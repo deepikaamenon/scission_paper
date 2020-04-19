@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.5.6)  27 MAR 2020 17:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.5.6)  2 APR 2020 17:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2170,23 +2170,20 @@ LaTeX Font Info:    Font shape `T1/fos/bx/n' in size <10.95> not available
  [1
 
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
+</Users/deepikaa/Desktop/scission_paper/figures/fig1/final/vpsdel_18.pdf, id=84
+, 3295.41173pt x 2771.3437pt>
+File: /Users/deepikaa/Desktop/scission_paper/figures/fig1/final/vpsdel_18.pdf G
+raphic file (type pdf)
 
-! LaTeX Error: File `figures/vpsdel_11' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.79 ...egraphics[width=\hsize]{figures/vpsdel_11}
-                                                  
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+<use /Users/deepikaa/Desktop/scission_paper/figures/fig1/final/vpsdel_18.pdf>
+Package pdftex.def Info: /Users/deepikaa/Desktop/scission_paper/figures/fig1/fi
+nal/vpsdel_18.pdf used on input line 79.
+(pdftex.def)             Requested size: 406.58981pt x 341.89238pt.
 LaTeX Font Info:    Font shape `T1/fos/bx/n' in size <8> not available
 (Font)              Font shape `T1/fos/b/n' tried instead on input line 80.
-[3]
+
+[3] [4 </Users/deepikaa/Desktop/scission_paper/figures/fig1/final/vpsdel_18.pdf
+>]
 
 ! LaTeX Error: File `figures/inp4' not found.
 
@@ -2201,7 +2198,7 @@ I could not locate the file with any of these extensions:
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-<figures/BAR_curvature.png, id=91, 650.43pt x 667.49374pt>
+<figures/BAR_curvature.png, id=217, 650.43pt x 667.49374pt>
 File: figures/BAR_curvature.png Graphic file (type png)
 
 <use figures/BAR_curvature.png>
@@ -2211,19 +2208,18 @@ Package pdftex.def Info: figures/BAR_curvature.png used on input line 122.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[4]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\color' on input line 137.
 
-[5 <./figures/BAR_curvature.png>]
-<figures/BARdup_place.png, id=106, 632.3625pt x 825.0825pt>
+[5] [6 <./figures/BAR_curvature.png>]
+<figures/BARdup_place.png, id=232, 632.3625pt x 825.0825pt>
 File: figures/BARdup_place.png Graphic file (type png)
 
 <use figures/BARdup_place.png>
 Package pdftex.def Info: figures/BARdup_place.png used on input line 152.
 (pdftex.def)             Requested size: 243.94759pt x 318.29352pt.
- [6 <./figures/BARdup_place.png>]
+ [7 <./figures/BARdup_place.png>]
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 196.
 
 
@@ -2236,11 +2232,11 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             See the microtype manual for details.
 
 
-Package natbib Warning: Citation `Aivazian917' on page 7 undefined on input lin
+Package natbib Warning: Citation `Aivazian917' on page 8 undefined on input lin
 e 196.
 
 
-Package natbib Warning: Citation `Aivazian917' on page 7 undefined on input lin
+Package natbib Warning: Citation `Aivazian917' on page 8 undefined on input lin
 e 196.
 
 (./main.bbl
@@ -2261,7 +2257,7 @@ Package natbib Warning: There were undefined citations.
 
 
 AED: lastpage setting LastPage
-[7] (./main.suppinfo)
+[8] (./main.suppinfo)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 225.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 225.
  (./main.aux)
@@ -2275,13 +2271,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 27325 strings out of 492995
- 497075 string characters out of 6132705
+ 27331 strings out of 492995
+ 497446 string characters out of 6132705
  717693 words of memory out of 5000000
- 30048 multiletter control sequences out of 15000+600000
+ 30052 multiletter control sequences out of 15000+600000
  673942 words of font info for 440 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,11n,49p,10419b,925s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,12n,49p,10419b,925s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/opensans/opensans-03.enc}
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/opensans/opensans-04.enc}{/
 usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texl
@@ -2291,10 +2287,10 @@ live/2017/texmf-dist/fonts/type1/public/opensans/OpenSans-Italic.pfb></usr/loca
 l/texlive/2017/texmf-dist/fonts/type1/public/opensans/OpenSans-Regular.pfb></us
 r/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmtt9.pfb></usr/local/tex
 live/2017/texmf-dist/fonts/type1/public/stix/stix-mathrm.pfb>
-Output written on main.pdf (7 pages, 1047790 bytes).
+Output written on main.pdf (8 pages, 1515671 bytes).
 PDF statistics:
- 159 PDF objects out of 1000 (max. 8388607)
- 139 compressed objects within 2 object streams
- 27 named destinations out of 1000 (max. 500000)
- 57475 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 285 PDF objects out of 1000 (max. 8388607)
+ 202 compressed objects within 3 object streams
+ 28 named destinations out of 1000 (max. 500000)
+ 57480 words of extra memory for PDF output out of 61914 (max. 10000000)
 
