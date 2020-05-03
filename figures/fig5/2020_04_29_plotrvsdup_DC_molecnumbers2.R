@@ -43,7 +43,7 @@ get(load("/Volumes/s-biochem-kaksonen/Deepika/data_desktop/Tracking/DC/diploids/
 
 
 #generate a template transformation matrix to fool gen.data
-get(load("/Volumes/MarkoKaksonenLab/Deepika/data_desktop/Tracking/DC/wt/Rvs167/110824_mytrasf.Rdata"))->transformation_template
+get(load("/Volumes/s-biochem-kaksonen/Deepika/data_desktop/Tracking/DC/wt/Rvs167/110824_mytrasf.Rdata"))->transformation_template
 transformation_template<-0*transformation_template
 
 ## get t0 from max abp1 intensities for each trace

@@ -5,6 +5,7 @@ mnorm<-function(x) return((x-min(x,na.rm=T))/(max(x,na.rm=T)-min(x,na.rm=T)))
 ##########haploid RVS
 
 get(load("/Users/deepikaa/Desktop/data_desktop/Tracking/SC/WT/Rvs167/2017_03_29_3131/tracks.Rdata"))->WTrvs_gen3131
+
 get(load("/Users/deepikaa/Desktop/data_desktop/Tracking/SC/rvs_delsh3/rvs167egfp_delsh3/2016_06_02_3154_delsh3_gfp_geneva/analysis2woFlalign/tracks.Rdata"))->delsh3_g_woflalign
 
 get(load("/Users/deepikaa/Desktop/data_desktop/Tracking/SC/Rvsduplication/Rvs167/2017_06_19/161_d100_167d3131_5b/tracks.Rdata")) -> rvs161d_167d
@@ -48,9 +49,10 @@ transformation_template<-0*transformation_template
 get(load("/Users/deepikaa/Desktop/data_desktop/Tracking/SC/Abp1-mCH/alignments/abpmch_Sla1823_mytrasf.Rdata"))->sla1823_transf
 get(load("/Users/deepikaa/Desktop/data_desktop/Tracking/SC/Abp1-mCH/alignments/abpmch_Rvs3132_mytrasf.Rdata"))->rvs3132_transf
 
+
 get(load("/Users/deepikaa/Desktop/data_desktop/Tracking/SC/Abp1-mCH/alignments/abpmch_delrvs1801_fimaxtrue1801_mytrasf.Rdata"))->sla1_delrvs1801_trasf
 
-
+time(abp1SC_3132_notrans$ts)[which(abp1SC_3132_notrans$ts[,"mean_sFI"]==max(abp1SC_3132_notrans$ts[,"mean_sFI"],na.rm=TRUE))]->t0_abp3132_wt
 time(WTrvs_gen3131$ts)[which(WTrvs_gen3131$ts[,"mean_sFI"]==max(WTrvs_gen3131$ts[,"mean_sFI"],na.rm=TRUE))]->t0_3132
 time(rvs161d_167d$ts)[which(rvs161d_167d$ts[,"mean_sFI"]==max(rvs161d_167d$ts[,"mean_sFI"],na.rm=TRUE))]->t0_rvs161d_167d
 time(delsh3_dup_sorted$ts)[which(delsh3_dup_sorted$ts[,"mean_sFI"]==max(delsh3_dup_sorted$ts[,"mean_sFI"],na.rm=TRUE))]->t0_delsh3_sorted
@@ -63,7 +65,9 @@ time(delsh3_g_woflalign$ts)[which(delsh3_g_woflalign$ts[,"mean_sFI"]==max(delsh3
 ## haploid
 ## RVS
 rvs_dup<-gen.data(rvs161d_167d,transformation_template,n=82.7 ,sn=7.5, t0=t0_rvs161d_167d)
-rvs_gen3131<-gen.data(WTrvs_gen3131,transformation_template,n=53.2,sn=5.2, t0=my_t0_3132)
+#rvs_gen3131<-gen.data(WTrvs_gen3131,rvs3132_transf,n=53.2,sn=5.2, t0=my_t0_3132)
+rvs_gen3131<-gen.data(WTrvs_gen3131,rvs3132_transf,n=73.4,sn=6.7, zero = 0, t0=t0_3132)
+
 delsh3_sorted<-gen.data(delsh3_dup_sorted,transformation_template,n=43.6 ,sn=9.6, t0=t0_delsh3_sorted)
 delsh3_g<-gen.data(delsh3_g_woflalign,transformation_template,n=30.1,sn=9.9, t0=t0_delsh3_g_woflalign)
 
@@ -177,121 +181,7 @@ myplot(trvsdel_sla1_2-25,rvsdel_sla1_2[,"x"]-xsla141_rvsdel_2-10,rvsdel_sla1_2[,
 dev.off()
 
 
-# ####halpoid vs diploid
-# #movement
-##--------------------------------------------------------------------------------------------------------
-#pdf("rvs_dup_haploid3.pdf")
-#myplot(t_rvs_dup,rvs_dup[,"x"]-x_rvs_dup,rvs_dup[,"t.err"],rvs_dup[,"x.err"],line.col="#00FFFF",xlab="Time (s)",ylab="Inward movement (nm)",line.lwd=3,deltat=0.25,xlim=c(-1.5,8),ylim=c(-25,150))
-#myplot(t_rvs_dup_d,rvs_dup_d[,"x"]-x_rvs_dup_d,rvs_dup_d[,"t.err"],rvs_dup_d[,"x.err"],line.col="#0033CC", hold_on=TRUE, line.lwd=3, deltat=0.25)
-#myplot(t_3131-0.2,rvs_gen3131[,"x"]-x_3131,rvs_gen3131[,"t.err"],rvs_gen3131[,"x.err"],line.col="#669900", hold_on=TRUE, line.lwd=3,deltat=0.25)
-#myplot(t_3131_d-1.2,rvs_gen3131_d[,"x"]-x_3131_d,rvs_gen3131_d[,"t.err"],rvs_gen3131_d[,"x.err"],line.col="#006633", hold_on=TRUE, line.lwd=3,deltat=0.25)
 
-#title(main="Rvs167-GFP", sub="time aligned to movement/int peak")
-#legend("topleft",c("Rvsdup-haploid","Rvsdup-diploid","WT-haploid", "WT-diploid"),lty=1,col=c("#00FFFF","#0033CC","#669900", "#006633"),bty='n', cex=0.75)
-# 
-# #nomolecule numbers
-#myplot(t_rvs_dup,mnorm(rvs_dup[,"fi"]),rvs_dup[,"t.err"],rvs_dup[,"fi.err"],line.col="#00FFFF",xlab="time(s)",ylab="fl.int",xlim=c(-1.5,8), ylim=c(0,1))
-#myplot(t_rvs_dup_d,mnorm(rvs_dup_d[,"fi"]),rvs_dup_d[,"t.err"],rvs_dup_d[,"fi.err"],line.col="#0033CC",hold_on=TRUE)
-#myplot(t_3131-0.2,mnorm(rvs_gen3131[,"fi"]),rvs_gen3131[,"t.err"],rvs_gen3131[,"fi.err"],line.col="#669900",hold_on=TRUE)
-#myplot(t_3131_d-1.2,mnorm(rvs_gen3131_d[,"fi"]),rvs_gen3131_d[,"t.err"],rvs_gen3131_d[,"fi.err"],line.col="#006633",hold_on=TRUE)
-
-#title(main="Rvs167-GFP", sub="time aligned to movement/int peak")
-#legend("topleft",c("Rvsdup-haploid","Rvsdup-diploid","WT-haploid", "WT-diploid"),lty=1,col=c("#00FFFF","#0033CC","#669900", "#006633"),bty='n', cex=0.75)
-# 
-# #molecule numbers
-#myplot(t_rvs_dup,rvs_dup[,"n"],rvs_dup[,"t.err"],rvs_dup[,"n.err"],line.col="#00FFFF",xlab="time(s)",ylab="# molecules",xlim=c(-1.5,8), ylim=c(0,200))
-#myplot(t_rvs_dup_d,rvs_dup_d[,"n"],rvs_dup_d[,"t.err"],rvs_dup_d[,"n.err"],line.col="#0033CC",hold_on=TRUE)
-#myplot(t_3131-0.2,rvs_gen3131[,"n"],rvs_gen3131[,"t.err"],rvs_gen3131[,"n.err"],line.col="#669900",hold_on=TRUE)
-#myplot(t_3131_d-1.2,rvs_gen3131_d[,"n"],rvs_gen3131_d[,"t.err"],rvs_gen3131_d[,"n.err"],line.col="#006633",hold_on=TRUE)
-#myplot(t_delsh3_sorted-0.9,delsh3_sorted[,"n"],delsh3_sorted[,"t.err"],delsh3_sorted[,"n.err"],line.col="#FF6600",hold_on=TRUE)
-#myplot(t_delsh3_g-2.2,delsh3_g[,"n"],delsh3_g[,"t.err"],delsh3_g[,"n.err"],line.col="#996600",hold_on=TRUE)
-
-#title(main="Rvs167-GFP", sub="time aligned to movement/int peak")
-#legend("topleft",c("Rvsdup-haploid","Rvs", "delsh3dup","delsh3"),lty=1,col=c("#00FFFF","#669900", "#FF6600","#996600"),bty='n', cex=0.75)
-#dev.off()
-##--------------------------------------------------------------------------------------------------------
-########################################################################################################
-#######only diploids
-# pdf("rvs_diploid2.pdf")
-# myplot(t_rvs_dup,rvs_dup[,"x"]-x_rvs_dup,rvs_dup[,"t.err"],rvs_dup[,"x.err"],line.col="#00FFFF",xlab="Time (s)",ylab="Inward movement (nm)",line.lwd=3,deltat=0.25,xlim=c(-2,8),ylim=c(-25,150))
-# myplot(t_rvs_dup_d,rvs_dup_d[,"x"]-x_rvs_dup_d,rvs_dup_d[,"t.err"],rvs_dup_d[,"x.err"],line.col="#0033CC", hold_on=TRUE, line.lwd=3, deltat=0.25)
-# myplot(t_3131,rvs_gen3131[,"x"]-x_3131,rvs_gen3131[,"t.err"],rvs_gen3131[,"x.err"],line.col="#669900", hold_on=TRUE, line.lwd=3,deltat=0.25)
-# myplot(t_3131_d-1,rvs_gen3131_d[,"x"]-x_3131_d,rvs_gen3131_d[,"t.err"],rvs_gen3131_d[,"x.err"],line.col="#006633", hold_on=TRUE, line.lwd=3,deltat=0.25)
-# myplot(t_rvs551x529_d-1.8,rvs551x529_d[,"x"]-x_rvs551x529_d,rvs551x529_d[,"t.err"],rvs551x529_d[,"x.err"],line.col="#660033", hold_on=TRUE, line.lwd=3,deltat=0.25)
-# title(main="Rvs167-GFP", sub="time aligned to intensity peak")
-# legend("topleft",c("Rvsdup-haploid","Rvsdup-diploid","WT-haploid", "WT-diploid", "551x529 diploid"),lty=1,col=c("#00FFFF","#0033CC","#669900", "#006633", "#660033"),bty='n', cex=0.75)
-# 
-# #molecule numbers
-# #myplot(t_rvs_bbcd-0.7,mnorm(rvs_bbcd[,"fi"]),rvs_bbcd[,"t.err"],rvs_bbcd[,"fi.err"],line.col="#CC6600",hold_on=TRUE)
-# 
-# myplot(t_rvs_dup,mnorm(rvs_dup[,"fi"]),rvs_dup[,"t.err"],rvs_dup[,"fi.err"],line.col="#00FFFF",xlab="time(s)",ylab="# molecules",xlim=c(-2,8), ylim=c(0,1))
-# myplot(t_rvs_dup_d,mnorm(rvs_dup_d[,"fi"]),rvs_dup_d[,"t.err"],rvs_dup_d[,"fi.err"],line.col="#0033CC",hold_on=TRUE)
-# myplot(t_3131,mnorm(rvs_gen3131[,"fi"]),rvs_gen3131[,"t.err"],rvs_gen3131[,"fi.err"],line.col="#669900",hold_on=TRUE)
-# myplot(t_3131_d-1,mnorm(rvs_gen3131_d[,"fi"]),rvs_gen3131_d[,"t.err"],rvs_gen3131_d[,"fi.err"],line.col="#006633",hold_on=TRUE)
-# myplot(t_rvs551x529_d-1.8,mnorm(rvs551x529_d[,"fi"]),rvs551x529_d[,"t.err"],rvs551x529_d[,"fi.err"],line.col="#660033",hold_on=TRUE)
-# title(main="Rvs167-GFP", sub="time aligned to intensity peak")
-# legend("topleft",c("Rvsdup-haploid","Rvsdup-diploid","WT-haploid", "WT-diploid", "551x529 diploid"),lty=1,col=c("#00FFFF","#0033CC","#669900", "#006633", "#660033"),bty='n', cex=0.75)
-#dev.off()
-########################################################################################################
-# #######only diploids, incl 7x3131
-#pdf("rvs_onlydiploid_incl7x3131_3131x100_3.pdf")
-#myplot(t_rvs_dup_d,rvs_dup_d[,"x"]-x_rvs_dup_d,rvs_dup_d[,"t.err"],rvs_dup_d[,"x.err"],line.col="#000000",xlab="Time (s)",ylab="Inward movement (nm)",line.lwd=3,deltat=0.25,xlim=c(-2,8),ylim=c(-25,150))
-#myplot(t_3131_d-1.2,rvs_gen3131_d[,"x"]-x_3131_d,rvs_gen3131_d[,"t.err"],rvs_gen3131_d[,"x.err"],line.col="#006633", hold_on=TRUE, line.lwd=3,deltat=0.25)
-#myplot(t_rvs551x529_d-1.8,rvs551x529_d[,"x"]-x_rvs551x529_d,rvs551x529_d[,"t.err"],rvs551x529_d[,"x.err"],line.col="#660033", hold_on=TRUE, line.lwd=3,deltat=0.25)
-#myplot(t_rvs7x3131_d,rvs7x3131_d[,"x"]-x_rvs7x3131_d,rvs7x3131_d[,"t.err"],rvs7x3131_d[,"x.err"],line.col="#CC00FF", hold_on=TRUE, line.lwd=3,deltat=0.25)
-#myplot(t_rvs3131x100_d,rvs3131x100_d[,"x"]-x_rvs3131x100_d,rvs3131x100_d[,"t.err"],rvs3131x100_d[,"x.err"],line.col="#FF3399", hold_on=TRUE, line.lwd=3,deltat=0.25)
-
-#myplot(t_3131_d-1.2,rvs_gen3131_d[,"x"]-x_3131_d,rvs_gen3131_d[,"t.err"],rvs_gen3131_d[,"x.err"],line.col="#006633", xlab="Time (s)",ylab="Inward movement (nm)",line.lwd=3,deltat=0.25,xlim=c(-2,8),ylim=c(-25,150))
-#myplot(t_rvs3131x100_d,rvs3131x100_d[,"x"]-x_rvs3131x100_d,rvs3131x100_d[,"t.err"],rvs3131x100_d[,"x.err"],line.col="#FF3399", hold_on=TRUE, line.lwd=3,deltat=0.25)
-#myplot(t_3131-0.2,rvs_gen3131[,"x"]-x_3131,rvs_gen3131[,"t.err"],rvs_gen3131[,"x.err"],line.col="#669900", hold_on=TRUE, line.lwd=3,deltat=0.25)
-
-#title(main="Rvs167-GFP", sub="time aligned to intensity peak")
-#legend("topleft",c("Rvsdup-diploid", "WT-diploid", "551x529 diploid motile", "7x3131 diploid motile", "3131x100 diploid"),lty=1,col=c("#0033CC", "#006633", "#660033", "#CC00FF", "#FF3399"),bty='n', cex=0.75)
-# 
-# #molecule numbers
-#myplot(t_rvs_dup_d,mnorm(rvs_dup_d[,"fi"]),rvs_dup_d[,"t.err"],rvs_dup_d[,"fi.err"],line.col="#0033CC",xlab="time(s)",ylab="# molecules",xlim=c(-2,8), ylim=c(0,1))
-#myplot(t_3131_d-1.2,mnorm(rvs_gen3131_d[,"fi"]),rvs_gen3131_d[,"t.err"],rvs_gen3131_d[,"fi.err"],line.col="#006633",hold_on=TRUE)
-#myplot(t_rvs551x529_d-1.8,mnorm(rvs551x529_d[,"fi"]),rvs551x529_d[,"t.err"],rvs551x529_d[,"fi.err"],line.col="#660033",hold_on=TRUE)
-#myplot(t_rvs7x3131_d,mnorm(rvs7x3131_d[,"fi"]),rvs7x3131_d[,"t.err"],rvs7x3131_d[,"fi.err"],line.col="#CC00FF",hold_on=TRUE)
-#myplot(t_rvs3131x100_d,mnorm(rvs3131x100_d[,"fi"]),rvs3131x100_d[,"t.err"],rvs3131x100_d[,"fi.err"],line.col="#FF3399",hold_on=TRUE)
-
-#myplot(t_3131_d-1.2,mnorm(rvs_gen3131_d[,"fi"]),rvs_gen3131_d[,"t.err"],rvs_gen3131_d[,"fi.err"],line.col="#006633",xlab="time(s)",ylab="# molecules",xlim=c(-2,8), ylim=c(0,1))
-#myplot(t_rvs3131x100_d,mnorm(rvs3131x100_d[,"fi"]),rvs3131x100_d[,"t.err"],rvs3131x100_d[,"fi.err"],line.col="#FF3399",hold_on=TRUE)
-#myplot(t_3131-0.2,mnorm(rvs_gen3131[,"fi"]),rvs_gen3131[,"t.err"],rvs_gen3131[,"fi.err"],line.col="#669900",hold_on=TRUE)
-
-# 
-#title(main="Rvs167-GFP", sub="time aligned to intensity peak")
-#legend("topleft",c("Rvsdup-diploid", "WT-diploid", "551x529 diploid motile", "7x3131 diploid motile", "3131x100 diploid"),lty=1,col=c("#0033CC", "#006633", "#660033", "#CC00FF", "#FF3399"),bty='n', cex=0.75)
-#dev.off()
-
-########################################################################################################
-#with molecule numbers
-#pdf("rvs_diploid_molecnum3.pdf")
-#myplot(t_rvs_dup_d,rvs_dup_d[,"x"]-x_rvs_dup_d,rvs_dup_d[,"t.err"],rvs_dup_d[,"x.err"],line.col="#0033CC",xlab="Time (s)",ylab="Inward movement (nm)",line.lwd=3,deltat=0.25,xlim=c(-2,8),ylim=c(-25,150))
-#myplot(t_3131_d-1.2,rvs_gen3131_d[,"x"]-x_3131_d,rvs_gen3131_d[,"t.err"],rvs_gen3131_d[,"x.err"],line.col="#006633", hold_on=TRUE, line.lwd=3,deltat=0.25)
-#myplot(t_rvs551x529_d-1.9,rvs551x529_d[,"x"]-x_rvs551x529_d,rvs551x529_d[,"t.err"],rvs551x529_d[,"x.err"],line.col="#660033", hold_on=TRUE, line.lwd=3,deltat=0.25)
-#myplot(t_3131-0.2,rvs_gen3131[,"x"]-x_3131,rvs_gen3131[,"t.err"],rvs_gen3131[,"x.err"],line.col="#669900", hold_on=TRUE, line.lwd=3,deltat=0.25)
-#
-#
-#title(main="Rvs167-GFP", sub="time aligned to intensity peak")
-# legend("topleft",c("Rvs161/167dup-diploid", "WT-diploid", "551x529 diploid motile", "WT-haploid"),lty=1,col=c("#0033CC", "#006633", "#660033", "#669900"),bty='n', cex=0.75)
-#legend("topleft",c("4x Rvs diploid", "2x Rvs diploid", "1x Rvs diploid", "1x Rvs haploid"),lty=1,col=c("#0033CC", "#006633", "#660033", "#669900"),bty='n', cex=0.75)
-
-# #molecule numbers
-# #
-#myplot(t_rvs_dup_d,rvs_dup_d[,"n"],rvs_dup_d[,"t.err"],rvs_dup_d[,"n.err"],line.col="#0033CC",xlab="time(s)",ylab="# molecules",xlim=c(-2,8), ylim=c(0,150))
-#myplot(t_3131_d-1.2,rvs_gen3131_d[,"n"],rvs_gen3131_d[,"t.err"],rvs_gen3131_d[,"n.err"],line.col="#006633",hold_on=TRUE)
-#myplot(t_rvs551x529_d-1.9,rvs551x529_d[,"n"],rvs551x529_d[,"t.err"],rvs551x529_d[,"n.err"],line.col="#660033",hold_on=TRUE)
-#myplot(t_3131-0.2,rvs_gen3131[,"n"],rvs_gen3131[,"t.err"],rvs_gen3131[,"n.err"],line.col="#669900",hold_on=TRUE)
-# # myplot(t_rvs7x3131_d,rvs7x3131_d[,"n"],rvs7x3131_d[,"t.err"],rvs7x3131_d[,"n.err"],line.col="#CC00FF",hold_on=TRUE)
-#
-#title(main="Rvs167-GFP", sub="time aligned to intensity peak")
-# legend("topleft",c("Rvs161/167dup-diploid", "WT-diploid", "551x529 diploid motile", "WT-haploid"),lty=1,col=c("#0033CC", "#006633", "#660033", "#669900"),bty='n', cex=0.75)
-#legend("topleft",c("4x Rvs diploid", "2x Rvs diploid", "1x Rvs diploid", "1x Rvs haploid"),lty=1,col=c("#0033CC", "#006633", "#660033", "#669900"),bty='n', cex=0.75)
-
-# 
-#dev.off()
-########################################################################################################
 ##with delsh3-duplicated
 pdf("rvs_all_haploid_rvsmax_abpmch.pdf")
 myplot(t_rvs_dup_d,rvs_dup_d[,"x"]-x_rvs_dup_d,rvs_dup_d[,"t.err"],rvs_dup_d[,"x.err"],line.col="#FFFFFF",xlab="Time (s)",ylab="Inward movement (nm)",line.lwd=3,deltat=0.25,xlim=c(-5,8),ylim=c(-25,150))
@@ -318,104 +208,22 @@ title(main="Rvs167-GFP", sub="time aligned to inward movment")
 legend("topleft",c("Rvs167/161 dup diploid: 4x Rvs","2832x3131: 2x Rvs","551x529: 1x Rvs","Rvs167/161 dup haploid",  "WT Rvs-Gen3131", "Rvs167delsh3 dup", "Rvsdelsh3"),lty=1,col=c("#0033CC", "#006633", "#660033", "#00FFFF","#669900", "#FF6600","#996600" ),bty='n', cex=0.75)
 dev.off()
 
-########################################################################################################
-#pdf("rvs_delsh3_vs559_3.pdf")
-#myplot(t_rvs_dup_d,rvs_dup_d[,"x"]-x_rvs_dup_d,rvs_dup_d[,"t.err"],rvs_dup_d[,"x.err"],line.col="#FFFFFF",xlab="Time (s)",ylab="Inward movement (nm)",line.lwd=3,deltat=0.25,xlim=c(-2,8),ylim=c(-25,150))
-#myplot(t_rvs551x529_d-1.9,rvs551x529_d[,"x"]-x_rvs551x529_d,rvs551x529_d[,"t.err"],rvs551x529_d[,"x.err"],line.col="#660033", hold_on=TRUE, line.lwd=3,deltat=0.25)
-#myplot(t_3131_d-1.2,rvs_gen3131_d[,"x"]-x_3131_d,rvs_gen3131_d[,"t.err"],rvs_gen3131_d[,"x.err"],line.col="#006633", hold_on=TRUE, line.lwd=3,deltat=0.25)
-#myplot(t_rvs_dup-0.4,rvs_dup[,"x"]-x_rvs_dup,rvs_dup[,"t.err"],rvs_dup[,"x.err"],line.col="#00FFFF", hold_on=TRUE, line.lwd=3,deltat=0.25)
-#myplot(t_3131-0.2,rvs_gen3131[,"x"]-x_3131,rvs_gen3131[,"t.err"],rvs_gen3131[,"x.err"],line.col="#669900", hold_on=TRUE, line.lwd=3,deltat=0.25)
-#myplot(t_delsh3_sorted-0.9,delsh3_sorted[,"x"]-x_delsh3_sorted,delsh3_sorted[,"t.err"],delsh3_sorted[,"x.err"],line.col="#FF6600", hold_on=TRUE, line.lwd=3,deltat=0.25)
-#myplot(t_delsh3_g-2.2,delsh3_g[,"x"]-x_delsh3_g,delsh3_g[,"t.err"],delsh3_g[,"x.err"],line.col="#996600", hold_on=TRUE, line.lwd=3,deltat=0.25)
-#title(main="Rvs167-GFP", sub="time aligned to inward movment")
-#legend("topleft",c("Rvs167/161 dup diploid: 4x Rvs","2832x3131: 2x Rvs","551x529: 1x Rvs","Rvs167/161 dup haploid",  "WT Rvs-Gen3131", "Rvs167delsh3 dup", "Rvsdelsh3"),lty=1,col=c("#0033CC", "#006633", "#660033", "#00FFFF","#669900", "#FF6600","#996600" ),bty='n', cex=0.75)
 
-#myplot(t_rvs_dup-0.4,mnorm(rvs_dup[,"fi"]),rvs_dup[,"t.err"],rvs_dup[,"fi.err"],line.col="#FFFFFF",xlab="time(s)",ylab="# molecules",xlim=c(-1.5,8), ylim=c(0,1))
-#myplot(t_rvs_dup_d,mnorm(rvs_dup_d[,"fi"]),rvs_dup_d[,"t.err"],rvs_dup_d[,"fi.err"],line.col="#0033CC",hold_on=TRUE)
-#myplot(t_rvs551x529_d-1.8,mnorm(rvs551x529_d[,"fi"]),rvs551x529_d[,"t.err"],rvs551x529_d[,"fi.err"],line.col="#660033",hold_on=TRUE)
-#myplot(t_3131_d-1.2,mnorm(rvs_gen3131_d[,"fi"]),rvs_gen3131_d[,"t.err"],rvs_gen3131_d[,"fi.err"],line.col="#006633",hold_on=TRUE)
-
-#myplot(t_3131-0.2,mnorm(rvs_gen3131[,"fi"]),rvs_gen3131[,"t.err"],rvs_gen3131[,"fi.err"],line.col="#669900",hold_on=TRUE)
-#myplot(t_delsh3_sorted-0.9,mnorm(delsh3_sorted[,"fi"]),delsh3_sorted[,"t.err"],delsh3_sorted[,"fi.err"],line.col="#FF6600",hold_on=TRUE)
-#myplot(t_delsh3_g-2.2,mnorm(delsh3_g[,"fi"]),delsh3_g[,"t.err"],delsh3_g[,"fi.err"],line.col="#996600",hold_on=TRUE)
-
-#title(main="Rvs167-GFP", sub="time aligned to inward movment")
-#legend("topleft",c("Rvs167/161 dup diploid: 4x Rvs","2832x3131: 2x Rvs","551x529: 1x Rvs","Rvs167/161 dup haploid",  "WT Rvs-Gen3131", "Rvs167delsh3 dup", "Rvsdelsh3"),lty=1,col=c("#0033CC", "#006633", "#660033", "#00FFFF","#669900", "#FF6600","#996600" ),bty='n', cex=0.75)
-
-#dev.off()
-########################################################################################################
-# pdf("rvs_allwomole2.pdf")
-# myplot(t_rvs_dup_d,rvs_dup_d[,"x"]-x_rvs_dup_d,rvs_dup_d[,"t.err"],rvs_dup_d[,"x.err"],line.col="#0033CC",xlab="Time (s)",ylab="Inward movement (nm)",line.lwd=3,deltat=0.25,xlim=c(-2,8),ylim=c(-25,150))
-# myplot(t_rvs551x529_d-1.9,rvs551x529_d[,"x"]-x_rvs551x529_d,rvs551x529_d[,"t.err"],rvs551x529_d[,"x.err"],line.col="#660033", hold_on=TRUE, line.lwd=3,deltat=0.25)
-# myplot(t_3131_d-1.2,rvs_gen3131_d[,"x"]-x_3131_d,rvs_gen3131_d[,"t.err"],rvs_gen3131_d[,"x.err"],line.col="#006633", hold_on=TRUE, line.lwd=3,deltat=0.25)
-# myplot(t_rvs_dup-0.4,rvs_dup[,"x"]-x_rvs_dup,rvs_dup[,"t.err"],rvs_dup[,"x.err"],line.col="#00FFFF", hold_on=TRUE, line.lwd=3,deltat=0.25)
-# myplot(t_3131-0.2,rvs_gen3131[,"x"]-x_3131,rvs_gen3131[,"t.err"],rvs_gen3131[,"x.err"],line.col="#669900", hold_on=TRUE, line.lwd=3,deltat=0.25)
-# myplot(t_delsh3_sorted-0.9,delsh3_sorted[,"x"]-x_delsh3_sorted,delsh3_sorted[,"t.err"],delsh3_sorted[,"x.err"],line.col="#FF6600", hold_on=TRUE, line.lwd=3,deltat=0.25)
-# myplot(t_delsh3_g-2.2,delsh3_g[,"x"]-x_delsh3_g,delsh3_g[,"t.err"],delsh3_g[,"x.err"],line.col="#996600", hold_on=TRUE, line.lwd=3,deltat=0.25)
-# title(main="Rvs167-GFP", sub="time aligned to inward movment")
-# legend("topleft",c("Rvs167/161 dup diploid: 4x Rvs","2832x3131: 2x Rvs","551x529: 1x Rvs","Rvs167/161 dup haploid",  "WT Rvs-Gen3131", "Rvs167delsh3 dup", "Rvsdelsh3"),lty=1,col=c("#0033CC", "#006633", "#660033", "#00FFFF","#669900", "#FF6600","#996600" ),bty='n', cex=0.75)
-# 
-# myplot(t_rvs_dup-0.4,mnorm(rvs_dup[,"fi"]),rvs_dup[,"t.err"],rvs_dup[,"fi.err"],line.col="#00FFFF",xlab="time(s)",ylab="# molecules",xlim=c(-1.5,8), ylim=c(0,1))
-# myplot(t_rvs_dup_d,mnorm(rvs_dup_d[,"fi"]),rvs_dup_d[,"t.err"],rvs_dup_d[,"fi.err"],line.col="#0033CC",hold_on=TRUE)
-# myplot(t_rvs551x529_d-1.8,mnorm(rvs551x529_d[,"fi"]),rvs551x529_d[,"t.err"],rvs551x529_d[,"fi.err"],line.col="#660033",hold_on=TRUE)
-# myplot(t_3131_d-1.2,mnorm(rvs_gen3131_d[,"fi"]),rvs_gen3131_d[,"t.err"],rvs_gen3131_d[,"fi.err"],line.col="#006633",hold_on=TRUE)
-# 
-# myplot(t_3131-0.2,mnorm(rvs_gen3131[,"fi"]),rvs_gen3131[,"t.err"],rvs_gen3131[,"fi.err"],line.col="#669900",hold_on=TRUE)
-# myplot(t_delsh3_sorted-0.9,mnorm(delsh3_sorted[,"fi"]),delsh3_sorted[,"t.err"],delsh3_sorted[,"fi.err"],line.col="#FF6600",hold_on=TRUE)
-# myplot(t_delsh3_g-2.2,mnorm(delsh3_g[,"fi"]),delsh3_g[,"t.err"],delsh3_g[,"fi.err"],line.col="#996600",hold_on=TRUE)
-# 
-# title(main="Rvs167-GFP", sub="time aligned to inward movment")
-# legend("topleft",c("Rvs167/161 dup diploid: 4x Rvs","2832x3131: 2x Rvs","551x529: 1x Rvs","Rvs167/161 dup haploid",  "WT Rvs-Gen3131", "Rvs167delsh3 dup", "Rvsdelsh3"),lty=1,col=c("#0033CC", "#006633", "#660033", "#00FFFF","#669900", "#FF6600","#996600" ),bty='n', cex=0.75)
-
-
-#pdf("rvs_haploiddup_vsdelsh3dup3.pdf")
-#myplot(t_rvs_dup_d,rvs_dup_d[,"x"]-x_rvs_dup_d,rvs_dup_d[,"t.err"],rvs_dup_d[,"x.err"],line.col="#0033CC",xlab="Time (s)",ylab="Inward movement (nm)",line.lwd=3,deltat=0.25,xlim=c(-2,8),ylim=c(-25,150))
-##myplot(t_rvs551x529_d-1.9,rvs551x529_d[,"x"]-x_rvs551x529_d,rvs551x529_d[,"t.err"],rvs551x529_d[,"x.err"],line.col="#660033", hold_on=TRUE, line.lwd=3,deltat=0.25)
-#myplot(t_3131_d-1.2,rvs_gen3131_d[,"x"]-x_3131_d,rvs_gen3131_d[,"t.err"],rvs_gen3131_d[,"x.err"],line.col="#006633", hold_on=TRUE, line.lwd=3,deltat=0.25)
-#myplot(t_rvs_dup-0.4,rvs_dup[,"x"]-x_rvs_dup,rvs_dup[,"t.err"],rvs_dup[,"x.err"],line.col="#00FFFF", hold_on=TRUE, line.lwd=3,deltat=0.25)
-#myplot(t_3131-0.2,rvs_gen3131[,"x"]-x_3131,rvs_gen3131[,"t.err"],rvs_gen3131[,"x.err"],line.col="#669900", hold_on=TRUE, line.lwd=3,deltat=0.25)
-#myplot(t_delsh3_sorted-0.9,delsh3_sorted[,"x"]-x_delsh3_sorted,delsh3_sorted[,"t.err"],delsh3_sorted[,"x.err"],line.col="#FF6600", hold_on=TRUE, line.lwd=3,deltat=0.25)
-#myplot(t_delsh3_g-2.2,delsh3_g[,"x"]-x_delsh3_g,delsh3_g[,"t.err"],delsh3_g[,"x.err"],line.col="#996600", hold_on=TRUE, line.lwd=3,deltat=0.25)
-#title(main="Rvs167-GFP", sub="time aligned to inward movment")
-#legend("topleft",c("Rvs167/161 dup diploid: 4x Rvs","2832x3131: 2x Rvs","551x529: 1x Rvs","Rvs167/161 dup haploid",  "WT Rvs-Gen3131", "Rvs167delsh3 dup", "Rvsdelsh3"),lty=1,col=c("#0033CC", "#006633", "#660033", "#00FFFF","#669900", "#FF6600","#996600" ),bty='n', cex=0.75)
-##########
-# myplot(t_rvs_dup-0.4,mnorm(rvs_dup[,"fi"]),rvs_dup[,"t.err"],rvs_dup[,"fi.err"],line.col="#00FFFF",xlab="time(s)",ylab="# molecules",xlim=c(-1.5,8), ylim=c(0,1))
-# myplot(t_rvs_dup_d,mnorm(rvs_dup_d[,"fi"]),rvs_dup_d[,"t.err"],rvs_dup_d[,"fi.err"],line.col="#0033CC",hold_on=TRUE)
-# #myplot(t_rvs551x529_d-1.8,mnorm(rvs551x529_d[,"fi"]),rvs551x529_d[,"t.err"],rvs551x529_d[,"fi.err"],line.col="#660033",hold_on=TRUE)
-# #myplot(t_3131_d-1.2,mnorm(rvs_gen3131_d[,"fi"]),rvs_gen3131_d[,"t.err"],rvs_gen3131_d[,"fi.err"],line.col="#006633",hold_on=TRUE)
-# 
-# myplot(t_3131-0.2,mnorm(rvs_gen3131[,"fi"]),rvs_gen3131[,"t.err"],rvs_gen3131[,"fi.err"],line.col="#669900",hold_on=TRUE)
-# myplot(t_delsh3_sorted-0.9,mnorm(delsh3_sorted[,"fi"]),delsh3_sorted[,"t.err"],delsh3_sorted[,"fi.err"],line.col="#FF6600",hold_on=TRUE)
-# #myplot(t_delsh3_g-2.2,mnorm(delsh3_g[,"fi"]),delsh3_g[,"t.err"],delsh3_g[,"fi.err"],line.col="#996600",hold_on=TRUE)
-############
-#myplot(t_3131+0.6,rvs_gen3131[,"n"],rvs_gen3131[,"t.err"],rvs_gen3131[,"n.err"],line.col="#009933",hold_on=TRUE)
-#
-#myplot(t_rvs_dup_d,rvs_dup_d[,"n"],rvs_dup_d[,"t.err"],rvs_dup_d[,"n.err"],line.col="#0033CC",xlab="time(s)",ylab="# molecules",xlim=c(-2,8), ylim=c(0,250))
-#myplot(t_3131_d-1.2,rvs_gen3131_d[,"n"],rvs_gen3131_d[,"t.err"],rvs_gen3131_d[,"n.err"],line.col="#006633",hold_on=TRUE)
-#myplot(t_rvs551x529_d-1.9,rvs551x529_d[,"n"],rvs551x529_d[,"t.err"],rvs551x529_d[,"n.err"],line.col="#660033",hold_on=TRUE)
-#myplot(t_3131-0.2,rvs_gen3131[,"n"],rvs_gen3131[,"t.err"],rvs_gen3131[,"n.err"],line.col="#669900",hold_on=TRUE)
-#myplot(t_delsh3_sorted-0.9,delsh3_sorted[,"n"],delsh3_sorted[,"t.err"],delsh3_sorted[,"n.err"],line.col="#FF6600",hold_on=TRUE)
-#myplot(t_rvs_dup-0.4,rvs_dup[,"n"],rvs_dup[,"t.err"],rvs_dup[,"n.err"],line.col="#00FFFF",hold_on=TRUE)
-
-# myplot(t_rvs7x3131_d,rvs7x3131_d[,"n"],rvs7x3131_d[,"t.err"],rvs7x3131_d[,"n.err"],line.col="#CC00FF",hold_on=TRUE)
-
-#title(main="Rvs167-GFP", sub="time aligned to inward movment")
-#legend("topleft",c("Rvs167/161 dup diploid: 4x Rvs","2832x3131: 2x Rvs","551x529: 1x Rvs","Rvs167/161 dup haploid",  "WT Rvs-Gen3131", "Rvs167delsh3 dup", "Rvsdelsh3"),lty=1,col=c("#0033CC", "#006633", "#660033", "#00FFFF","#669900", "#FF6600","#996600" ),bty='n', cex=0.75)
-
-#dev.off()
 ########################################################################################################
 ##with delsh3-duplicated
 pdf("rvs_delsh3_duplicate_alignedRvspeak_abpmch.pdf")
-myplot(t_rvs_dup_d,rvs_dup_d[,"x"]-x_rvs_dup_d,rvs_dup_d[,"t.err"],rvs_dup_d[,"x.err"],line.col="#FFFFFF",xlab="Time (s)",ylab="Inward movement (nm)",line.lwd=3,deltat=0.25,xlim=c(-2,8),ylim=c(-25,150))
-myplot(t_rvs_dup,rvs_dup[,"x"]-x_rvs_dup,rvs_dup[,"t.err"],rvs_dup[,"x.err"],line.col="#00FFFF", hold_on=TRUE, line.lwd=3,deltat=0.25)
-myplot(t_3131-0.3,rvs_gen3131[,"x"]-x_3131,rvs_gen3131[,"t.err"],rvs_gen3131[,"x.err"],line.col="#669900", hold_on=TRUE, line.lwd=3,deltat=0.25)
-myplot(t_delsh3_sorted-1.2,delsh3_sorted[,"x"]-x_delsh3_sorted,delsh3_sorted[,"t.err"],delsh3_sorted[,"x.err"],line.col="#FF6600", hold_on=TRUE, line.lwd=3,deltat=0.25)
+myplot(rvs_dup_d[,"t"],rvs_dup_d[,"x"]-x_rvs_dup_d,rvs_dup_d[,"t.err"],rvs_dup_d[,"x.err"],line.col="#FFFFFF",xlab="Time (s)",ylab="Inward movement (nm)",line.lwd=3,deltat=0.25,xlim=c(-10,10),ylim=c(-25,150))
+myplot(rvs_dup[,"t"],rvs_dup[,"x"]-x_rvs_dup,rvs_dup[,"t.err"],rvs_dup[,"x.err"],line.col="#00FFFF", hold_on=TRUE, line.lwd=3,deltat=0.25)
+myplot(rvs_gen3131[,"t"],rvs_gen3131[,"x"]-x_3131,rvs_gen3131[,"t.err"],rvs_gen3131[,"x.err"],line.col="#669900", hold_on=TRUE, line.lwd=3,deltat=0.25)
+myplot(delsh3_sorted[,"t"],delsh3_sorted[,"x"]-x_delsh3_sorted,delsh3_sorted[,"t.err"],delsh3_sorted[,"x.err"],line.col="#FF6600", hold_on=TRUE, line.lwd=3,deltat=0.25)
+myplot(delsh3_g[,"t"],delsh3_g[,"x"]-x_delsh3_g,delsh3_g[,"t.err"],delsh3_g[,"x.err"],line.col="#996600", hold_on=TRUE, line.lwd=3,deltat=0.25)
+
 title(main="Rvs167-GFP", sub="time aligned to inward movment")
 legend("topleft",c("Rvs167/161 dup diploid", "Rvs167/161 dup", "WT Rvs-Gen3131", "Rvs167delsh3 dup"),lty=1,col=c("#0033CC", "#00FFFF", "#669900", "#FF9900"),bty='n', cex=0.75)
 
 myplot(t_rvs_dup,rvs_dup[,"n"],rvs_dup[,"t.err"],rvs_dup[,"n.err"],line.col="#00FFFF",xlab="time(s)",ylab="# molecules",xlim=c(-1.5,8), ylim=c(0,200))
 myplot(t_rvs_dup_d,rvs_dup_d[,"n"],rvs_dup_d[,"t.err"],rvs_dup_d[,"n.err"],line.col="#FFFFFF",hold_on=TRUE)
-myplot(t_3131-0.3,rvs_gen3131[,"n"],rvs_gen3131[,"t.err"],rvs_gen3131[,"n.err"],line.col="#669900",hold_on=TRUE)
+myplot(rvs_gen3131[,"t"],rvs_gen3131[,"n"],rvs_gen3131[,"t.err"],rvs_gen3131[,"n.err"],line.col="#669900",hold_on=TRUE)
 myplot(t_delsh3_sorted-1.2,delsh3_sorted[,"n"],delsh3_sorted[,"t.err"],delsh3_sorted[,"n.err"],line.col="#FF6600",hold_on=TRUE)
 title(main="Rvs167-GFP", sub="time aligned to inward movment")
 legend("topleft",c("Rvs167/161 dup diploid", "Rvs167/161 dup", "WT Rvs-Gen3131", "Rvs167delsh3 dup"),lty=1,col=c("#0033CC", "#00FFFF", "#669900", "#FF9900"),bty='n', cex=0.75)
