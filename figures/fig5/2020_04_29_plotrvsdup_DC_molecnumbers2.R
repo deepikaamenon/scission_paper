@@ -40,8 +40,6 @@ get(load("/Volumes/s-biochem-kaksonen/Deepika/data_desktop/Tracking/DC/diploids/
 get(load("/Volumes/s-biochem-kaksonen/Deepika/data_desktop/Tracking/DC/diploids/sla1/2018_04_18/823x100/rvs2x_sla1_W2.Rdata"))->abp_sla1notrans_2x
 #get(load("/Volumes/s-biochem-kaksonen/Deepika/data_desktop/Tracking/DC/diploids/sla1/2018_04_18/"))->abp_sla1notrans_1x
 
-
-
 #generate a template transformation matrix to fool gen.data
 get(load("/Volumes/s-biochem-kaksonen/Deepika/data_desktop/Tracking/DC/wt/Rvs167/110824_mytrasf.Rdata"))->transformation_template
 transformation_template<-0*transformation_template
@@ -63,7 +61,7 @@ abp_sla1notrans_2x[which(abp_sla1notrans_2x[,"mean_sFI"]==max(abp_sla1notrans_2x
 
 rvs4x<-gen.data(Rvs4x,transformation_template,n=63.7 ,sn=5.5,t0=t0_abp_4x)
 rvs2x<-gen.data(Rvs2x,transformation_template,n=55.9,sn=4.6, t0=t0_abp_2x)
-
+rvs1x<-gen.data(Rvs1x,transformation_template,n=44.8 ,sn=4.7,t0=t0_abp_1x)
 
 sla14x<-gen.data(Sla14x,transformation_template,n=150 ,sn=5.5,t0=t0_abp_sla14x)
 sla12x<-gen.data(Sla12x,transformation_template,n=150,sn=5.5, t0=t0_abp_sla12x)
@@ -71,7 +69,7 @@ sla12x_2xsla1<-gen.data(Sla12x_2xsla1,transformation_template,n=150,sn=5.5, t0=t
 sla1diploid_rvs1x<-gen.data(rvs1x_1316x531,transformation_template,n=NA,sn=NA)
 ##made up the sla1 numbers
 
-rvs1x<-gen.data(Rvs1x,transformation_template,n=44.8 ,sn=4.7)
+
 #rvsmismatch<-gen.data(rvs_mismatch7x3131_diploid,transformation_template,n=NA ,sn=NA)
 
 #abp is shifted in t by max of its intensity peak
@@ -118,9 +116,9 @@ mnorm<-function(x) return((x-min(x,na.rm=T))/(max(x,na.rm=T)-min(x,na.rm=T)))
 
 
 #plot them, with t0= max of corresponding abp peak
-pdf("Rvsdup_DC_newabpmolecunumbers_all12_rvspeakalign201807_w1x.pdf")
+pdf("Rvsdup_DC_newabpmolecunumbers_all12_rvspeakalign201807_w3.pdf")
 #all the sla1s
-myplot(rvs4x[,"t"],rvs4x[,"x"]-rvs4x_x0,rvs4x[,"t.err"],rvs4x[,"x.err"],line.col="#003300",xlab="Time (s)",ylab="Inward movement (nm)",line.lwd=3,deltat=0.25,xlim=c(-25,10),ylim=c(-25,200))
+myplot(rvs4x[,"t"],rvs4x[,"x"]-rvs4x_x0,rvs4x[,"t.err"],rvs4x[,"x.err"],line.col="#003300",xlab="Time (s)",ylab="Inward movement (nm)",line.lwd=3,deltat=0.25,xlim=c(-10,10),ylim=c(-25,200))
 myplot(rvs2x[,"t"],rvs2x[,"x"]-rvs2x_x0,rvs2x[,"t.err"],rvs2x[,"x.err"],line.col="#669900",hold_on=TRUE,line.lwd=3,deltat=0.25)
 myplot(sla14x[,"t"],sla14x[,"x"]-sla14x_x0,sla14x[,"t.err"],sla14x[,"x.err"],line.col="#82dad7",hold_on=TRUE,line.lwd=3,deltat=0.25)
 myplot(sla12x[,"t"],sla12x[,"x"]-sla12x_x0,sla12x[,"t.err"],sla12x[,"x.err"],line.col="#000033",hold_on=TRUE,line.lwd=3,deltat=0.25)
@@ -130,29 +128,30 @@ myplot(t_diploid1x-22.3,sla1diploid_rvs1x[,"x"]-x_sla1diploid_rvs1x,sla1diploid_
 #myplot(sla12x_2xsla1[,"t"]+1.8,sla12x_2xsla1[,"x"]-sla12x_2xsla1_x0,sla12x_2xsla1[,"t.err"],sla12x_2xsla1[,"x.err"],line.col="#000066",hold_on=TRUE,line.lwd=3,deltat=0.25)
 
 
-legend("topleft",c("Rvs4x", "Rvs2x", "sla14x", "sla12x 1/2 sla1 tagged"),lty=1,col=c('#003300','#669900',"#82dad7", "#000033"),bty='n', cex=0.75)
+legend("topleft",c("Rvs4x", "Rvs2x", "sla14x", "sla12x 1/2 sla1 tagged", "Rvs1x"),lty=1,col=c('#003300','#669900',"#82dad7", "#000033", "#A69732"),bty='n', cex=0.75)
 title(main="Rvs in diploids", sub=" t0= abp max")
 
 #alignment of each
 
 #myplot(t_rvs_dup,rvs_dup[,"n"],rvs_dup[,"t.err"],rvs_dup[,"n.err"],line.col="#00FFFF",xlab="time(s)",ylab="# molecules",xlim=c(-1.5,8), ylim=c(0,200))
 
-myplot(abp4x[,"t"],abp4x[,"n"],abp4x[,"t.err"],abp4x[,"n.err"],line.col="#990000",xlab="Time (s)",ylab="Fl.Intensity (a.u)",line.lwd=3,deltat=0.45,xlim=c(-10,7),ylim=c(0,400))
+myplot(abp4x[,"t"],abp4x[,"n"],abp4x[,"t.err"],abp4x[,"n.err"],line.col="#990000",xlab="Time (s)",ylab="Fl.Intensity (a.u)",line.lwd=3,deltat=0.45,xlim=c(-10,10),ylim=c(0,400))
 myplot(rvs4x[,"t"],rvs4x[,"n"],rvs4x[,"t.err"],rvs4x[,"n.err"],line.col="#003300",hold_on=TRUE,line.lwd=3,deltat=0.45)
 
-title(main="4xRvs", sub=" t0= abp max")
+title(main="Rvs vs Abp-Rvs", sub=" t0= abp max")
 
 myplot(abp2x[,"t"],abp2x[,"n"],abp2x[,"t.err"],abp2x[,"n.err"],line.col="#CC0066",hold_on=TRUE,line.lwd=3,deltat=0.45)
 myplot(rvs2x[,"t"],rvs2x[,"n"],rvs2x[,"t.err"],rvs2x[,"n.err"],line.col="#669900",hold_on=TRUE,line.lwd=3,deltat=0.45)
 
 myplot(abp1x[,"t"],abp1x[,"n"],abp1x[,"t.err"],abp1x[,"n.err"],line.col="#CC7E00",hold_on=TRUE,line.lwd=3,deltat=0.45)
 myplot(rvs1x[,"t"],rvs1x[,"n"],rvs1x[,"t.err"],rvs1x[,"n.err"],line.col="#A69732",hold_on=TRUE,line.lwd=3,deltat=0.45)
+legend("topleft",c("Rvs4x", "Rvs2x", "Rvs1x", "Abp4x", "Abp2x", "Abp1x"),lty=1,col=c('#003300','#669900',"#A69732", "#990000", "#CC0066", "#CC7E00"),bty='n', cex=0.75)
 
 
-title(main="2xRvs", sub=" t0= abp max")
+#title(main="2xRvs", sub=" t0= abp max")
 
 #intensities
-myplot(abp4x[,"t"],abp4x[,"n"],abp4x[,"t.err"],abp4x[,"n.err"],line.col="#FFFFFF",xlab="Time (s)",ylab="Fl.Intensity (a.u)",line.lwd=3,deltat=0.45,xlim=c(-30,7),ylim=c(0,400))
+myplot(abp4x[,"t"],abp4x[,"n"],abp4x[,"t.err"],abp4x[,"n.err"],line.col="#FFFFFF",xlab="Time (s)",ylab="Fl.Intensity (a.u)",line.lwd=3,deltat=0.45,xlim=c(-10,10),ylim=c(0,400))
 #myplot(abp2x[,"t"],abp2x[,"n"],abp2x[,"t.err"],abp2x[,"n.err"],line.col="#CC0066",hold_on=TRUE,line.lwd=3,deltat=0.45)
 myplot(rvs4x[,"t"],rvs4x[,"n"],rvs4x[,"t.err"],rvs4x[,"n.err"],line.col="#003300",hold_on=TRUE,line.lwd=3,deltat=0.45)
 myplot(rvs2x[,"t"],rvs2x[,"n"],rvs2x[,"t.err"],rvs2x[,"n.err"],line.col="#669900",hold_on=TRUE,line.lwd=3,deltat=0.45)
@@ -161,13 +160,13 @@ myplot(rvs2x[,"t"],rvs2x[,"n"],rvs2x[,"t.err"],rvs2x[,"n.err"],line.col="#669900
 myplot(sla14x[,"t"],sla14x[,"n"],sla14x[,"t.err"],sla14x[,"n.err"],line.col="#82dad7",hold_on=TRUE,line.lwd=3,deltat=0.45)
 myplot(sla12x[,"t"],sla12x[,"n"],sla12x[,"t.err"],sla12x[,"n.err"],line.col="#000033",hold_on=TRUE,line.lwd=3,deltat=0.45)
 
-legend("topleft",c("abp4x", "abp2x", "Rvs4x", "Rvs2x", "abp4x_sla1", "abp2x_sla1", "sla14x", "sla12x"),lty=1,col=c('#990000','#CC0066','#FF6600', '#FFCC33', "#82dad7", "#000033"),bty='n', cex=0.75)
+legend("topleft",c("abp4x", "abp2x", "Rvs4x", "Rvs2x", "abp4x_sla1", "abp2x_sla1", "sla14x", "sla12x"),lty=1,col=c('#990000','#CC0066',"#003300", "#669900","#FF6600","#FFCC33", "#82dad7", "#000033"),bty='n', cex=0.75)
 title(main="abp1 fl.int", sub="t0= maxima for each average trace")
 
 #intensities with numbers
 #myplot(rvs_del51b[,"t"],rvs_del51b[,"n"],rvs_del51b[,"t.err"],rvs_del51b[,"n.err"],line.col="#FFFFFF",line.lwd=3,deltat=0.25, xlim=c(-6,4), ylim=c(-2,150),las=1, bty="n", cex.axis=1.5)
 
-myplot(abp4x[,"t"],abp4x[,"n"],abp4x[,"t.err"],abp4x[,"n.err"],line.col="#990000",xlab="Time (s)",ylab="Fl.Intensity (a.u)",line.lwd=3,deltat=0.45,xlim=c(-10,7),ylim=c(0,400))
+myplot(abp4x[,"t"],abp4x[,"n"],abp4x[,"t.err"],abp4x[,"n.err"],line.col="#990000",xlab="Time (s)",ylab="Fl.Intensity (a.u)",line.lwd=3,deltat=0.45,xlim=c(-10,10),ylim=c(0,400))
 myplot(abp2x[,"t"],abp2x[,"n"],abp2x[,"t.err"],abp2x[,"n.err"],line.col="#CC0066",hold_on=TRUE,line.lwd=3,deltat=0.45)
 #myplot(rvs4x[,"t"]+0.25,mnorm(rvs4x[,"fi"]),rvs4x[,"t.err"],rvs4x[,"fi.err"],line.col="#003300",xlab="Time (s)",ylab="Inward movement (nm)",hold_on=TRUE,line.lwd=3,deltat=0.45)
 #myplot(rvs2x[,"t"],mnorm(rvs2x[,"fi"]),rvs2x[,"t.err"],rvs2x[,"fi.err"],line.col="#669900",xlab="Time (s)",ylab="Inward movement (nm)",hold_on=TRUE,line.lwd=3,deltat=0.45)
@@ -177,43 +176,43 @@ title(main="abp1 fl.int", sub="t0= maxima for each average trace")
 
 #sla1 vs abp
 
-myplot(abpsla14x[,"t"],abpsla14x[,"n"],abpsla14x[,"t.err"],abpsla14x[,"n.err"],line.col="#FF6600",xlab="Time (s)",ylab="Fl.Intensity (a.u)",line.lwd=3,deltat=0.45,xlim=c(-30,30),ylim=c(0,400))
+myplot(abpsla14x[,"t"],abpsla14x[,"n"],abpsla14x[,"t.err"],abpsla14x[,"n.err"],line.col="#FF6600",xlab="Time (s)",ylab="Fl.Intensity (a.u)",line.lwd=3,deltat=0.45,xlim=c(-10,10),ylim=c(0,400))
 myplot(sla14x[,"t"],sla14x[,"n"],sla14x[,"t.err"],sla14x[,"n.err"],line.col="#82dad7",hold_on=TRUE,line.lwd=3,deltat=0.45)
 myplot(rvs4x[,"t"],rvs4x[,"n"],rvs4x[,"t.err"],rvs4x[,"n.err"],line.col="#003300",hold_on=TRUE,line.lwd=3,deltat=0.45)
 myplot(abp4x[,"t"],abp4x[,"n"],abp4x[,"t.err"],abp4x[,"n.err"],line.col="#990000",hold_on=TRUE, line.lwd=3,deltat=0.45)
 
-legend("topleft",c("abp4x",  "sla14x"),lty=1,col=c("#FF6600","#82dad7"),bty='n', cex=0.75)
+legend("topleft",c("abpSla14x",  "sla14x", "rvs4x", "abprvs4x"),lty=1,col=c("#FF6600","#82dad7", "#003300","#990000"),bty='n', cex=0.75)
 
-myplot(abpsla12x[,"t"],abpsla12x[,"n"],abpsla12x[,"t.err"],abpsla12x[,"n.err"],line.col="#FFCC33",xlab="Time (s)",ylab="Fl.Intensity (a.u)",line.lwd=3,deltat=0.45,xlim=c(-30,30),ylim=c(0,400))
+myplot(abpsla12x[,"t"],abpsla12x[,"n"],abpsla12x[,"t.err"],abpsla12x[,"n.err"],line.col="#FFCC33",xlab="Time (s)",ylab="Fl.Intensity (a.u)",line.lwd=3,deltat=0.45,xlim=c(-10,30),ylim=c(0,400))
 myplot(sla12x[,"t"],sla12x[,"n"],sla12x[,"t.err"],sla12x[,"n.err"],line.col="#000033",hold_on=TRUE,line.lwd=3,deltat=0.45)
 myplot(rvs2x[,"t"],rvs2x[,"n"],rvs2x[,"t.err"],rvs2x[,"n.err"],line.col="#669900",hold_on=TRUE,line.lwd=3,deltat=0.45)
 myplot(abp2x[,"t"],abp2x[,"n"],abp2x[,"t.err"],abp2x[,"n.err"],line.col="#CC0066",hold_on=TRUE,line.lwd=3,deltat=0.45)
 
-legend("topleft",c("abp2x",  "sla12x"),lty=1,col=c("#FFCC33","#000033"),bty='n', cex=0.75)
+legend("topleft",c("abp sla12x",  "sla12x", "rvs2x", "abp rvs2x"),lty=1,col=c("#FFCC33","#000033", "#669900", "#CC0066"),bty='n', cex=0.75)
 title(main="abp1 fl.int", sub="t0= maxima for each average trace")
 
 
 #all the abps
-myplot(abp4x[,"t"],abp4x[,"x"]-abp4x_x0, abp4x[,"t.err"],abp4x[,"x.err"],line.col="#990000",xlab="Time (s)",ylab="Inward movement (nm)",line.lwd=3,deltat=0.25,xlim=c(-10,7),ylim=c(-50,150))
+myplot(abp4x[,"t"],abp4x[,"x"]-abp4x_x0, abp4x[,"t.err"],abp4x[,"x.err"],line.col="#990000",xlab="Time (s)",ylab="Inward movement (nm)",line.lwd=3,deltat=0.25,xlim=c(-10,10),ylim=c(-50,150))
 myplot(abp2x[,"t"],abp2x[,"x"]-abp2x_x0, abp2x[,"t.err"],abp2x[,"x.err"],line.col="#CC0066",hold_on=TRUE,line.lwd=3,deltat=0.25)
 myplot(abpsla14x[,"t"],abpsla14x[,"x"]-abpsla14x_x0, abpsla14x[,"t.err"],abpsla14x[,"x.err"],line.col="#FF6600",hold_on=TRUE,line.lwd=3,deltat=0.25)
 myplot(abpsla12x[,"t"],abpsla12x[,"x"]-abpsla12x_x0, abpsla12x[,"t.err"],abpsla12x[,"x.err"],line.col="#FFCC33",hold_on=TRUE,line.lwd=3,deltat=0.25)
 
 title(main="abp1 in Rvs dupl diploids", sub="t0= maxima for each average trace")
-legend("topleft",c("abp4x", "abp2x"),lty=1,col=c('#990000','#FF3300'),bty='n', cex=0.75)
+legend("topleft",c("abp4x", "abp2x", "abpsla14x", "abpsla12x"),lty=1,col=c('#990000',"#CC0066","#FF6600","#FFCC33"),bty='n', cex=0.75)
 
 #all the abp intensities
-myplot(abpsla12x[,"t"],abpsla12x[,"n"],abpsla12x[,"t.err"],abpsla12x[,"n.err"],line.col="#FFCC33",xlab="Time (s)",ylab="Fl.Intensity (a.u)",line.lwd=3,deltat=0.45,xlim=c(-20,20),ylim=c(0,300))
+myplot(abpsla12x[,"t"],abpsla12x[,"n"],abpsla12x[,"t.err"],abpsla12x[,"n.err"],line.col="#FFCC33",xlab="Time (s)",ylab="Fl.Intensity (a.u)",line.lwd=3,deltat=0.45,xlim=c(-10,10),ylim=c(0,300))
 #myplot(abpsla14x[,"t"],abpsla14x[,"n"],abpsla14x[,"t.err"],abpsla14x[,"n.err"],line.col="#FF6600",hold_on=TRUE,line.lwd=3,deltat=0.45,xlim=c(-30,30),ylim=c(0,400))
 #myplot(abp4x[,"t"],abp4x[,"n"],abp4x[,"t.err"],abp4x[,"n.err"],line.col="#990000",hold_on=TRUE, line.lwd=3,deltat=0.45)
 myplot(abp2x[,"t"],abp2x[,"n"],abp2x[,"t.err"],abp2x[,"n.err"],line.col="#CC0066",hold_on=TRUE,line.lwd=3,deltat=0.45)
-legend("topleft",c("abp2x sla1",  "abp2x"),lty=1,col=c("#FFCC33", "#CC0066"),bty='n', cex=0.75)
+legend("topleft",c("abp2x sla1",  "abp rvs2x"),lty=1,col=c("#FFCC33", "#CC0066"),bty='n', cex=0.75)
 
-myplot(abpsla12x[,"t"],abpsla12x[,"n"],abpsla12x[,"t.err"],abpsla12x[,"n.err"],line.col="#FFFFFF",xlab="Time (s)",ylab="Fl.Intensity (a.u)",line.lwd=3,deltat=0.45,xlim=c(-20,20),ylim=c(0,300))
+myplot(abpsla12x[,"t"],abpsla12x[,"n"],abpsla12x[,"t.err"],abpsla12x[,"n.err"],line.col="#FFFFFF",xlab="Time (s)",ylab="Fl.Intensity (a.u)",line.lwd=3,deltat=0.45,xlim=c(-10,10),ylim=c(0,300))
 myplot(abpsla14x[,"t"],abpsla14x[,"n"],abpsla14x[,"t.err"],abpsla14x[,"n.err"],line.col="#FF6600",hold_on=TRUE,line.lwd=3,deltat=0.45,xlim=c(-30,30),ylim=c(0,400))
 myplot(abp4x[,"t"],abp4x[,"n"],abp4x[,"t.err"],abp4x[,"n.err"],line.col="#990000",hold_on=TRUE, line.lwd=3,deltat=0.45)
 #myplot(abp2x[,"t"],abp2x[,"n"],abp2x[,"t.err"],abp2x[,"n.err"],line.col="#CC0066",hold_on=TRUE,line.lwd=3,deltat=0.45)
-legend("topleft",c("abp4x sla1", "abp4x"),lty=1,col=c( "#FF6600",'#990000'),bty='n', cex=0.75)
+legend("topleft",c("abpsla12x","abp1sla14x", "abp rvs4x"),lty=1,col=c( "#FF6600","#FF6600",'#990000'),bty='n', cex=0.75)
 
 dev.off()
 
