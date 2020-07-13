@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.5.6)  26 JUN 2020 15:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.5.6)  10 JUL 2020 21:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2170,15 +2170,15 @@ LaTeX Font Info:    Font shape `T1/fos/bx/n' in size <10.95> not available
  [1
 
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-</Users/deepikaa/Desktop/scission_paper/figures/fig1/final/vpsdel_19.pdf, id=97
-, 3295.41173pt x 2984.1387pt>
-File: /Users/deepikaa/Desktop/scission_paper/figures/fig1/final/vpsdel_19.pdf G
+</Users/deepikaa/Desktop/scission_paper/figures/fig1/final/vpsdel_22.pdf, id=97
+, 3707.78217pt x 2984.1387pt>
+File: /Users/deepikaa/Desktop/scission_paper/figures/fig1/final/vpsdel_22.pdf G
 raphic file (type pdf)
 
-<use /Users/deepikaa/Desktop/scission_paper/figures/fig1/final/vpsdel_19.pdf>
+<use /Users/deepikaa/Desktop/scission_paper/figures/fig1/final/vpsdel_22.pdf>
 Package pdftex.def Info: /Users/deepikaa/Desktop/scission_paper/figures/fig1/fi
-nal/vpsdel_19.pdf used on input line 80.
-(pdftex.def)             Requested size: 284.61162pt x 257.72375pt.
+nal/vpsdel_22.pdf used on input line 80.
+(pdftex.def)             Requested size: 394.39261pt x 317.41913pt.
 LaTeX Font Info:    Font shape `T1/fos/bx/n' in size <8> not available
 (Font)              Font shape `T1/fos/b/n' tried instead on input line 81.
 LaTeX Font Info:    Try loading font information for TS1+fos on input line 81.
@@ -2190,7 +2190,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `fos' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [2 </Users/deepikaa/Desktop/scission_paper/figures/fig1/final/vpsdel_19.pdf>]
+ [2 </Users/deepikaa/Desktop/scission_paper/figures/fig1/final/vpsdel_22.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 87--88
 
  []
@@ -2206,62 +2206,77 @@ Underfull \hbox (badness 10000) in paragraph at lines 98--99
  []
 
 [3]
-</Users/deepikaa/Desktop/scission_paper/figures/fig2/inp3.pdf, id=242, 1778.725
-25pt x 2330.24582pt>
-File: /Users/deepikaa/Desktop/scission_paper/figures/fig2/inp3.pdf Graphic file
+</Users/deepikaa/Desktop/scission_paper/figures/fig2/inp7.pdf, id=235, 2823.890
+1pt x 2228.325pt>
+File: /Users/deepikaa/Desktop/scission_paper/figures/fig2/inp7.pdf Graphic file
  (type pdf)
 
-<use /Users/deepikaa/Desktop/scission_paper/figures/fig2/inp3.pdf>
+<use /Users/deepikaa/Desktop/scission_paper/figures/fig2/inp7.pdf>
 Package pdftex.def Info: /Users/deepikaa/Desktop/scission_paper/figures/fig2/in
-p3.pdf used on input line 114.
-(pdftex.def)             Requested size: 203.2949pt x 266.31924pt.
+p7.pdf used on input line 114.
+(pdftex.def)             Requested size: 325.27309pt x 256.643pt.
 
-</Users/deepikaa/Desktop/scission_paper/figures/fig3/sla2_del_final7.png, id=24
-3, 1956.5898pt x 1292.6694pt>
-File: /Users/deepikaa/Desktop/scission_paper/figures/fig3/sla2_del_final7.png G
-raphic file (type png)
+</Users/deepikaa/Desktop/scission_paper/figures/fig3/sla2_del_final12.pdf, id=2
+36, 1020.75352pt x 2624.08357pt>
+File: /Users/deepikaa/Desktop/scission_paper/figures/fig3/sla2_del_final12.pdf 
+Graphic file (type pdf)
 
-<use /Users/deepikaa/Desktop/scission_paper/figures/fig3/sla2_del_final7.png>
+<use /Users/deepikaa/Desktop/scission_paper/figures/fig3/sla2_del_final12.pdf>
 Package pdftex.def Info: /Users/deepikaa/Desktop/scission_paper/figures/fig3/sl
-a2_del_final7.png used on input line 151.
-(pdftex.def)             Requested size: 325.27309pt x 214.89865pt.
-
-Overfull \vbox (11.50287pt too high) has occurred while \output is active []
+a2_del_final12.pdf used on input line 151.
+(pdftex.def)             Requested size: 243.95636pt x 627.11024pt.
 
 
-[4 </Users/deepikaa/Desktop/scission_paper/figures/fig2/inp3.pdf>]
+LaTeX Warning: Float too large for page by 13.37752pt on input line 154.
+
+
+Overfull \vbox (2.64656pt too high) has occurred while \output is active []
+
+
+[4 </Users/deepikaa/Desktop/scission_paper/figures/fig2/inp7.pdf>] [5 </Users/d
+eepikaa/Desktop/scission_paper/figures/fig3/sla2_del_final12.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\color' on input line 171.
 
 
-</Users/deepikaa/Desktop/scission_paper/figures/fig4/delsh3_3.png, id=353, 1951
-.0491pt x 1053.4557pt>
-File: /Users/deepikaa/Desktop/scission_paper/figures/fig4/delsh3_3.png Graphic 
-file (type png)
+</Users/deepikaa/Desktop/scission_paper/figures/fig4/delsh3_5.pdf, id=501, 2968
+.46025pt x 1944.26375pt>
+File: /Users/deepikaa/Desktop/scission_paper/figures/fig4/delsh3_5.pdf Graphic 
+file (type pdf)
 
-<use /Users/deepikaa/Desktop/scission_paper/figures/fig4/delsh3_3.png>
+<use /Users/deepikaa/Desktop/scission_paper/figures/fig4/delsh3_5.pdf>
 Package pdftex.def Info: /Users/deepikaa/Desktop/scission_paper/figures/fig4/de
-lsh3_3.png used on input line 179.
-(pdftex.def)             Requested size: 292.64474pt x 158.01154pt.
- [5 </Users/deepikaa/Desktop/scission_paper/figures/fig3/sla2_del_final7.png>]
-</Users/deepikaa/Desktop/scission_paper/figures/fig5/fig5_2.pdf, id=361, 2621.7
-95pt x 2234.3475pt>
-File: /Users/deepikaa/Desktop/scission_paper/figures/fig5/fig5_2.pdf Graphic fi
+lsh3_5.pdf used on input line 179.
+(pdftex.def)             Requested size: 445.24983pt x 291.62698pt.
+
+Overfull \hbox (38.66002pt too wide) in paragraph at lines 177--180
+ [][] 
+ []
+
+[6 </Users/deepikaa/Desktop/scission_paper/figures/fig4/delsh3_5.pdf>]
+</Users/deepikaa/Desktop/scission_paper/figures/fig5/fig5_5.pdf, id=551, 4612.0
+303pt x 2475.38792pt>
+File: /Users/deepikaa/Desktop/scission_paper/figures/fig5/fig5_5.pdf Graphic fi
 le (type pdf)
 
-<use /Users/deepikaa/Desktop/scission_paper/figures/fig5/fig5_2.pdf>
+<use /Users/deepikaa/Desktop/scission_paper/figures/fig5/fig5_5.pdf>
 Package pdftex.def Info: /Users/deepikaa/Desktop/scission_paper/figures/fig5/fi
-g5_2.pdf used on input line 207.
-(pdftex.def)             Requested size: 325.24324pt x 277.17897pt.
+g5_5.pdf used on input line 207.
+(pdftex.def)             Requested size: 406.54959pt x 218.20497pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[6 </Users/deepikaa/Desktop/scission_paper/figures/fig4/delsh3_3.png>]
+[7]
 LaTeX Font Info:    Font shape `T1/fos/bx/it' in size <10> not available
 (Font)              Font shape `T1/fos/b/it' tried instead on input line 239.
- [7 </Users/deepikaa/Desktop/scission_paper/figures/fig5/fig5_2.pdf>] [8] [9]
+
+Overfull \vbox (0.70598pt too high) has occurred while \output is active []
+
+
+[8 </Users/deepikaa/Desktop/scission_paper/figures/fig5/fig5_5.pdf>] [9]
+[10]
 
 ! Package inputenc Error: Unicode char ́ (U+301)
 (inputenc)                not set up for use with LaTeX.
@@ -2312,7 +2327,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 277--279
 
  []
 
-[10] [11]
+[11] [12]
 
 ! Package inputenc Error: Unicode char ́ (U+301)
 (inputenc)                not set up for use with LaTeX.
@@ -2343,7 +2358,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[12]
+[13]
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 321.
 
  (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/t1lmtt.fd
@@ -2355,11 +2370,11 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             See the microtype manual for details.
 
 
-Package natbib Warning: Citation `Aivazian917' on page 13 undefined on input li
+Package natbib Warning: Citation `Aivazian917' on page 14 undefined on input li
 ne 321.
 
 
-Package natbib Warning: Citation `Aivazian917' on page 13 undefined on input li
+Package natbib Warning: Citation `Aivazian917' on page 14 undefined on input li
 ne 321.
 
 (./main.bbl
@@ -2380,7 +2395,7 @@ Package natbib Warning: There were undefined citations.
 
 
 AED: lastpage setting LastPage
-[13] (./main.suppinfo)
+[14] (./main.suppinfo)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 350.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 350.
  (./main.aux)
@@ -2394,11 +2409,11 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 27580 strings out of 492995
- 503179 string characters out of 6132705
- 719693 words of memory out of 5000000
+ 27568 strings out of 492995
+ 502917 string characters out of 6132705
+ 721693 words of memory out of 5000000
  30169 multiletter control sequences out of 15000+600000
- 708159 words of font info for 557 fonts, out of 8000000 for 9000
+ 707129 words of font info for 547 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,11n,49p,10419b,925s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/opensans/opensans-03.enc}
@@ -2411,10 +2426,10 @@ local/texlive/2017/texmf-dist/fonts/type1/public/opensans/OpenSans-Italic.pfb><
 /usr/local/texlive/2017/texmf-dist/fonts/type1/public/opensans/OpenSans-Regular
 .pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmtt9.pfb></usr/
 local/texlive/2017/texmf-dist/fonts/type1/public/stix/stix-mathrm.pfb>
-Output written on main.pdf (13 pages, 4992921 bytes).
+Output written on main.pdf (14 pages, 2590891 bytes).
 PDF statistics:
- 587 PDF objects out of 1000 (max. 8388607)
- 377 compressed objects within 4 object streams
- 39 named destinations out of 1000 (max. 500000)
+ 741 PDF objects out of 1000 (max. 8388607)
+ 441 compressed objects within 5 object streams
+ 40 named destinations out of 1000 (max. 500000)
  70842 words of extra memory for PDF output out of 74296 (max. 10000000)
 
