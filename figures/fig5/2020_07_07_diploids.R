@@ -20,7 +20,7 @@ get(load("/Volumes/s-biochem-kaksonen/Deepika/data_desktop/Tracking/SC/diploid/R
 get(load("/Volumes/s-biochem-kaksonen/Deepika/data_desktop/Tracking/SC/diploid/sla1/2017_10_27_5ax4drvsdup_diploid/5ax4d/tracks.Rdata"))->Sla14x
 get(load("/Volumes/s-biochem-kaksonen/Deepika/data_desktop/Tracking/SC/diploid/sla1/2017_08_16_823x822/822x823/tracks.Rdata"))->Sla12x_2xsla1
 get(load("/Volumes/s-biochem-kaksonen/Deepika/data_desktop/Tracking/SC/diploid/sla1/2017_06_12_823x100diploid/tracks.Rdata"))->Sla12x
-get(load("/Volumes/s-biochem-kaksonen/Deepika/data_desktop/Tracking/SC/diploid/sla1/2018_04_10/tracks.Rdata"))->rvs1x_1316x531
+get(load("/Volumes/s-biochem-kaksonen/Deepika/data_desktop/Tracking/SC/diploid/sla1/2018_04_10/1316x531/tracks.Rdata"))->rvs1x_1316x531
 
 
 #sla1 from haploids
