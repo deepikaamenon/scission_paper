@@ -40,6 +40,13 @@ get(load("/Volumes/s-biochem-kaksonen/Deepika/data_desktop/Tracking/DC/diploids/
 get(load("/Volumes/s-biochem-kaksonen/Deepika/data_desktop/Tracking/DC/diploids/sla1/2018_04_18/823x100/rvs2x_sla1_W2.Rdata"))->abp_sla1notrans_2x
 #get(load("/Volumes/s-biochem-kaksonen/Deepika/data_desktop/Tracking/DC/diploids/sla1/2018_04_18/"))->abp_sla1notrans_1x
 
+
+#abp from mcherry_sla1co-tag
+get(load("/Users/deepikaa/Desktop/data_desktop/Tracking/SC/Abp1-mCH/2020_08_11/4293/tracks.Rdata"))->abpmch_notrans_1x
+get(load("/Users/deepikaa/Desktop/data_desktop/Tracking/SC/Abp1-mCH/2020_08_11/4295/tracks.Rdata"))->abpmch_notrans_2x
+#get(load("/Users/deepikaa/Desktop/data_desktop/Tracking/SC/Abp1-mCH/2020_07_27/1xbar_823_3292/tracks.Rdata"))->abpmch_notrans_4xRvs
+
+
 #generate a template transformation matrix to fool gen.data
 get(load("/Volumes/s-biochem-kaksonen/Deepika/data_desktop/Tracking/DC/wt/Rvs167/110824_mytrasf.Rdata"))->transformation_template
 transformation_template<-0*transformation_template
@@ -53,8 +60,15 @@ time(Rvs4x$ts)[which(Rvs4x$ts[,"mean_sFI"]==max(Rvs4x$ts[,"mean_sFI"],na.rm=TRUE
 time(Rvs2x$ts)[which(Rvs2x$ts[,"mean_sFI"]==max(Rvs2x$ts[,"mean_sFI"],na.rm=TRUE))]->t0_rvs_2x
 time(Rvs1x$ts)[which(Rvs1x$ts[,"mean_sFI"]==max(Rvs1x$ts[,"mean_sFI"],na.rm=TRUE))]->t0_rvs_1x
 
+#abp1 t0 from w2 data, sla1 co-tag
 abp_sla1notrans_4x[which(abp_sla1notrans_4x[,"mean_sFI"]==max(abp_sla1notrans_4x[,"mean_sFI"],na.rm=TRUE)),"mean_t"]->t0_abp_sla14x
 abp_sla1notrans_2x[which(abp_sla1notrans_2x[,"mean_sFI"]==max(abp_sla1notrans_2x[,"mean_sFI"],na.rm=TRUE)),"mean_t"]->t0_abp_sla12x
+
+#abp1 t0 from mcherry sc data, sla1 co-tag
+time(abpmch_notrans_1x$ts)[which(abpmch_notrans_1x$ts[,"mean_sFI"]==max(abpmch_notrans_1x$ts[,"mean_sFI"],na.rm=TRUE))]->t0_abpmch_1x
+time(abpmch_notrans_2x$ts)[which(abpmch_notrans_2x$ts[,"mean_sFI"]==max(abpmch_notrans_2x$ts[,"mean_sFI"],na.rm=TRUE))]->t0_abpmch_2x
+#time(abpmch_notrans_1xBar_rvs$ts)[which(abpmch_notrans_1xBar_rvs$ts[,"mean_sFI"]==max(abpmch_notrans_1xBar_rvs$ts[,"mean_sFI"],na.rm=TRUE))]->t0_abpmch_1xBar_rvs
+
 
 #t0_abp_2x=t0_abp_2x-3.75
 #output nice and usable data using gen.data
@@ -77,12 +91,18 @@ sla1diploid_rvs1x<-gen.data(rvs1x_1316x531,transformation_template,n=NA,sn=NA)
 #rvsmismatch<-gen.data(rvs_mismatch7x3131_diploid,transformation_template,n=NA ,sn=NA)
 
 #abp is shifted in t by max of its intensity peak
+#abp1 from .w2 data
 abp4x<-gen.data(abp_notrans_4x,NULL,n=124.1,sn=16.3,rescale.n=1, t0=t0_abp_4x)
 abp2x<-gen.data(abp_notrans_2x,NULL,n=131.4,sn=15.8,rescale.n=1,t0=t0_abp_2x)
 abp1x<-gen.data(abp_notrans_1x,NULL,n=126.5,sn=20.1,rescale.n=1,t0=t0_abp_1x)
 
 abpsla14x<-gen.data(abp_sla1notrans_4x,NULL,n=124.1,sn=16.3,rescale.n=1, t0=t0_abp_sla14x)
 abpsla12x<-gen.data(abp_sla1notrans_2x,NULL,n=131.4,sn=15.8,rescale.n=1,t0=t0_abp_sla12x)
+
+#abp1 mch data
+abpmch_1x<-gen.data(abpmch_notrans_1x,transformation_template,n=126.5,sn=20.1,rescale.n=1, t0=t0_abpmch_1x)
+abpmch_2x<-gen.data(abpmch_notrans_2x,transformation_template,n=131.4,sn=15.8,rescale.n=1, t0=t0_abpmch_2x)
+#abpmch_4x<-gen.data(abpmch_notrans_2xRvs,transformation_template,n=265.8 ,sn=19.9,rescale.n=1, t0=t0_abpmch_2xRvs)
 
 print("genok")
 #abp1 in 3131x3132= 229.4 ?? 25.1
@@ -109,18 +129,25 @@ abp4x_x0<-mean(abp4x[1:10,"x"])
 abp2x_x0<-mean(abp2x[1:10,"x"])
 abp1x_x0<-mean(abp1x[1:10,"x"])
 
+abpsla14x_x0<-mean(abpsla14x[1:10,"x"])
+abpsla12x_x0<-mean(abpsla12x[1:10,"x"])
+
+abpmch_1x_x0<-mean(abpmch_1x[1:10,"x"])
+abpmch_2x_x0<-mean(abpmch_2x[1:10,"x"])
+
 sla14x_x0<-mean(sla14x[1:120,"x"])
 sla12x_x0<-mean(sla12x[1:120,"x"])
 sla12x_2xsla1_x0<-mean(sla12x_2xsla1[1:10,"x"])
 x_sla1diploid_rvs1x<-mean(sla1diploid_rvs1x[1:120, "x"])
-abpsla14x_x0<-mean(abpsla14x[1:10,"x"])
-abpsla12x_x0<-mean(abpsla12x[1:10,"x"])
+
 
 mnorm<-function(x) return((x-min(x,na.rm=T))/(max(x,na.rm=T)-min(x,na.rm=T)))
 
 
 #plot them, with t0= max of corresponding abp peak
-pdf("Rvsdup_DC_alignedRvsmax3.pdf")
+pdf("Rvsdup_DC_alignedRvsmax4.pdf")
+#_4: with abp1mch data
+
 #all the sla1s
 myplot(rvs4x[,"t"],rvs4x[,"x"]-rvs4x_x0,rvs4x[,"t.err"],rvs4x[,"x.err"],line.col="#003300",xlab="Time (s)",ylab="Inward movement (nm)",line.lwd=3,deltat=0.25,xlim=c(-10,10),ylim=c(-25,200))
 myplot(rvs2x[,"t"],rvs2x[,"x"]-rvs2x_x0,rvs2x[,"t.err"],rvs2x[,"x.err"],line.col="#669900",hold_on=TRUE,line.lwd=3,deltat=0.25)
@@ -142,7 +169,6 @@ title(main="Rvs in diploids", sub=" t0rvs=rvs max")
 
 myplot(abp4x[,"t"],abp4x[,"n"],abp4x[,"t.err"],abp4x[,"n.err"],line.col="#990000",xlab="Time (s)",ylab="Fl.Intensity (a.u)",line.lwd=3,deltat=0.45,xlim=c(-10,10),ylim=c(0,250))
 myplot(rvs4x[,"t"],rvs4x[,"n"],rvs4x[,"t.err"],rvs4x[,"n.err"],line.col="#003300",hold_on=TRUE,line.lwd=3,deltat=0.45)
-
 title(main="Rvs vs Abp-Rvs", sub=" t0rvs= rvs max")
 
 myplot(abp2x[,"t"],abp2x[,"n"],abp2x[,"t.err"],abp2x[,"n.err"],line.col="#CC0066",hold_on=TRUE,line.lwd=3,deltat=0.45)
@@ -233,6 +259,18 @@ myplot(abpsla14x[,"t"],abpsla14x[,"n"],abpsla14x[,"t.err"],abpsla14x[,"n.err"],l
 myplot(abp4x[,"t"],abp4x[,"n"],abp4x[,"t.err"],abp4x[,"n.err"],line.col="#990000",hold_on=TRUE, line.lwd=3,deltat=0.45)
 #myplot(abp2x[,"t"],abp2x[,"n"],abp2x[,"t.err"],abp2x[,"n.err"],line.col="#CC0066",hold_on=TRUE,line.lwd=3,deltat=0.45)
 legend("topleft",c("abpsla12x","abp1sla14x", "abp rvs4x"),lty=1,col=c( "#FF6600","#FF6600",'#990000'),bty='n', cex=0.75)
+
+
+#all the mch abp1
+myplot(abpmch_1x[,"t"],abpmch_1x[,"x"]-abpmch_1x_x0, abpmch_1x[,"t.err"],abpmch_1x[,"x.err"],line.col="#990000",xlab="Time (s)",ylab="Inward movement (nm)",line.lwd=3,deltat=0.25,xlim=c(-10,10),ylim=c(-50,250))
+myplot(abpmch_2x[,"t"],abpmch_2x[,"x"]-abpmch_2x_x0, abpmch_2x[,"t.err"],abpmch_2x[,"x.err"],line.col="#CC0066",hold_on=TRUE,line.lwd=3,deltat=0.25)
+#myplot(abpmch_4x[,"t"],abpmch_4x[,"x"]-abpmch_4x_x0, abpmch_4x[,"t.err"],abpmch_4x[,"x.err"],line.col="#FF6600",hold_on=TRUE,line.lwd=3,deltat=0.25)
+title(main="abp1mcherry sla1 co-tag")
+
+
+myplot(abpmch_1x[,"t"],abpmch_1x[,"n"],abpmch_1x[,"t.err"],abpmch_1x[,"n.err"],line.col="#990000",xlab="Time (s)",ylab="Fl.Intensity (a.u)",line.lwd=3,deltat=0.45,xlim=c(-10,10),ylim=c(0,250))
+myplot(abpmch_2x[,"t"],abpmch_2x[,"n"],abpmch_2x[,"t.err"],abpmch_2x[,"n.err"],line.col="#CC0066",hold_on=TRUE,line.lwd=3,deltat=0.45,xlim=c(-30,30),ylim=c(0,400))
+title(main="abp1mcherry sla1 co-tag")
 
 dev.off()
 
