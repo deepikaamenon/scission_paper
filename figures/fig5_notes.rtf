@@ -3,7 +3,7 @@
 }
 {\colortbl;\red255\green255\blue255;}
 {\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\paperw11900\paperh16840\margl1440\margr1440\vieww11660\viewh12940\viewkind0
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
 \f0\fs24 \cf0 Fig5: duplication data\
@@ -123,4 +123,57 @@ delsh3 from old data\
 !!switch diploid and haploid positions\
 !! cant say \'93significantly\'94 without this actually meaning something in p values?\
 \
-}
+\
+\
+2020_09_11\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f2\b \cf0 HAPLOIDS: abp plots, fl profile, movement plots, general:
+\f0\b0 \
+molecule numbers are not consistent; rvs_del has molecule numbers in the gfp channel. putting these in the plots makes them look like the rvs_del has a higher maxima than the delsh3 and the delsh3_2x\
+\
+.w2: abps\
+1xbar abp is SUPER noisy, which we kind of knew before from the abp1 scatter plots. \
+2xbar abp looks better, and looks like the mcherry SC imaged abp1-mcherry in the sla1 co-tagged strain, which is good\
+rvs_1x looks like rvs_2x, which doesnt make much sense, considering they have teh same fl.intensity profile.\
+\
+sla1 co-tag\
+1xbar and 2xbar look like they have longer lifetime that the 1x and 2x and rvs_del abp\'92s\
+\
+rvs co-tag\
+the lifetimes of the delsh3 strains abp1\'92s are actually closer to the 1x and 2x abp1\'92s. CANT GET THE DELRVS ABP1 co-tag, so going to have to use the sla1-cotag profiles. \
+Its wierd that he lifetimes change for the abp1 profiles, but the behaviour of the coat and the rvs are consistent, irrespective\'85 aka the invagination dynamics doesnt care about the abp lifetime? \
+\
+between the rvs cotag and sla1 cotag, the general trend is anyway, that the 1xbar looks the worst (is most different from WT), and adding bar domains, and rvs molecules shifts it towards the WT, with the 2xRVS looking about the same as 1xRVS in both cases. \
+\
+abpgfp no cotag\
+the delrvs abp-gfp looks quite different without the sla1 co-tag. sla1 co-tag abp1 looks similar to the WT while the no co-tag looks like the delsh3. \
+likely because the sal1 cotag was sorted for retractions and the abp1-gfp alone was not.\
+should be able to get what the abp1 looks like from the retracting sla1 in dc\'85.and sort these\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f2\b \cf0 abp plots, molecule numbers\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b0 \cf0 abp1 m-cherry rvs co-tag for the data set is not terrible, and makes sense, except that there isnt an rvs_del number from here\
+abp1 mcherry numbers from sla1 cotag make no sense, or at least the 1xbar vs 2xbar makes no sense: theres more 1xbar than 2xbar??\
+could also redo the numbers data set\
+\
+\
+final for the figure: \
+takeing the rvs co-tag at the moment, after getting numbers for the delrvs abp1mch can decide what to do about that or to switch to the sla1 co-tag. or try to get the single tagged strain??\
+\
+has the benefit of fitting on the same time axis as the remaing fig5 plots\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f2\b \cf0 DIPLOIDS: abp plots, fl profile, movement plots, general:\
+\
+some of the data hasnt been analyzed. \
+taken the .w2 for now, dont have the strains yet for the remaining, and swap out for \'93proper\'94 ones later\
+final abp1 plot for diploid is taken from Rvsdup_DC_alignedRvsmax4.pdf created by 2020.07.07.R}

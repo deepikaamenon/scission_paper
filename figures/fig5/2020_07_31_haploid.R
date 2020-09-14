@@ -28,10 +28,10 @@ get(load("/Users/deepikaa/Desktop/data_desktop/Tracking/SC/rvs_delsh3/delsh3_abp
 get(load("/Users/deepikaa/Desktop/data_desktop/Tracking/SC/WT/Abp1/2017_04_10_123/tracks.Rdata"))->wt_notrans_abp1gfp
 
 #abp from alignment of Sla1 SC to Rvs-abp DC _ W2.data
-#get(load("/Volumes/s-biochem-kaksonen/Deepika/data_desktop/Tracking/DC/diploids/2018_02_21/4xrvs/rvsgfpdup4x_W2.Rdata"))->abp_notrans_Rvswt
-get(load("/Users/deepikaa/Desktop/data_desktop/Tracking/DC/rvsduplicat/2020_05_16/3706/2xRVS_823_revalign_W2.Rdata"))->abp_notrans_Rvs2x
-get(load("/Users/deepikaa/Desktop/data_desktop/Tracking/DC/delsh3/2016_06_01_delsh3_sla1GFP_abpMch_geneva/rvsdelsh3_sla1gfp_geneva_W2.Rdata"))->abp_notrans_1xBAR
-get(load("/Users/deepikaa/Desktop/data_desktop/Tracking/DC/rvsduplicat/2019_10_31/3826_2xbar823/2xBAR_823_revalign_W2.Rdata"))->abp_notrans_2xBAR
+get(load("/Users/deepikaa/Desktop/data_desktop/Tracking/DC/wt/sla10822/0822_wo_treat/rev_align/wt_sla1_823_REV_bothfalse_W2.Rdata"))->abp_notrans_Rvs1x_w2
+get(load("/Users/deepikaa/Desktop/data_desktop/Tracking/DC/rvsduplicat/2020_05_16/3706/2xRVS_823_revalign_W2.Rdata"))->abp_notrans_Rvs2x_w2
+get(load("/Users/deepikaa/Desktop/data_desktop/Tracking/DC/delsh3/2016_06_01_delsh3_sla1GFP_abpMch_geneva/rvsdelsh3_sla1gfp_geneva_W2.Rdata"))->abp_notrans_1xBAR_w2
+get(load("/Users/deepikaa/Desktop/data_desktop/Tracking/DC/rvsduplicat/2019_10_31/3826_2xbar823/2xBAR_823_revalign_W2.Rdata"))->abp_notrans_2xBAR_w2
 
 
 #abp mcherry from mcherry_sla1co-tag
@@ -64,9 +64,10 @@ time(delsh3_notrans_abp1gfp$ts)[which(delsh3_notrans_abp1gfp$ts[,"mean_sFI"]==ma
 time(wt_notrans_abp1gfp$ts)[which(wt_notrans_abp1gfp$ts[,"mean_sFI"]==max(wt_notrans_abp1gfp$ts[,"mean_sFI"],na.rm=TRUE))]->t0_abp_wtgfp
 
 #abp1 .W2 times
-abp_notrans_Rvs2x[which(abp_notrans_Rvs2x[,"mean_sFI"]==max(abp_notrans_Rvs2x[,"mean_sFI"],na.rm=TRUE)),"mean_t"]->t0_abp_Rvs2x
-abp_notrans_2xBAR[which(abp_notrans_2xBAR[,"mean_sFI"]==max(abp_notrans_2xBAR[,"mean_sFI"],na.rm=TRUE)),"mean_t"]->t0_abp_2xBAR
-abp_notrans_1xBAR[which(abp_notrans_1xBAR[,"mean_sFI"]==max(abp_notrans_1xBAR[,"mean_sFI"],na.rm=TRUE)),"mean_t"]->t0_abp_1xBAR
+abp_notrans_Rvs1x_w2[which(abp_notrans_Rvs1x_w2[,"mean_sFI"]==max(abp_notrans_Rvs1x_w2[,"mean_sFI"],na.rm=TRUE)),"mean_t"]->t0_abp_Rvs1x
+abp_notrans_Rvs2x_w2[which(abp_notrans_Rvs2x_w2[,"mean_sFI"]==max(abp_notrans_Rvs2x_w2[,"mean_sFI"],na.rm=TRUE)),"mean_t"]->t0_abp_Rvs2x
+abp_notrans_2xBAR_w2[which(abp_notrans_2xBAR_w2[,"mean_sFI"]==max(abp_notrans_2xBAR_w2[,"mean_sFI"],na.rm=TRUE)),"mean_t"]->t0_abp_2xBAR
+abp_notrans_1xBAR_w2[which(abp_notrans_1xBAR_w2[,"mean_sFI"]==max(abp_notrans_1xBAR_w2[,"mean_sFI"],na.rm=TRUE)),"mean_t"]->t0_abp_1xBAR
 
 #abp1mCh times from sla1 co-tag
 time(abpmch_notrans_1xRvs$ts)[which(abpmch_notrans_1xRvs$ts[,"mean_sFI"]==max(abpmch_notrans_1xRvs$ts[,"mean_sFI"],na.rm=TRUE))]->t0_abpmch_1xRvs
@@ -110,27 +111,28 @@ delsh3_dup<-gen.data(delsh3_dup_sorted,transformation_template,n=43.6 ,sn=9.6, t
 delsh3_g<-gen.data(delsh3_g_woflalign,transformation_template,n=30.1,sn=9.9, t0=t0_delsh3)
 
 #abp1_w2 data??
-abp_sla1_2x<-gen.data(abp_notrans_Rvs2x,NULL,n=260.7,sn=21.3,rescale.n=1, t0=t0_abp_Rvs2x)
-abp_sla1_1xBAR<-gen.data(abp_notrans_1xBAR,NULL,n=223.6,sn=19.2,rescale.n=1,t0=t0_abp_1xBAR)
-abp_sla1_2xBAR<-gen.data(abp_notrans_2xBAR,NULL,n=245.8,sn=18.4,rescale.n=1,t0=t0_abp_2xBAR)
+abp_sla1_1x_w2<-gen.data(abp_notrans_Rvs1x_w2,NULL,n=260.7,sn=21.3,rescale.n=1, t0=t0_abp_Rvs1x)
+abp_sla1_2x_w2<-gen.data(abp_notrans_Rvs2x_w2,NULL,n=260.7,sn=21.3,rescale.n=1, t0=t0_abp_Rvs2x)
+abp_sla1_1xBAR_w2<-gen.data(abp_notrans_1xBAR_w2,NULL,n=223.6,sn=19.2,rescale.n=1,t0=t0_abp_1xBAR)
+abp_sla1_2xBAR_w2<-gen.data(abp_notrans_2xBAR_w2,NULL,n=245.8,sn=18.4,rescale.n=1,t0=t0_abp_2xBAR)
 print("gen abp okok")
 
 
-#abp1_gfp data
+#abp1_gfp data, numbers from single tag quantification
 
-abpgfp_delrvs<-gen.data(delrvs_notrans_abp1gfp,transformation_template,n=260.7,sn=21.3,t0=t0_abp_delrvsgfp)
-abpgfp_delsh3<-gen.data(delsh3_notrans_abp1gfp,transformation_template,n=223.6,sn=19.2,t0=t0_abp_delsh3gfp)
-abpgfp_wt<-gen.data(wt_notrans_abp1gfp,transformation_template,n=245.8,sn=18.4,t0=t0_abp_wtgfp)
+abpgfp_delrvs<-gen.data(delrvs_notrans_abp1gfp,transformation_template,n=235.3,sn=16.3,t0=t0_abp_delrvsgfp)
+abpgfp_delsh3<-gen.data(delsh3_notrans_abp1gfp,transformation_template,n=172.6,sn=12.9,t0=t0_abp_delsh3gfp)
+abpgfp_wt<-gen.data(wt_notrans_abp1gfp,transformation_template,n=253.1,sn=19.9,t0=t0_abp_wtgfp)
 
 print("gen abpgfp ok")
 
 
 #abp1 mch SC tracking from sla1 co-tagged strains
 #numbers from sla1 co-tag
-#abpmch_1x<-gen.data(abpmch_notrans_1xRvs,transformation_template,n=360.4,sn=37.7,rescale.n=1, t0=t0_abpmch_1xRvs)
-#abpmch_2x<-gen.data(abpmch_notrans_2xRvs,transformation_template,n=329.4 ,sn=41.6,rescale.n=1, t0=t0_abpmch_2xRvs)
-#abpmch_1xBAR<-gen.data(abpmch_notrans_1xBar,transformation_template,n=341.9,sn=37.6,rescale.n=1,t0=t0_abpmch_1xBar)
-#abpmch_2xBAR<-gen.data(abpmch_notrans_2xBar,transformation_template,n=277.9,sn=33.8,rescale.n=1,t0=t0_abpmch_2xBar)
+abpmch_1x_sla1_no<-gen.data(abpmch_notrans_1xRvs,transformation_template,n=360.4,sn=37.7,rescale.n=1, t0=t0_abpmch_1xRvs)
+abpmch_2x_sla1_no<-gen.data(abpmch_notrans_2xRvs,transformation_template,n=329.4 ,sn=41.6,rescale.n=1, t0=t0_abpmch_2xRvs)
+abpmch_1xBAR_sla1_no<-gen.data(abpmch_notrans_1xBar,transformation_template,n=341.9,sn=37.6,rescale.n=1,t0=t0_abpmch_1xBar)
+abpmch_2xBAR_sla1_no<-gen.data(abpmch_notrans_2xBar,transformation_template,n=277.9,sn=33.8,rescale.n=1,t0=t0_abpmch_2xBar)
 
 #numbers from rvs co-tag, profiles from sla1 co-tag
 abpmch_1x<-gen.data(abpmch_notrans_1xRvs,transformation_template,n=285.2,sn=27.1,rescale.n=1, t0=t0_abpmch_1xRvs)
@@ -201,7 +203,7 @@ cols_blue<-brewer.pal(n=9, name="Blues")
 cols_rdpu<-brewer.pal(n=9, name="RdPu")
 
 ##with delsh3-duplicated
-pdf("all_haploid_2020_12.pdf")
+pdf("all_haploid_2020_13.pdf")
 #_3: old 1xBAR analysis_p1_2, abp1 numbers w/ sla1 co-tag
 #_4: new 1xBAR with percentile=2, abp1 numbers w/ sla1 co-tag
 #_5: new 1xBAR w/ percentil=2, abp1 numbers w/ rvs co-tag
@@ -212,6 +214,7 @@ pdf("all_haploid_2020_12.pdf")
 #10: includes abpmcherry from rvs co-tag strains
 #11: includes abpgfp
 #12: realigned rvsdel_abpgfp after sorting tracks
+#13: includes wt 823 rev aligned
 
 #sla1
 myplot(sla823[,"t"]-13.5,sla823[,"x"]-xsla823,sla823[,"t.err"],sla823[,"x.err"],line.col="#023858", xlab="Time (s)",ylab="Inward movement (nm)",line.lwd=3,deltat=0.25,xlim=c(-10,10),ylim=c(-25,200))
@@ -251,16 +254,17 @@ myplot(delsh3_g[,"t"],delsh3_g[,"n"],delsh3_g[,"t.err"],delsh3_g[,"n.err"],line.
 title(main="Rvs167-GFP", sub="time aligned to rvs max ")
 legend("topleft",c("rvs dup","rvs wt","delsh3 dup","delsh3"),lty=1,col=c("#000000", "#669900", "#FF6600", "#996600" ),bty='n', cex=0.75)
 
-#abp intensity
-myplot(abp_sla1_2xBAR[,"t"],abp_sla1_2xBAR[,"n"],abp_sla1_2xBAR[,"t.err"],abp_sla1_2xBAR[,"n.err"],line.col="#660099",xlab="time(s)",ylab="# molecules",xlim=c(-10,10), ylim=c(0,500))
-myplot(abp_sla1_1xBAR[,"t"],abp_sla1_1xBAR[,"n"],abp_sla1_1xBAR[,"t.err"],abp_sla1_1xBAR[,"n.err"],line.col="#66cc99",hold_on=TRUE,line.lwd=3,deltat=0.45)
-myplot(abp_sla1_2x[,"t"],abp_sla1_2x[,"n"],abp_sla1_2x[,"t.err"],abp_sla1_2x[,"n.err"],line.col="#CC0066",hold_on=TRUE,line.lwd=3,deltat=0.45)
+#abp intensity .W2
+myplot(abp_sla1_2xBAR_w2[,"t"],abp_sla1_2xBAR_w2[,"n"],abp_sla1_2xBAR_w2[,"t.err"],abp_sla1_2xBAR_w2[,"n.err"],line.col="#660099",xlab="time(s)",ylab="# molecules",xlim=c(-20,20), ylim=c(0,500))
+myplot(abp_sla1_1xBAR_w2[,"t"],abp_sla1_1xBAR_w2[,"n"],abp_sla1_1xBAR_w2[,"t.err"],abp_sla1_1xBAR_w2[,"n.err"],line.col="#66cc99",hold_on=TRUE,line.lwd=3,deltat=0.45)
+myplot(abp_sla1_2x_w2[,"t"],abp_sla1_2x_w2[,"n"],abp_sla1_2x_w2[,"t.err"],abp_sla1_2x_w2[,"n.err"],line.col="#CC0066",hold_on=TRUE,line.lwd=3,deltat=0.45)
+myplot(abp_sla1_1x_w2[,"t"],abp_sla1_1x_w2[,"n"],abp_sla1_1x_w2[,"t.err"],abp_sla1_1x_w2[,"n.err"],line.col="#CC0099",hold_on=TRUE,line.lwd=3,deltat=0.45)
 
 legend("topleft",c("abp1_sla1 2xRvs","abp1_sla1 2xBAR", "abp1_sla1 1xBAR"),lty=1,col=c("#CC0066", "#660099", "#66cc99"),bty='n', cex=0.75)
-title(main="abp sla1 w2")
+title(main="abp sla1 w2 data")
 
 ##################################################################################################################################
-#abp_mch intensity
+#abp_mch intensity sla1 co-tag
 myplot(abpmch_2x[,"t"],abpmch_2x[,"n"],abpmch_2x[,"t.err"],abpmch_2x[,"n.err"],line.col="#CC0066",xlab="time(s)",ylab="# molecules",xlim=c(-17,17), ylim=c(0,500))
 myplot(abpmch_1x[,"t"],abpmch_1x[,"n"],abpmch_1x[,"t.err"],abpmch_1x[,"n.err"],line.col="#000000",hold_on=TRUE,line.lwd=3,deltat=0.45)
 myplot(abpmch_1xBAR[,"t"],abpmch_1xBAR[,"n"],abpmch_1xBAR[,"t.err"],abpmch_1xBAR[,"n.err"],line.col="#66cc99",hold_on=TRUE,line.lwd=3,deltat=0.45)
@@ -280,7 +284,7 @@ legend("topleft",c("abp1mch 1xRvs", "abp1mch 2xRvs","abp1mch 2xBAR", "abp1mch 1x
 
 ######################################################################################################################
 #abp_mch intensity rvs co-tag
-myplot(abpmch_2x_rvs[,"t"],abpmch_2x_rvs[,"n"],abpmch_2x_rvs[,"t.err"],abpmch_2x_rvs[,"n.err"],line.col="#CC0066",xlab="time(s)",ylab="# molecules",xlim=c(-17,17), ylim=c(0,500))
+myplot(abpmch_2x_rvs[,"t"],abpmch_2x_rvs[,"n"],abpmch_2x_rvs[,"t.err"],abpmch_2x_rvs[,"n.err"],line.col="#CC0066",xlab="time(s)",ylab="# molecules",xlim=c(-10,10), ylim=c(0,500))
 myplot(abpmch_1x_rvs[,"t"],abpmch_1x_rvs[,"n"],abpmch_1x_rvs[,"t.err"],abpmch_1x_rvs[,"n.err"],line.col="#000000",hold_on=TRUE,line.lwd=3,deltat=0.45)
 myplot(abpmch_1xBAR_rvs[,"t"],abpmch_1xBAR_rvs[,"n"],abpmch_1xBAR_rvs[,"t.err"],abpmch_1xBAR_rvs[,"n.err"],line.col="#66cc99",hold_on=TRUE,line.lwd=3,deltat=0.45)
 myplot(abpmch_2xBAR_rvs[,"t"],abpmch_2xBAR_rvs[,"n"],abpmch_2xBAR_rvs[,"t.err"],abpmch_2xBAR_rvs[,"n.err"],line.col="#660099",hold_on=TRUE,line.lwd=3,deltat=0.45)
@@ -294,6 +298,16 @@ myplot(abpmch_1xBAR_rvs[,"t"],abpmch_1xBAR_rvs[,"x"]-x_abpmch1xBar_rvs,abpmch_1x
 myplot(abpmch_2xBAR_rvs[,"t"],abpmch_2xBAR_rvs[,"x"]-x_abpmch2xBar_rvs,abpmch_2xBAR_rvs[,"t.err"],abpmch_2xBAR_rvs[,"x.err"],line.col="#660099", hold_on=TRUE, line.lwd=3,deltat=0.25)
 title(main="Abp1-mch rvs co-tag", sub="time aligned to abp1 max")
 legend("topleft",c("abp1mch 1xRvs", "abp1mch 2xRvs","abp1mch 2xBAR", "abp1mch 1xBAR"),lty=1,col=c("#000000", "#CC0066", "#660099","#66cc99"),bty='n', cex=0.75)
+
+#abpmch intensity sla1 co-tag
+myplot(abpmch_1x_sla1_no[,"t"],abpmch_1x_sla1_no[,"n"],abpmch_1x_sla1_no[,"t.err"],abpmch_1x_sla1_no[,"n.err"],line.col="#CC0066",xlab="time(s)",ylab="# molecules",xlim=c(-17,17), ylim=c(0,600))
+myplot(abpmch_2x_sla1_no[,"t"],abpmch_2x_sla1_no[,"n"],abpmch_2x_sla1_no[,"t.err"],abpmch_2x_sla1_no[,"n.err"],line.col="#000000",hold_on=TRUE,line.lwd=3,deltat=0.45)
+myplot(abpmch_1xBAR_sla1_no[,"t"],abpmch_1xBAR_sla1_no[,"n"],abpmch_1xBAR_sla1_no[,"t.err"],abpmch_1xBAR_sla1_no[,"n.err"],line.col="#66cc99",hold_on=TRUE,line.lwd=3,deltat=0.45)
+myplot(abpmch_2xBAR_sla1_no[,"t"],abpmch_2xBAR_sla1_no[,"n"],abpmch_2xBAR_sla1_no[,"t.err"],abpmch_2xBAR_sla1_no[,"n.err"],line.col="#660099",hold_on=TRUE,line.lwd=3,deltat=0.45)
+legend("topleft",c("abp1mch 1xRvs", "abp1mch 2xRvs","abp1mch 2xBAR", "abp1mch 1xBAR"),lty=1,col=c("#000000", "#CC0066", "#660099","#66cc99"),bty='n', cex=0.75)
+title(main="abp mch sla1 co-tag profile, numbers")
+
+
 
 ##################################################################################################################################
 #abp_GFP
