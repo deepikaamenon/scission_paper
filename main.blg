@@ -4,45 +4,46 @@ The top-level auxiliary file: main.aux
 The style file: apalike.bst
 Database file #1: yeast_endocytosis-scission_paper.bib
 Warning--I didn't find a database entry for "Aivazian917"
-You've used 40 entries,
+Warning--empty institution in Rothman1986
+You've used 44 entries,
             1935 wiz_defined-function locations,
-            772 strings with 14292 characters,
-and the built_in function-call counts, 20472 in all, are:
-= -- 1930
-> -- 1250
-< -- 6
-+ -- 452
-- -- 452
-* -- 2037
-:= -- 3596
-add.period$ -- 119
-call.type$ -- 40
-change.case$ -- 426
-chr.to.int$ -- 40
-cite$ -- 40
-duplicate$ -- 569
-empty$ -- 1194
-format.name$ -- 502
-if$ -- 3832
+            799 strings with 15538 characters,
+and the built_in function-call counts, 22487 in all, are:
+= -- 2115
+> -- 1392
+< -- 7
++ -- 504
+- -- 504
+* -- 2237
+:= -- 3962
+add.period$ -- 131
+call.type$ -- 44
+change.case$ -- 473
+chr.to.int$ -- 44
+cite$ -- 45
+duplicate$ -- 622
+empty$ -- 1297
+format.name$ -- 560
+if$ -- 4200
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 39
-newline$ -- 202
-num.names$ -- 120
-pop$ -- 345
+missing$ -- 42
+newline$ -- 222
+num.names$ -- 132
+pop$ -- 384
 preamble$ -- 1
-purify$ -- 426
+purify$ -- 472
 quote$ -- 0
-skip$ -- 421
+skip$ -- 460
 stack$ -- 0
-substring$ -- 1466
-swap$ -- 52
+substring$ -- 1577
+swap$ -- 55
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 240
-warning$ -- 0
-while$ -- 154
+type$ -- 264
+warning$ -- 1
+while$ -- 168
 width$ -- 0
-write$ -- 519
-(There was 1 warning)
+write$ -- 570
+(There were 2 warnings)

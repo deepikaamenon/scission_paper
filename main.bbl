@@ -1,5 +1,13 @@
 \begin{thebibliography}{}
 
+\bibitem[Bensen et~al., 2000]{Bensen2000}
+Bensen, E.~S., Costaguta, G., and Payne, G.~S. (2000).
+\newblock {Synthetic genetic interactions with temperature-sensitive clathrin
+  in Saccharomyces cerevisiae. Roles for synaptojanin-like Inp53p and
+  dynamin-related Vps1p in clathrin-dependent protein sorting at the
+  trans-Golgi network.}
+\newblock {\em Genetics}, 154(1):83--97.
+
 \bibitem[Bitsikas et~al., 2014]{Bitsikas2014}
 Bitsikas, V., Corr{\^{e}}a, I.~R., and Nichols, B.~J. (2014).
 \newblock {Clathrin-independent pathways do not contribute significantly to
@@ -205,6 +213,12 @@ Rothman, J.~H., Raymond, C.~K., Gilbert, T., O'Hara, P.~J., and Stevens, T.~H.
   proteins performs an essential function in yeast protein sorting}.
 \newblock {\em Cell}, 61(6):1063--1074.
 
+\bibitem[Rothman and Stevens, 1986]{Rothman1986}
+Rothman, J.~I. and Stevens, T.~H. (1986).
+\newblock {Protein Sorting in Yeast: Mutants Defective in Vacuole Biogenesis
+  Mislocalize Vacuolar Proteins into the Late Secretory Pathway}.
+\newblock Technical report.
+
 \bibitem[Shupliakov et~al., 1997]{Shupliakov1997}
 Shupliakov, O., L{\"{o}}w, P., Grabs, D., Gad, H., Chen, H., David, C., Takei,
   K., {De Camilli}, P., and Brodin, L. (1997).
@@ -212,11 +226,28 @@ Shupliakov, O., L{\"{o}}w, P., Grabs, D., Gad, H., Chen, H., David, C., Takei,
   domain interactions.}
 \newblock {\em Science (New York, N.Y.)}, 276(5310):259--63.
 
+\bibitem[Simunovic et~al., 2017]{Simunovic2017b}
+Simunovic, M., Manneville, J.-B., Renard, H.-F.~O., Johannes, L., Bassereau,
+  P., Callan, A., Correspondence, J., Evergren, E., Raghunathan, K., Bhatia,
+  D., Kenworthy, A.~K., Voth, G.~A., Prost, J., Mcmahon, H.~T., and
+  Callan-Jones, A. (2017).
+\newblock {Friction Mediates Scission of Tubular Membranes Scaffolded by BAR
+  Proteins}.
+\newblock {\em Cell}, 170:1--13.
+
 \bibitem[Sivadon et~al., 1997]{Sivadon1997}
 Sivadon, P., Crouzet, M., and Aigle, M. (1997).
 \newblock {Functional assessment of the yeast Rvs161 and Rvs167 protein
   domains}.
 \newblock {\em FEBS letters}, 417(1):21--27.
+
+\bibitem[Skruzny et~al., 2012]{Skruzny2012}
+Skruzny, M., Brach, T., Ciuffa, R., Rybina, S., Wachsmuth, M., and Kaksonen, M.
+  (2012).
+\newblock {Molecular basis for coupling the plasma membrane to the actin
+  cytoskeleton during clathrin-mediated endocytosis.}
+\newblock {\em Proceedings of the National Academy of Sciences of the United
+  States of America}, 109(38):E2533--42.
 
 \bibitem[{Smaczynska-de Rooij} et~al., 2012]{Smaczynska-deRooij2012}
 {Smaczynska-de Rooij}, I.~I., Allwood, E.~G., Mishra, R., Booth, W.~I.,
