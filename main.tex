@@ -7,7 +7,12 @@
 % Use the doublespacing option for 2.0 line spacing
 % Please note that these options may affect formatting.
 % Additionally, the use of the \newcommand function should be limited.
-
+\newcommand{\beginsupplement}{%
+	\setcounter{table}{0}
+	\renewcommand{\thetable}{S\arabic{table}}%
+	\setcounter{figure}{0}
+	\renewcommand{\thefigure}{S\arabic{figure}}%
+}
 
 \usepackage{lipsum} % Required to insert dummy text
 \usepackage[version=4]{mhchem}
