@@ -14,6 +14,13 @@ Bitsikas, V., Corr{\^{e}}a, I.~R., and Nichols, B.~J. (2014).
   endocytic flux}.
 \newblock {\em eLife}, 3:e03970.
 
+\bibitem[Boucrot et~al., 2012]{Boucrot2012}
+Boucrot, E., Pick, A., Camdere, G., Liska, N., Evergren, E., McMahon, H.~T.,
+  and Kozlov, M.~M. (2012).
+\newblock {Membrane Fission Is Promoted by Insertion of Amphipathic Helices and
+  Is Restricted by Crescent BAR Domains}.
+\newblock {\em Cell}, 149(1):124--136.
+
 \bibitem[Bui et~al., 2012]{Bui2012}
 Bui, H.~T., Karren, M.~A., Bhar, D., and Shaw, J.~M. (2012).
 \newblock {A novel motif in the yeast mitochondrial dynamin Dnm1 is essential
@@ -38,6 +45,11 @@ Colwill, K., Field, D., Moore, L., Friesen, J., and Andrews, B. (1999).
 D'Hondt, K., Heese-Peck, A., and Riezman, H. (2000).
 \newblock {Protein and Lipid Requirements for Endocytosis}.
 \newblock {\em Annual Review of Genetics}, 34(1):255--295.
+
+\bibitem[Dmitrieff and N{\'{e}}d{\'{e}}lec, 2015]{Dmitrieff2015}
+Dmitrieff, S. and N{\'{e}}d{\'{e}}lec, F. (2015).
+\newblock {Membrane Mechanics of Endocytosis in Cells with Turgor}.
+\newblock {\em PLoS Comput Biol}, 11(10):e1004538.
 
 \bibitem[Farsad et~al., 2001]{Farsad2001}
 Farsad, K., Ringstad, N., Takei, K., Floyd, S.~R., Rose, K., and {De Camilli},
@@ -148,6 +160,12 @@ Lila, T. and Drubin, D.~G. (1997).
   protein and the actin cytoskeleton.}
 \newblock {\em Molecular Biology of the Cell}, 8(2):367--385.
 
+\bibitem[Liu et~al., 2006]{Liu2006}
+Liu, J., Kaksonen, M., Drubin, D.~G., and Oster, G. (2006).
+\newblock {Endocytic vesicle scission by lipid phase boundary forces.}
+\newblock {\em Proceedings of the National Academy of Sciences of the United
+  States of America}, 103(27):10277--82.
+
 \bibitem[Liu et~al., 2009]{Liu2009}
 Liu, J., Sun, Y., Drubin, D.~G., and Oster, G.~F. (2009).
 \newblock {The Mechanochemistry of Endocytosis}.
@@ -166,6 +184,13 @@ Meinecke, M., Boucrot, E., Camdere, G., Hon, W.-C., Mittal, R., and McMahon,
 \newblock {Cooperative recruitment of dynamin and BIN/amphiphysin/Rvs (BAR)
   domain-containing proteins leads to GTP-dependent membrane scission.}
 \newblock {\em The Journal of biological chemistry}, 288(9):6651--61.
+
+\bibitem[Mim et~al., 2012]{Mim2012}
+Mim, C., Cui, H., Gawronski-Salerno, J.~A., Frost, A., Lyman, E., Voth, G.~A.,
+  and Unger, V.~M. (2012).
+\newblock {Structural basis of membrane bending by the N-BAR protein
+  endophilin}.
+\newblock {\em Cell}, 149(1):137--145.
 
 \bibitem[Moustaq et~al., 2016]{Moustaq2016}
 Moustaq, L., {Smaczynska-de Rooij}, I.~I., Palmer, S.~E., Marklew, C.~J., and
