@@ -133,13 +133,16 @@ abpmch_1x_sla1_no<-gen.data(abpmch_notrans_1xRvs,transformation_template,n=360.4
 abpmch_2x_sla1_no<-gen.data(abpmch_notrans_2xRvs,transformation_template,n=329.4 ,sn=41.6,rescale.n=1, t0=t0_abpmch_2xRvs)
 abpmch_1xBAR_sla1_no<-gen.data(abpmch_notrans_1xBar,transformation_template,n=341.9,sn=37.6,rescale.n=1,t0=t0_abpmch_1xBar)
 abpmch_2xBAR_sla1_no<-gen.data(abpmch_notrans_2xBar,transformation_template,n=277.9,sn=33.8,rescale.n=1,t0=t0_abpmch_2xBar)
+#abpmch_rvsdel<-gen.data(abpmch_notrans_rvsdel,transformation_template,n=384.5,sn=35.9,rescale.n=1,t0=t0_abpmch_rvsdel) mky3297
+abpmch_rvsdel<-gen.data(abpmch_notrans_rvsdel,transformation_template,n=372.4,sn=50.6,rescale.n=1,t0=t0_abpmch_rvsdel)
+
 
 #numbers from rvs co-tag, profiles from sla1 co-tag
 abpmch_1x<-gen.data(abpmch_notrans_1xRvs,transformation_template,n=285.2,sn=27.1,rescale.n=1, t0=t0_abpmch_1xRvs)
 abpmch_2x<-gen.data(abpmch_notrans_2xRvs,transformation_template,n=265.8 ,sn=19.9,rescale.n=1, t0=t0_abpmch_2xRvs)
 abpmch_1xBAR<-gen.data(abpmch_notrans_1xBar,transformation_template,n=223.6,sn=19.2,rescale.n=1,t0=t0_abpmch_1xBar)
 abpmch_2xBAR<-gen.data(abpmch_notrans_2xBar,transformation_template,n=245.8,sn=18.4,rescale.n=1,t0=t0_abpmch_2xBar)
-abpmch_rvsdel<-gen.data(abpmch_notrans_rvsdel,transformation_template,n=245.8,sn=18.4,rescale.n=1,t0=t0_abpmch_rvsdel)
+#abpmch_rvsdel<-gen.data(abpmch_notrans_rvsdel,transformation_template,n=384.5,sn=35.9,rescale.n=1,t0=t0_abpmch_rvsdel) mky3297
 
 #numbers from rvs co-tag, profiles from rvs co-tag
 abpmch_1x_rvs<-gen.data(abpmch_notrans_1xRvs_rvs,transformation_template,n=285.2,sn=27.1,rescale.n=1, t0=t0_abpmch_1xRvs_rvs)
@@ -203,7 +206,7 @@ cols_blue<-brewer.pal(n=9, name="Blues")
 cols_rdpu<-brewer.pal(n=9, name="RdPu")
 
 ##with delsh3-duplicated
-pdf("all_haploid_2020_13.pdf")
+pdf("all_haploid_2020_15.pdf")
 #_3: old 1xBAR analysis_p1_2, abp1 numbers w/ sla1 co-tag
 #_4: new 1xBAR with percentile=2, abp1 numbers w/ sla1 co-tag
 #_5: new 1xBAR w/ percentil=2, abp1 numbers w/ rvs co-tag
@@ -215,6 +218,8 @@ pdf("all_haploid_2020_13.pdf")
 #11: includes abpgfp
 #12: realigned rvsdel_abpgfp after sorting tracks
 #13: includes wt 823 rev aligned
+#14: numbers for rvsdel from mky3297, rvsdel sla1 co-tag
+#15: numbers for rvsdel from mky1801, rvsdel sla1 co-tag
 
 #sla1
 myplot(sla823[,"t"]-13.5,sla823[,"x"]-xsla823,sla823[,"t.err"],sla823[,"x.err"],line.col="#023858", xlab="Time (s)",ylab="Inward movement (nm)",line.lwd=3,deltat=0.25,xlim=c(-10,10),ylim=c(-25,200))
@@ -265,7 +270,7 @@ title(main="abp sla1 w2 data")
 
 ##################################################################################################################################
 #abp_mch intensity sla1 co-tag
-myplot(abpmch_2x[,"t"],abpmch_2x[,"n"],abpmch_2x[,"t.err"],abpmch_2x[,"n.err"],line.col="#CC0066",xlab="time(s)",ylab="# molecules",xlim=c(-17,17), ylim=c(0,500))
+myplot(abpmch_2x[,"t"],abpmch_2x[,"n"],abpmch_2x[,"t.err"],abpmch_2x[,"n.err"],line.col="#CC0066",xlab="time(s)",ylab="# molecules",xlim=c(-17,17), ylim=c(0,600))
 myplot(abpmch_1x[,"t"],abpmch_1x[,"n"],abpmch_1x[,"t.err"],abpmch_1x[,"n.err"],line.col="#000000",hold_on=TRUE,line.lwd=3,deltat=0.45)
 myplot(abpmch_1xBAR[,"t"],abpmch_1xBAR[,"n"],abpmch_1xBAR[,"t.err"],abpmch_1xBAR[,"n.err"],line.col="#66cc99",hold_on=TRUE,line.lwd=3,deltat=0.45)
 myplot(abpmch_2xBAR[,"t"],abpmch_2xBAR[,"n"],abpmch_2xBAR[,"t.err"],abpmch_2xBAR[,"n.err"],line.col="#660099",hold_on=TRUE,line.lwd=3,deltat=0.45)

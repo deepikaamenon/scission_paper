@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.5.6)  30 SEP 2020 19:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.5.6)  8 OCT 2020 17:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2192,14 +2192,14 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
  [3 </Users/deepikaa/Desktop/scission_paper/figures/fig1/final/vpsdel_27.pdf>]
-</Users/deepikaa/Desktop/scission_paper/figures/fig2/inp8.pdf, id=463, 2823.890
+</Users/deepikaa/Desktop/scission_paper/figures/fig2/inp9.pdf, id=463, 2823.890
 1pt x 2228.325pt>
-File: /Users/deepikaa/Desktop/scission_paper/figures/fig2/inp8.pdf Graphic file
+File: /Users/deepikaa/Desktop/scission_paper/figures/fig2/inp9.pdf Graphic file
  (type pdf)
 
-<use /Users/deepikaa/Desktop/scission_paper/figures/fig2/inp8.pdf>
+<use /Users/deepikaa/Desktop/scission_paper/figures/fig2/inp9.pdf>
 Package pdftex.def Info: /Users/deepikaa/Desktop/scission_paper/figures/fig2/in
-p8.pdf used on input line 118.
+p9.pdf used on input line 118.
 (pdftex.def)             Requested size: 325.27309pt x 256.643pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 126--127
@@ -2220,12 +2220,12 @@ a2_del_final16.pdf used on input line 140.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[5 </Users/deepikaa/Desktop/scission_paper/figures/fig2/inp8.pdf>]
+[5 </Users/deepikaa/Desktop/scission_paper/figures/fig2/inp9.pdf>]
 Overfull \vbox (1.6881pt too high) has occurred while \output is active []
 
 
 [6 </Users/deepikaa/Desktop/scission_paper/figures/fig3/sla2_del_final16.pdf>]
-</Users/deepikaa/Desktop/scission_paper/figures/fig3/fig3_sh3loc.pdf, id=723, 9
+</Users/deepikaa/Desktop/scission_paper/figures/fig3/fig3_sh3loc.pdf, id=724, 9
 21.21864pt x 599.98256pt>
 File: /Users/deepikaa/Desktop/scission_paper/figures/fig3/fig3_sh3loc.pdf Graph
 ic file (type pdf)
@@ -2240,7 +2240,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\color' on input line 171.
 
 
-</Users/deepikaa/Desktop/scission_paper/figures/fig4/delsh3_9.pdf, id=726, 3388
+</Users/deepikaa/Desktop/scission_paper/figures/fig4/delsh3_9.pdf, id=727, 3388
 .60976pt x 2408.51822pt>
 File: /Users/deepikaa/Desktop/scission_paper/figures/fig4/delsh3_9.pdf Graphic 
 file (type pdf)
@@ -2251,7 +2251,7 @@ lsh3_9.pdf used on input line 179.
 (pdftex.def)             Requested size: 304.94235pt x 216.72054pt.
  [7 </Users/deepikaa/Desktop/scission_paper/figures/fig3/fig3_sh3loc.pdf> </Use
 rs/deepikaa/Desktop/scission_paper/figures/fig4/delsh3_9.pdf>]
-</Users/deepikaa/Desktop/scission_paper/figures/fig5/fig5_7.pdf, id=873, 5208.4
+</Users/deepikaa/Desktop/scission_paper/figures/fig5/fig5_7.pdf, id=874, 5208.4
 1856pt x 2571.09558pt>
 File: /Users/deepikaa/Desktop/scission_paper/figures/fig5/fig5_7.pdf Graphic fi
 le (type pdf)
@@ -2276,7 +2276,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.239 ...$\Delta$sh3} (Fig.\ref{delsh3}B). Sla1 
+l.239 ...\Delta$sh3}, (Fig.\ref{delsh3}B). Sla1 
                                                   moves inwards at a slower ...
 
 Your command was ignored.
@@ -2305,7 +2305,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.248 ...tin and curvature independent manner.  
+l.242 ...tin and curvature independent manner.  
                                                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2324,7 +2324,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.251 ...sassembly indicates that upon vesicle  
+l.245 ...sassembly indicates that upon vesicle  
                                                   scission, the actin networ...
 
 Your command was ignored.
@@ -2339,7 +2339,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.251 ...sity starts to drop, and the decay of  
+l.245 ...sity starts to drop, and the decay of  
                                                   Abp1 is prolonged, taking ...
 
 Your command was ignored.
@@ -2354,7 +2354,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.251 ...t is not clear what the decoupling of  
+l.245 ...t is not clear what the decoupling of  
                                                   Abp1 and Rvs167\textit{$\D...
 
 Your command was ignored.
@@ -2369,14 +2369,26 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.251 ...gests a strong disruption of the actin 
+l.245 ...gests a strong disruption of the actin 
                                                   network dynamics.
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[10] [11] [12]
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 324.
+[10]
+</Users/deepikaa/Desktop/scission_paper/figures/yeast_schematic_concl.pdf, id=1
+039, 702.625pt x 287.0725pt>
+File: /Users/deepikaa/Desktop/scission_paper/figures/yeast_schematic_concl.pdf 
+Graphic file (type pdf)
+
+<use /Users/deepikaa/Desktop/scission_paper/figures/yeast_schematic_concl.pdf>
+Package pdftex.def Info: /Users/deepikaa/Desktop/scission_paper/figures/yeast_s
+chematic_concl.pdf used on input line 271.
+(pdftex.def)             Requested size: 325.27309pt x 132.90036pt.
+
+[11 </Users/deepikaa/Desktop/scission_paper/figures/yeast_schematic_concl.pdf>]
+[12]
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 333.
 
  (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -2388,88 +2400,80 @@ Package microtype Info: Loading generic settings for font family
 
 
 Package natbib Warning: Citation `Aivazian917' on page 13 undefined on input li
-ne 324.
+ne 333.
 
 
 Package natbib Warning: Citation `Aivazian917' on page 13 undefined on input li
-ne 324.
+ne 333.
 
 (./main.bbl [13] [14])
-Underfull \hbox (badness 10000) in paragraph at lines 353--354
+Underfull \hbox (badness 10000) in paragraph at lines 362--363
 
  []
 
-
-</Users/deepikaa/Desktop/scission_paper/figures/fig1/growth_assay.pdf, id=1067,
- 1413.28pt x 676.4171pt>
+[15]
+</Users/deepikaa/Desktop/scission_paper/figures/fig1/growth_assay.pdf, id=1160,
+ 1587.9325pt x 676.4171pt>
 File: /Users/deepikaa/Desktop/scission_paper/figures/fig1/growth_assay.pdf Grap
 hic file (type pdf)
 
 <use /Users/deepikaa/Desktop/scission_paper/figures/fig1/growth_assay.pdf>
 Package pdftex.def Info: /Users/deepikaa/Desktop/scission_paper/figures/fig1/gr
-owth_assay.pdf used on input line 361.
-(pdftex.def)             Requested size: 284.61162pt x 136.22025pt.
+owth_assay.pdf used on input line 370.
+(pdftex.def)             Requested size: 325.27309pt x 138.55286pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-</Users/deepikaa/Desktop/scission_paper/figures/fig1/wt_alignment2.pdf, id=1068
-, 883.75868pt x 498.86375pt>
+</Users/deepikaa/Desktop/scission_paper/figures/fig1/wt_alignment2.pdf, id=1161
+, 930.405pt x 497.92224pt>
 File: /Users/deepikaa/Desktop/scission_paper/figures/fig1/wt_alignment2.pdf Gra
 phic file (type pdf)
 
 <use /Users/deepikaa/Desktop/scission_paper/figures/fig1/wt_alignment2.pdf>
 Package pdftex.def Info: /Users/deepikaa/Desktop/scission_paper/figures/fig1/wt
-_alignment2.pdf used on input line 369.
-(pdftex.def)             Requested size: 325.27309pt x 183.60997pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
+_alignment2.pdf used on input line 378.
+(pdftex.def)             Requested size: 325.27309pt x 174.07785pt.
 
 </Users/deepikaa/Desktop/scission_paper/figures/fig1/vpsdel_alignment2.pdf, id=
-1071, 938.80736pt x 505.89pt>
+1164, 930.405pt x 497.92224pt>
 File: /Users/deepikaa/Desktop/scission_paper/figures/fig1/vpsdel_alignment2.pdf
  Graphic file (type pdf)
 
 <use /Users/deepikaa/Desktop/scission_paper/figures/fig1/vpsdel_alignment2.pdf>
 Package pdftex.def Info: /Users/deepikaa/Desktop/scission_paper/figures/fig1/vp
-sdel_alignment2.pdf used on input line 377.
-(pdftex.def)             Requested size: 345.60382pt x 186.2346pt.
+sdel_alignment2.pdf used on input line 386.
+(pdftex.def)             Requested size: 325.27309pt x 174.07785pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 </Users/deepikaa/Desktop/scission_paper/figures/fig1/rvsdel_alignment.pdf, id=1
-074, 990.65309pt x 505.89pt>
+167, 930.405pt x 497.92224pt>
 File: /Users/deepikaa/Desktop/scission_paper/figures/fig1/rvsdel_alignment.pdf 
 Graphic file (type pdf)
 
 <use /Users/deepikaa/Desktop/scission_paper/figures/fig1/rvsdel_alignment.pdf>
 Package pdftex.def Info: /Users/deepikaa/Desktop/scission_paper/figures/fig1/rv
-sdel_alignment.pdf used on input line 385.
-(pdftex.def)             Requested size: 325.27309pt x 166.10281pt.
+sdel_alignment.pdf used on input line 394.
+(pdftex.def)             Requested size: 325.27309pt x 174.07785pt.
 
-</Users/deepikaa/Desktop/scission_paper/figures/fig2/supplement.pdf, id=1077, 2
-641.71953pt x 1075.12665pt>
+</Users/deepikaa/Desktop/scission_paper/figures/fig2/supplement.pdf, id=1170, 2
+550.7797pt x 1075.12665pt>
 File: /Users/deepikaa/Desktop/scission_paper/figures/fig2/supplement.pdf Graphi
 c file (type pdf)
 
 <use /Users/deepikaa/Desktop/scission_paper/figures/fig2/supplement.pdf>
 Package pdftex.def Info: /Users/deepikaa/Desktop/scission_paper/figures/fig2/su
-pplement.pdf used on input line 393.
-(pdftex.def)             Requested size: 386.25908pt x 157.19357pt.
+pplement.pdf used on input line 402.
+(pdftex.def)             Requested size: 386.25908pt x 162.80411pt.
 
 </Users/deepikaa/Desktop/scission_paper/figures/fig4/cytoplasmic_int_supplement
-3.pdf, id=1080, 1806.75pt x 883.36826pt>
+3.pdf, id=1171, 1806.75pt x 883.36826pt>
 File: /Users/deepikaa/Desktop/scission_paper/figures/fig4/cytoplasmic_int_suppl
 ement3.pdf Graphic file (type pdf)
 
 <use /Users/deepikaa/Desktop/scission_paper/figures/fig4/cytoplasmic_int_supple
 ment3.pdf>
 Package pdftex.def Info: /Users/deepikaa/Desktop/scission_paper/figures/fig4/cy
-toplasmic_int_supplement3.pdf used on input line 401.
+toplasmic_int_supplement3.pdf used on input line 410.
 (pdftex.def)             Requested size: 243.95636pt x 119.27652pt.
 
 
@@ -2477,39 +2481,39 @@ Package natbib Warning: There were undefined citations.
 
 
 AED: lastpage setting LastPage
-[15] [16 </Users/deepikaa/Desktop/scission_paper/figures/fig1/growth_assay.pdf>
- </Users/deepikaa/Desktop/scission_paper/figures/fig1/wt_alignment2.pdf
+[16 </Users/deepikaa/Desktop/scission_paper/figures/fig1/growth_assay.pdf> </Us
+ers/deepikaa/Desktop/scission_paper/figures/fig1/wt_alignment2.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file /Users/deepikaa/Desktop/scis
 sion_paper/figures/fig1/wt_alignment2.pdf): PDF inclusion: multiple pdfs with p
 age group included in a single page
-> </Users/deepikaa/Desktop/scission_paper/figures/fig1/vpsdel_alignment2.pdf
+>] [17 </Users/deepikaa/Desktop/scission_paper/figures/fig1/vpsdel_alignment2.p
+df> </Users/deepikaa/Desktop/scission_paper/figures/fig1/rvsdel_alignment.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file /Users/deepikaa/Desktop/scis
-sion_paper/figures/fig1/vpsdel_alignment2.pdf): PDF inclusion: multiple pdfs wi
-th page group included in a single page
->] [17 </Users/deepikaa/Desktop/scission_paper/figures/fig1/rvsdel_alignment.pd
-f> </Users/deepikaa/Desktop/scission_paper/figures/fig2/supplement.pdf
+sion_paper/figures/fig1/rvsdel_alignment.pdf): PDF inclusion: multiple pdfs wit
+h page group included in a single page
+> </Users/deepikaa/Desktop/scission_paper/figures/fig2/supplement.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file /Users/deepikaa/Desktop/scis
 sion_paper/figures/fig2/supplement.pdf): PDF inclusion: multiple pdfs with page
  group included in a single page
-> </Users/deepikaa/Desktop/scission_paper/figures/fig4/cytoplasmic_int_suppleme
-nt3.pdf>] (./main.suppinfo)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 406.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 406.
+>] [18 </Users/deepikaa/Desktop/scission_paper/figures/fig4/cytoplasmic_int_sup
+plement3.pdf>] (./main.suppinfo)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 415.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 415.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 406.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 406.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 415.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 415.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: A675325550E4295BC5C2502B28137118;2678.
+(rerunfilecheck)             Checksum: 9DE579F28785292E0A1447D6592D14D7;2676.
  ) 
 Here is how much of TeX's memory you used:
- 28103 strings out of 492995
- 514917 string characters out of 6132705
- 724518 words of memory out of 5000000
- 30365 multiletter control sequences out of 15000+600000
- 746474 words of font info for 773 fonts, out of 8000000 for 9000
+ 28118 strings out of 492995
+ 515459 string characters out of 6132705
+ 722643 words of memory out of 5000000
+ 30370 multiletter control sequences out of 15000+600000
+ 747272 words of font info for 778 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,11n,53p,10450b,1116s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/opensans/opensans-02.enc}
@@ -2525,10 +2529,10 @@ fb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmtt9.pfb></usr/lo
 cal/texlive/2017/texmf-dist/fonts/type1/public/stix/stix-mathcal.pfb></usr/loca
 l/texlive/2017/texmf-dist/fonts/type1/public/stix/stix-mathit.pfb></usr/local/t
 exlive/2017/texmf-dist/fonts/type1/public/stix/stix-mathrm.pfb>
-Output written on main.pdf (17 pages, 8164729 bytes).
+Output written on main.pdf (18 pages, 8553011 bytes).
 PDF statistics:
- 2572 PDF objects out of 2984 (max. 8388607)
- 962 compressed objects within 10 object streams
- 107 named destinations out of 1000 (max. 500000)
- 71973 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 2680 PDF objects out of 2984 (max. 8388607)
+ 1018 compressed objects within 11 object streams
+ 109 named destinations out of 1000 (max. 500000)
+ 71978 words of extra memory for PDF output out of 74296 (max. 10000000)
 
