@@ -146,8 +146,9 @@ mnorm<-function(x) return((x-min(x,na.rm=T))/(max(x,na.rm=T)-min(x,na.rm=T)))
 
 
 #plot them, with t0= max of corresponding abp peak
-pdf("Rvsdup_DC_alignedRvsmax4.pdf")
+pdf("Rvsdup_DC_alignedRvsmax5.pdf")
 #_4: with abp1mch data
+#_5 with sla1 vs abp1 movement
 
 #all the sla1s
 myplot(rvs4x[,"t"],rvs4x[,"x"]-rvs4x_x0,rvs4x[,"t.err"],rvs4x[,"x.err"],line.col="#003300",xlab="Time (s)",ylab="Inward movement (nm)",line.lwd=3,deltat=0.25,xlim=c(-10,10),ylim=c(-25,200))
@@ -226,17 +227,20 @@ title(main=" fl. int abp1 .w2 rvs co-tag", sub="t0= maxima for each average trac
 
 #sla1 vs abp
 
-myplot(abpsla14x[,"t"],abpsla14x[,"n"],abpsla14x[,"t.err"],abpsla14x[,"n.err"],line.col="#FF6600",xlab="Time (s)",ylab="Fl.Intensity (a.u)",line.lwd=3,deltat=0.45,xlim=c(-20,10),ylim=c(0,400))
+myplot(abpsla14x[,"t"],abpsla14x[,"n"],abpsla14x[,"t.err"],abpsla14x[,"n.err"],line.col="#0000ee",xlab="Time (s)",ylab="Fl.Intensity (a.u)",line.lwd=3,deltat=0.45,xlim=c(-20,10),ylim=c(0,400))
 myplot(sla14x[,"t"],sla14x[,"n"],sla14x[,"t.err"],sla14x[,"n.err"],line.col="#82dad7",hold_on=TRUE,line.lwd=3,deltat=0.45)
 myplot(rvs4x[,"t"],rvs4x[,"n"],rvs4x[,"t.err"],rvs4x[,"n.err"],line.col="#003300",hold_on=TRUE,line.lwd=3,deltat=0.45)
 myplot(abp4x[,"t"],abp4x[,"n"],abp4x[,"t.err"],abp4x[,"n.err"],line.col="#990000",hold_on=TRUE, line.lwd=3,deltat=0.45)
+myplot(sla14x[,"t"],sla14x[,"x"]-sla14x_x0,sla14x[,"t.err"],sla14x[,"x.err"],line.col="#82daee",hold_on=TRUE,line.lwd=3,deltat=0.45)
+
 legend("topleft",c("abpSla14x",  "sla14x", "rvs4x", "abprvs4x"),lty=1,col=c("#FF6600","#82dad7", "#003300","#990000"),bty='n', cex=0.75)
 title(main="all the rvs4x", sub="t0= maxima for each average trace")
 
-myplot(abpsla12x[,"t"],abpsla12x[,"n"],abpsla12x[,"t.err"],abpsla12x[,"n.err"],line.col="#FFCC33",xlab="Time (s)",ylab="Fl.Intensity (a.u)",line.lwd=3,deltat=0.45,xlim=c(-20,10),ylim=c(0,400))
+myplot(abpsla12x[,"t"],abpsla12x[,"n"],abpsla12x[,"t.err"],abpsla12x[,"n.err"],line.col="#0000ee",xlab="Time (s)",ylab="Fl.Intensity (a.u)",line.lwd=3,deltat=0.45,xlim=c(-20,10),ylim=c(0,400))
 myplot(sla12x[,"t"],sla12x[,"n"],sla12x[,"t.err"],sla12x[,"n.err"],line.col="#000033",hold_on=TRUE,line.lwd=3,deltat=0.45)
 myplot(rvs2x[,"t"],rvs2x[,"n"],rvs2x[,"t.err"],rvs2x[,"n.err"],line.col="#669900",hold_on=TRUE,line.lwd=3,deltat=0.45)
 myplot(abp2x[,"t"],abp2x[,"n"],abp2x[,"t.err"],abp2x[,"n.err"],line.col="#CC0066",hold_on=TRUE,line.lwd=3,deltat=0.45)
+myplot(sla12x[,"t"],sla12x[,"x"]-sla12x_x0,sla12x[,"t.err"],sla12x[,"x.err"],line.col="#000066",hold_on=TRUE,line.lwd=3,deltat=0.45)
 
 legend("topleft",c("abp sla12x",  "sla12x", "rvs2x", "abp rvs2x"),lty=1,col=c("#FFCC33","#000033", "#669900", "#CC0066"),bty='n', cex=0.75)
 title(main="all the rvs2x", sub="t0= maxima for each average trace")

@@ -134,37 +134,28 @@ abpmch_2x_sla1_no<-gen.data(abpmch_notrans_2xRvs,transformation_template,n=329.4
 abpmch_1xBAR_sla1_no<-gen.data(abpmch_notrans_1xBar,transformation_template,n=341.9,sn=37.6,rescale.n=1,t0=t0_abpmch_1xBar)
 abpmch_2xBAR_sla1_no<-gen.data(abpmch_notrans_2xBar,transformation_template,n=277.9,sn=33.8,rescale.n=1,t0=t0_abpmch_2xBar)
 #abpmch_rvsdel<-gen.data(abpmch_notrans_rvsdel,transformation_template,n=384.5,sn=35.9,rescale.n=1,t0=t0_abpmch_rvsdel) mky3297
-abpmch_rvsdel<-gen.data(abpmch_notrans_rvsdel,transformation_template,n=372.4,sn=50.6,rescale.n=1,t0=t0_abpmch_rvsdel)
+abpmch_rvsdel<-gen.data(abpmch_notrans_rvsdel,transformation_template,n=362.64,sn=39.36,rescale.n=1,t0=t0_abpmch_rvsdel)
+#rvs delnumbers an average of 5 numbers, 2x data sets 1802, 1801, 4394, 3297
 
-
-#numbers from rvs co-tag, profiles from sla1 co-tag
-abpmch_1x<-gen.data(abpmch_notrans_1xRvs,transformation_template,n=285.2,sn=27.1,rescale.n=1, t0=t0_abpmch_1xRvs)
-abpmch_2x<-gen.data(abpmch_notrans_2xRvs,transformation_template,n=265.8 ,sn=19.9,rescale.n=1, t0=t0_abpmch_2xRvs)
-abpmch_1xBAR<-gen.data(abpmch_notrans_1xBar,transformation_template,n=223.6,sn=19.2,rescale.n=1,t0=t0_abpmch_1xBar)
-abpmch_2xBAR<-gen.data(abpmch_notrans_2xBar,transformation_template,n=245.8,sn=18.4,rescale.n=1,t0=t0_abpmch_2xBar)
+#numbers from sla1 co-tag set2 2
+abpmch_1x_sla1_no2<-gen.data(abpmch_notrans_1xRvs,transformation_template,n=344.8,sn=27.8,rescale.n=1, t0=t0_abpmch_1xRvs)
+abpmch_2x_sla1_no2<-gen.data(abpmch_notrans_2xRvs,transformation_template,n=318.8 ,sn=28.1,rescale.n=1, t0=t0_abpmch_2xRvs)
+abpmch_1xBAR_sla1_no2<-gen.data(abpmch_notrans_1xBar,transformation_template,n=243.5,sn=24.6,rescale.n=1,t0=t0_abpmch_1xBar)
+abpmch_2xBAR_sla1_no2<-gen.data(abpmch_notrans_2xBar,transformation_template,n=296.2,sn=25,rescale.n=1,t0=t0_abpmch_2xBar)
 #abpmch_rvsdel<-gen.data(abpmch_notrans_rvsdel,transformation_template,n=384.5,sn=35.9,rescale.n=1,t0=t0_abpmch_rvsdel) mky3297
+abpmch_rvsdel2<-gen.data(abpmch_notrans_rvsdel,transformation_template,n=362.64,sn=39.36,rescale.n=1,t0=t0_abpmch_rvsdel)
+#rvs delnumbers an average of 5 numbers, 2x data sets 1802, 1801, 4394, 3297
 
 #numbers from rvs co-tag, profiles from rvs co-tag
 abpmch_1x_rvs<-gen.data(abpmch_notrans_1xRvs_rvs,transformation_template,n=285.2,sn=27.1,rescale.n=1, t0=t0_abpmch_1xRvs_rvs)
 abpmch_2x_rvs<-gen.data(abpmch_notrans_2xRvs_rvs,transformation_template,n=265.8 ,sn=19.9,rescale.n=1, t0=t0_abpmch_2xRvs_rvs)
 abpmch_1xBAR_rvs<-gen.data(abpmch_notrans_1xBar_rvs,transformation_template,n=223.6,sn=19.2,rescale.n=1,t0=t0_abpmch_1xBar_rvs)
 abpmch_2xBAR_rvs<-gen.data(abpmch_notrans_2xBar_rvs,transformation_template,n=245.8,sn=18.4,rescale.n=1,t0=t0_abpmch_2xBar_rvs)
+#abpmch_rvsdel<-gen.data(abpmch_notrans_rvsdel,transformation_template,n=384.5,sn=35.9,rescale.n=1,t0=t0_abpmch_rvsdel) mky3297
 
 
 print("gen abpmch okok")
-#time for sla1
-#wt
-#tsla823=sla823[,"t"]-sla823[1,"t"]
-#tsla_141geneva=sla1_141geneva[,"t"]-sla1_141geneva[1,"t"]
-#tsla_hd=sla1_hd[,"t"]-sla1_hd[1,"t"]
 
-####mutant
-#trvsdup=rvsdup[,"t"]-rvsdup[1,"t"]
-#tdelsh3dup=delsh3dup[,"t"]-delsh3dup[1,"t"]
-#tdelsh3=delsh3[,"t"]-delsh3[1,"t"]
-#tsla141_rvsdel=sla141_rvsdel[,"t"]-sla141_rvsdel[1,"t"]
-
-#set initial y position to 0
 #rvs
 x_rvs_dup<-mean(rvs_dup[1:25,"x"])
 x_3131<-mean(rvs_wt[1:25,"x"])
@@ -206,7 +197,7 @@ cols_blue<-brewer.pal(n=9, name="Blues")
 cols_rdpu<-brewer.pal(n=9, name="RdPu")
 
 ##with delsh3-duplicated
-pdf("all_haploid_2020_15.pdf")
+pdf("all_haploid_2020_16.pdf")
 #_3: old 1xBAR analysis_p1_2, abp1 numbers w/ sla1 co-tag
 #_4: new 1xBAR with percentile=2, abp1 numbers w/ sla1 co-tag
 #_5: new 1xBAR w/ percentil=2, abp1 numbers w/ rvs co-tag
@@ -220,6 +211,7 @@ pdf("all_haploid_2020_15.pdf")
 #13: includes wt 823 rev aligned
 #14: numbers for rvsdel from mky3297, rvsdel sla1 co-tag
 #15: numbers for rvsdel from mky1801, rvsdel sla1 co-tag
+#16: comparing 2 abp1 mch data sets
 
 #sla1
 myplot(sla823[,"t"]-13.5,sla823[,"x"]-xsla823,sla823[,"t.err"],sla823[,"x.err"],line.col="#023858", xlab="Time (s)",ylab="Inward movement (nm)",line.lwd=3,deltat=0.25,xlim=c(-10,10),ylim=c(-25,200))
@@ -251,45 +243,49 @@ legend("topleft",c("rvs dup","rvs wt","delsh3 dup","delsh3"),lty=1,col=c("#00FFF
 
 
 #rvs intensity
-myplot(rvs_dup[,"t"],rvs_dup[,"n"],rvs_dup[,"t.err"],rvs_dup[,"n.err"],line.col="#000000",xlab="time(s)",ylab="# molecules",xlim=c(-20,20), ylim=c(0,200))
+myplot(rvs_dup[,"t"],rvs_dup[,"n"],rvs_dup[,"t.err"],rvs_dup[,"n.err"],line.col="#00FFFF",xlab="time(s)",ylab="# molecules",xlim=c(-10,10), ylim=c(0,200))
 myplot(rvs_wt[,"t"],rvs_wt[,"n"],rvs_wt[,"t.err"],rvs_wt[,"n.err"],line.col="#669900",hold_on=TRUE)
 myplot(delsh3_dup[,"t"],delsh3_dup[,"n"],delsh3_dup[,"t.err"],delsh3_dup[,"n.err"],line.col="#FF6600",hold_on=TRUE)
 myplot(delsh3_g[,"t"],delsh3_g[,"n"],delsh3_g[,"t.err"],delsh3_g[,"n.err"],line.col="#996600",hold_on=TRUE)
 
 title(main="Rvs167-GFP", sub="time aligned to rvs max ")
-legend("topleft",c("rvs dup","rvs wt","delsh3 dup","delsh3"),lty=1,col=c("#000000", "#669900", "#FF6600", "#996600" ),bty='n', cex=0.75)
+legend("topleft",c("rvs dup","rvs wt","delsh3 dup","delsh3"),lty=1,col=c("#00FFFF", "#669900", "#FF6600", "#996600"),bty='n', cex=0.75)
 
-#abp intensity .W2
-myplot(abp_sla1_2xBAR_w2[,"t"],abp_sla1_2xBAR_w2[,"n"],abp_sla1_2xBAR_w2[,"t.err"],abp_sla1_2xBAR_w2[,"n.err"],line.col="#660099",xlab="time(s)",ylab="# molecules",xlim=c(-20,20), ylim=c(0,500))
-myplot(abp_sla1_1xBAR_w2[,"t"],abp_sla1_1xBAR_w2[,"n"],abp_sla1_1xBAR_w2[,"t.err"],abp_sla1_1xBAR_w2[,"n.err"],line.col="#66cc99",hold_on=TRUE,line.lwd=3,deltat=0.45)
-myplot(abp_sla1_2x_w2[,"t"],abp_sla1_2x_w2[,"n"],abp_sla1_2x_w2[,"t.err"],abp_sla1_2x_w2[,"n.err"],line.col="#CC0066",hold_on=TRUE,line.lwd=3,deltat=0.45)
-myplot(abp_sla1_1x_w2[,"t"],abp_sla1_1x_w2[,"n"],abp_sla1_1x_w2[,"t.err"],abp_sla1_1x_w2[,"n.err"],line.col="#CC0099",hold_on=TRUE,line.lwd=3,deltat=0.45)
-
-legend("topleft",c("abp1_sla1 2xRvs","abp1_sla1 2xBAR", "abp1_sla1 1xBAR"),lty=1,col=c("#CC0066", "#660099", "#66cc99"),bty='n', cex=0.75)
-title(main="abp sla1 w2 data")
 
 ##################################################################################################################################
 #abp_mch intensity sla1 co-tag
-myplot(abpmch_2x[,"t"],abpmch_2x[,"n"],abpmch_2x[,"t.err"],abpmch_2x[,"n.err"],line.col="#CC0066",xlab="time(s)",ylab="# molecules",xlim=c(-17,17), ylim=c(0,600))
-myplot(abpmch_1x[,"t"],abpmch_1x[,"n"],abpmch_1x[,"t.err"],abpmch_1x[,"n.err"],line.col="#000000",hold_on=TRUE,line.lwd=3,deltat=0.45)
-myplot(abpmch_1xBAR[,"t"],abpmch_1xBAR[,"n"],abpmch_1xBAR[,"t.err"],abpmch_1xBAR[,"n.err"],line.col="#66cc99",hold_on=TRUE,line.lwd=3,deltat=0.45)
-myplot(abpmch_2xBAR[,"t"],abpmch_2xBAR[,"n"],abpmch_2xBAR[,"t.err"],abpmch_2xBAR[,"n.err"],line.col="#660099",hold_on=TRUE,line.lwd=3,deltat=0.45)
+myplot(abpmch_2x_sla1_no[,"t"],abpmch_2x_sla1_no[,"n"],abpmch_2x_sla1_no[,"t.err"],abpmch_2x_sla1_no[,"n.err"],line.col="#CC0066",xlab="time(s)",ylab="# molecules",xlim=c(-17,17), ylim=c(0,600))
+myplot(abpmch_1x_sla1_no[,"t"],abpmch_1x_sla1_no[,"n"],abpmch_1x_sla1_no[,"t.err"],abpmch_1x_sla1_no[,"n.err"],line.col="#000000",hold_on=TRUE,line.lwd=3,deltat=0.45)
+myplot(abpmch_1xBAR_sla1_no[,"t"],abpmch_1xBAR_sla1_no[,"n"],abpmch_1xBAR_sla1_no[,"t.err"],abpmch_1xBAR_sla1_no[,"n.err"],line.col="#66cc99",hold_on=TRUE,line.lwd=3,deltat=0.45)
+myplot(abpmch_2xBAR_sla1_no[,"t"],abpmch_2xBAR_sla1_no[,"n"],abpmch_2xBAR_sla1_no[,"t.err"],abpmch_2xBAR_sla1_no[,"n.err"],line.col="#660099",hold_on=TRUE,line.lwd=3,deltat=0.45)
 myplot(abpmch_rvsdel[,"t"],abpmch_rvsdel[,"n"],abpmch_rvsdel[,"t.err"],abpmch_rvsdel[,"n.err"],line.col="#ccddee",hold_on=TRUE,line.lwd=3,deltat=0.45)
 legend("topleft",c("abp1mch 1xRvs", "abp1mch 2xRvs","abp1mch 2xBAR", "abp1mch 1xBAR", "abp1mch rvsdel"),lty=1,col=c("#000000", "#CC0066", "#660099","#66cc99","#ccddee"),bty='n', cex=0.75)
 title(main="abp mch sla1 co-tag")
 
 ##abp1 movement
-myplot(abpmch_2x[,"t"],abpmch_2x[,"x"]-x_abpmch2x,abpmch_2x[,"t.err"],abpmch_2x[,"x.err"],line.col="#CC0066", xlab="Time (s)",ylab="Inward movement (nm)",line.lwd=3,deltat=0.25,xlim=c(-17,17),ylim=c(-25,300))
-myplot(abpmch_1x[,"t"],abpmch_1x[,"x"]-x_abpmch1x,abpmch_1x[,"t.err"],abpmch_1x[,"x.err"],line.col="#000000", hold_on=TRUE, line.lwd=3,deltat=0.25)
-myplot(abpmch_1xBAR[,"t"],abpmch_1xBAR[,"x"]-x_abpmch1xBar,abpmch_1xBAR[,"t.err"],abpmch_1xBAR[,"x.err"],line.col="#66cc99", hold_on=TRUE, line.lwd=3,deltat=0.25)
-myplot(abpmch_2xBAR[,"t"],abpmch_2xBAR[,"x"]-x_abpmch2xBar,abpmch_2xBAR[,"t.err"],abpmch_2xBAR[,"x.err"],line.col="#660099", hold_on=TRUE, line.lwd=3,deltat=0.25)
+myplot(abpmch_2x_sla1_no[,"t"],abpmch_2x_sla1_no[,"x"]-x_abpmch2x,abpmch_2x_sla1_no[,"t.err"],abpmch_2x_sla1_no[,"x.err"],line.col="#CC0066", xlab="Time (s)",ylab="Inward movement (nm)",line.lwd=3,deltat=0.25,xlim=c(-17,17),ylim=c(-25,300))
+myplot(abpmch_1x_sla1_no[,"t"],abpmch_1x_sla1_no[,"x"]-x_abpmch1x,abpmch_1x_sla1_no[,"t.err"],abpmch_1x_sla1_no[,"x.err"],line.col="#000000", hold_on=TRUE, line.lwd=3,deltat=0.25)
+myplot(abpmch_1xBAR_sla1_no[,"t"],abpmch_1xBAR_sla1_no[,"x"]-x_abpmch1xBar,abpmch_1xBAR_sla1_no[,"t.err"],abpmch_1xBAR_sla1_no[,"x.err"],line.col="#66cc99", hold_on=TRUE, line.lwd=3,deltat=0.25)
+myplot(abpmch_2xBAR_sla1_no[,"t"],abpmch_2xBAR_sla1_no[,"x"]-x_abpmch2xBar,abpmch_2xBAR_sla1_no[,"t.err"],abpmch_2xBAR_sla1_no[,"x.err"],line.col="#660099", hold_on=TRUE, line.lwd=3,deltat=0.25)
 myplot(abpmch_rvsdel[,"t"],abpmch_rvsdel[,"x"]-x_abpmchrvsdel,abpmch_rvsdel[,"t.err"],abpmch_rvsdel[,"x.err"],line.col="#ccddee", hold_on=TRUE, line.lwd=3,deltat=0.25)
 title(main="Abp1-mch sla1 co-tag", sub="time aligned to abp1 max")
 legend("topleft",c("abp1mch 1xRvs", "abp1mch 2xRvs","abp1mch 2xBAR", "abp1mch 1xBAR", "abpmch rvsdel"),lty=1,col=c("#000000", "#CC0066", "#660099","#66cc99","#ccddee"),bty='n', cex=0.75)
 
+
+##################################################################################################################################
+#abp_mch intensity sla1 co-tag set2
+myplot(abpmch_2x_sla1_no2[,"t"],abpmch_2x_sla1_no2[,"n"],abpmch_2x_sla1_no2[,"t.err"],abpmch_2x_sla1_no2[,"n.err"],line.col="#CC0066",xlab="time(s)",ylab="# molecules",xlim=c(-17,17), ylim=c(0,600))
+myplot(abpmch_1x_sla1_no2[,"t"],abpmch_1x_sla1_no2[,"n"],abpmch_1x_sla1_no2[,"t.err"],abpmch_1x_sla1_no2[,"n.err"],line.col="#000000",hold_on=TRUE,line.lwd=3,deltat=0.45)
+myplot(abpmch_1xBAR_sla1_no2[,"t"],abpmch_1xBAR_sla1_no2[,"n"],abpmch_1xBAR_sla1_no2[,"t.err"],abpmch_1xBAR_sla1_no2[,"n.err"],line.col="#66cc99",hold_on=TRUE,line.lwd=3,deltat=0.45)
+myplot(abpmch_2xBAR_sla1_no2[,"t"],abpmch_2xBAR_sla1_no2[,"n"],abpmch_2xBAR_sla1_no2[,"t.err"],abpmch_2xBAR_sla1_no2[,"n.err"],line.col="#660099",hold_on=TRUE,line.lwd=3,deltat=0.45)
+myplot(abpmch_rvsdel2[,"t"],abpmch_rvsdel2[,"n"],abpmch_rvsdel2[,"t.err"],abpmch_rvsdel2[,"n.err"],line.col="#ccddee",hold_on=TRUE,line.lwd=3,deltat=0.45)
+legend("topleft",c("abp1mch 1xRvs", "abp1mch 2xRvs","abp1mch 2xBAR", "abp1mch 1xBAR", "abp1mch rvsdel"),lty=1,col=c("#000000", "#CC0066", "#660099","#66cc99","#ccddee"),bty='n', cex=0.75)
+title(main="abp mch sla1 co-tag set2")
+
+
 ######################################################################################################################
 #abp_mch intensity rvs co-tag
-myplot(abpmch_2x_rvs[,"t"],abpmch_2x_rvs[,"n"],abpmch_2x_rvs[,"t.err"],abpmch_2x_rvs[,"n.err"],line.col="#CC0066",xlab="time(s)",ylab="# molecules",xlim=c(-10,10), ylim=c(0,500))
+myplot(abpmch_2x_rvs[,"t"],abpmch_2x_rvs[,"n"],abpmch_2x_rvs[,"t.err"],abpmch_2x_rvs[,"n.err"],line.col="#CC0066",xlab="time(s)",ylab="# molecules",xlim=c(-15,15), ylim=c(0,500))
 myplot(abpmch_1x_rvs[,"t"],abpmch_1x_rvs[,"n"],abpmch_1x_rvs[,"t.err"],abpmch_1x_rvs[,"n.err"],line.col="#000000",hold_on=TRUE,line.lwd=3,deltat=0.45)
 myplot(abpmch_1xBAR_rvs[,"t"],abpmch_1xBAR_rvs[,"n"],abpmch_1xBAR_rvs[,"t.err"],abpmch_1xBAR_rvs[,"n.err"],line.col="#66cc99",hold_on=TRUE,line.lwd=3,deltat=0.45)
 myplot(abpmch_2xBAR_rvs[,"t"],abpmch_2xBAR_rvs[,"n"],abpmch_2xBAR_rvs[,"t.err"],abpmch_2xBAR_rvs[,"n.err"],line.col="#660099",hold_on=TRUE,line.lwd=3,deltat=0.45)
@@ -303,15 +299,6 @@ myplot(abpmch_1xBAR_rvs[,"t"],abpmch_1xBAR_rvs[,"x"]-x_abpmch1xBar_rvs,abpmch_1x
 myplot(abpmch_2xBAR_rvs[,"t"],abpmch_2xBAR_rvs[,"x"]-x_abpmch2xBar_rvs,abpmch_2xBAR_rvs[,"t.err"],abpmch_2xBAR_rvs[,"x.err"],line.col="#660099", hold_on=TRUE, line.lwd=3,deltat=0.25)
 title(main="Abp1-mch rvs co-tag", sub="time aligned to abp1 max")
 legend("topleft",c("abp1mch 1xRvs", "abp1mch 2xRvs","abp1mch 2xBAR", "abp1mch 1xBAR"),lty=1,col=c("#000000", "#CC0066", "#660099","#66cc99"),bty='n', cex=0.75)
-
-#abpmch intensity sla1 co-tag
-myplot(abpmch_1x_sla1_no[,"t"],abpmch_1x_sla1_no[,"n"],abpmch_1x_sla1_no[,"t.err"],abpmch_1x_sla1_no[,"n.err"],line.col="#CC0066",xlab="time(s)",ylab="# molecules",xlim=c(-17,17), ylim=c(0,600))
-myplot(abpmch_2x_sla1_no[,"t"],abpmch_2x_sla1_no[,"n"],abpmch_2x_sla1_no[,"t.err"],abpmch_2x_sla1_no[,"n.err"],line.col="#000000",hold_on=TRUE,line.lwd=3,deltat=0.45)
-myplot(abpmch_1xBAR_sla1_no[,"t"],abpmch_1xBAR_sla1_no[,"n"],abpmch_1xBAR_sla1_no[,"t.err"],abpmch_1xBAR_sla1_no[,"n.err"],line.col="#66cc99",hold_on=TRUE,line.lwd=3,deltat=0.45)
-myplot(abpmch_2xBAR_sla1_no[,"t"],abpmch_2xBAR_sla1_no[,"n"],abpmch_2xBAR_sla1_no[,"t.err"],abpmch_2xBAR_sla1_no[,"n.err"],line.col="#660099",hold_on=TRUE,line.lwd=3,deltat=0.45)
-legend("topleft",c("abp1mch 1xRvs", "abp1mch 2xRvs","abp1mch 2xBAR", "abp1mch 1xBAR"),lty=1,col=c("#000000", "#CC0066", "#660099","#66cc99"),bty='n', cex=0.75)
-title(main="abp mch sla1 co-tag profile, numbers")
-
 
 
 ##################################################################################################################################
