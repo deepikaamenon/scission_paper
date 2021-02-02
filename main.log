@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.5.6)  29 JAN 2021 20:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.5.6)  2 FEB 2021 22:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1938,44 +1938,44 @@ Package: translator 2010/06/12 ver 1.10
 uage-mappings.tex))) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 49.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 49.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 50.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 50.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for LS1/stix/m/n on input line 49.
-LaTeX Font Info:    Try loading font information for LS1+stix on input line 49.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for LS1/stix/m/n on input line 50.
+LaTeX Font Info:    Try loading font information for LS1+stix on input line 50.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/stix/ls1stix.fd
 File: ls1stix.fd 2015/04/17 v1.1.2-latex STIX LS1 font definitions
 )
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for LS2/stix/m/n on input line 49.
-LaTeX Font Info:    Try loading font information for LS2+stix on input line 49.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for LS2/stix/m/n on input line 50.
+LaTeX Font Info:    Try loading font information for LS2+stix on input line 50.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/stix/ls2stix.fd
 File: ls2stix.fd 2015/04/17 v1.1.2-latex STIX LS2 font definitions
 )
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Try loading font information for T1+fos on input line 49.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Try loading font information for T1+fos on input line 50.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/opensans/t1fos.fd
 File: t1fos.fd 2011/11/11 Fontinst v1.927 font definitions for T1/fos.
@@ -2012,7 +2012,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \microtypecontext on input line 49.
+LaTeX Info: Redefining \microtypecontext on input line 50.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -2067,8 +2067,8 @@ Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 49.
-Package hyperref Info: Link coloring ON on input line 49.
+(lastpage)             ! on input line 50.
+Package hyperref Info: Link coloring ON on input line 50.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -2077,9 +2077,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count351
 )
-LaTeX Info: Redefining \ref on input line 49.
-LaTeX Info: Redefining \pageref on input line 49.
-LaTeX Info: Redefining \nameref on input line 49.
+LaTeX Info: Redefining \ref on input line 50.
+LaTeX Info: Redefining \pageref on input line 50.
+LaTeX Info: Redefining \nameref on input line 50.
 
 (./main.out) (./main.out)
 \@outlinefile=\write4
@@ -2088,7 +2088,7 @@ LaTeX Info: Redefining \nameref on input line 49.
 .................................................
 . chemgreek info: "mapping-activated"
 . 
-. Activating mapping `default' on line 49.
+. Activating mapping `default' on line 50.
 .................................................
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/beamer/translator/dicts/translato
@@ -2100,46 +2100,46 @@ File: siunitx-abbreviations.cfg 2017/05/19 v2.7g siunitx: Abbreviated units
 )
 \c__siunitx_mathsf_int=\count352
 LaTeX Font Info:    Try loading font information for LS1+stixscr on input line 
-49.
+50.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/stix/ls1stixscr.fd
 File: ls1stixscr.fd 2015/04/17 v1.1.2-latex STIX script LS1 font definitions
 )
-LaTeX Font Info:    Try loading font information for LS2+stixex on input line 4
-9.
+LaTeX Font Info:    Try loading font information for LS2+stixex on input line 5
+0.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/stix/ls2stixex.fd
 File: ls2stixex.fd 2015/04/17 v1.1.2-latex STIX extentions LS2 font definitions
 
 )
 LaTeX Font Info:    Try loading font information for LS1+stixfrak on input line
- 49.
+ 50.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/stix/ls1stixfrak.fd
 File: ls1stixfrak.fd 2015/04/17 v1.1.2-latex STIX fraktur LS1 font definitions
 )
-LaTeX Font Info:    Try loading font information for LS1+stixbb on input line 4
-9.
+LaTeX Font Info:    Try loading font information for LS1+stixbb on input line 5
+0.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/stix/ls1stixbb.fd
 File: ls1stixbb.fd 2015/04/17 v1.1.2-latex STIX blackboard LS1 font definitions
 
 )
 LaTeX Font Info:    Try loading font information for LS2+stixcal on input line 
-49.
+50.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/stix/ls2stixcal.fd
 File: ls2stixcal.fd 2015/04/17 v1.1.2-latex STIX calligraphic LS2 font definiti
 ons
 )
-LaTeX Font Info:    Try loading font information for LS1+stixsf on input line 4
-9.
+LaTeX Font Info:    Try loading font information for LS1+stixsf on input line 5
+0.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/stix/ls1stixsf.fd
 File: ls1stixsf.fd 2015/04/17 v1.1.2-latex STIX sans-serif LS1 font definitions
 
 )
-LaTeX Font Info:    Try loading font information for LS2+stixtt on input line 4
-9.
+LaTeX Font Info:    Try loading font information for LS2+stixtt on input line 5
+0.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/stix/ls2stixtt.fd
 File: ls2stixtt.fd 2015/04/17 v1.1.2-latex STIX typewriter LS2 font definitions
@@ -2147,21 +2147,21 @@ File: ls2stixtt.fd 2015/04/17 v1.1.2-latex STIX typewriter LS2 font definitions
 )
 \c__siunitx_mathtt_int=\count353
 LaTeX Font Info:    Font shape `T1/fos/bx/n' in size <9> not available
-(Font)              Font shape `T1/fos/b/n' tried instead on input line 52.
+(Font)              Font shape `T1/fos/b/n' tried instead on input line 53.
 LaTeX Font Info:    Font shape `T1/fos/bx/n' in size <22> not available
-(Font)              Font shape `T1/fos/b/n' tried instead on input line 52.
+(Font)              Font shape `T1/fos/b/n' tried instead on input line 53.
 LaTeX Font Info:    Font shape `T1/fos/bx/n' in size <10> not available
-(Font)              Font shape `T1/fos/b/n' tried instead on input line 52.
+(Font)              Font shape `T1/fos/b/n' tried instead on input line 53.
 LaTeX Font Info:    Font shape `T1/fos/bx/n' in size <7.5> not available
-(Font)              Font shape `T1/fos/b/n' tried instead on input line 52.
+(Font)              Font shape `T1/fos/b/n' tried instead on input line 53.
 LaTeX Font Info:    Font shape `T1/fos/bx/n' in size <7> not available
-(Font)              Font shape `T1/fos/b/n' tried instead on input line 52.
+(Font)              Font shape `T1/fos/b/n' tried instead on input line 53.
 LaTeX Font Info:    Font shape `T1/fos/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/fos/b/n' tried instead on input line 58.
+(Font)              Font shape `T1/fos/b/n' tried instead on input line 59.
 LaTeX Font Info:    Font shape `T1/fos/bx/it' in size <9> not available
-(Font)              Font shape `T1/fos/b/it' tried instead on input line 60.
+(Font)              Font shape `T1/fos/b/it' tried instead on input line 61.
 
-Underfull \hbox (badness 10000) in paragraph at lines 62--63
+Underfull \hbox (badness 10000) in paragraph at lines 63--64
 
  []
 
@@ -2169,55 +2169,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 62--63
 
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 [2]
-</Users/deepikaa/Desktop/scission_paper/figures/fig1/final/vpsdel_29.pdf, id=32
-7, 6343.7pt x 3759.54562pt>
+</Users/deepikaa/Desktop/scission_paper/figures/fig1/final/vpsdel_29.pdf, id=31
+5, 6343.7pt x 3759.54562pt>
 File: /Users/deepikaa/Desktop/scission_paper/figures/fig1/final/vpsdel_29.pdf G
 raphic file (type pdf)
 
 <use /Users/deepikaa/Desktop/scission_paper/figures/fig1/final/vpsdel_29.pdf>
 Package pdftex.def Info: /Users/deepikaa/Desktop/scission_paper/figures/fig1/fi
-nal/vpsdel_29.pdf used on input line 88.
+nal/vpsdel_29.pdf used on input line 89.
 (pdftex.def)             Requested size: 412.56496pt x 244.49377pt.
 
-Overfull \hbox (5.97514pt too wide) in paragraph at lines 87--90
+Overfull \hbox (5.97514pt too wide) in paragraph at lines 88--91
  [][] 
  []
 
 LaTeX Font Info:    Font shape `T1/fos/bx/n' in size <8> not available
-(Font)              Font shape `T1/fos/b/n' tried instead on input line 90.
+(Font)              Font shape `T1/fos/b/n' tried instead on input line 91.
 LaTeX Font Info:    Font shape `T1/fos/bx/it' in size <8> not available
-(Font)              Font shape `T1/fos/b/it' tried instead on input line 90.
+(Font)              Font shape `T1/fos/b/it' tried instead on input line 91.
 [3 </Users/deepikaa/Desktop/scission_paper/figures/fig1/final/vpsdel_29.pdf>]
 
 Package natbib Warning: Citation `Boeke2014' on page 4 undefined on input line 
-103.
+104.
 
 
-</Users/deepikaa/Desktop/scission_paper/figures/fig2/inp9.pdf, id=466, 2823.890
+</Users/deepikaa/Desktop/scission_paper/figures/fig2/inp9.pdf, id=454, 2823.890
 1pt x 2228.325pt>
 File: /Users/deepikaa/Desktop/scission_paper/figures/fig2/inp9.pdf Graphic file
  (type pdf)
 
 <use /Users/deepikaa/Desktop/scission_paper/figures/fig2/inp9.pdf>
 Package pdftex.def Info: /Users/deepikaa/Desktop/scission_paper/figures/fig2/in
-p9.pdf used on input line 119.
+p9.pdf used on input line 120.
 (pdftex.def)             Requested size: 325.27309pt x 256.643pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 127--128
-
- []
-
-[4]
-</Users/deepikaa/Desktop/scission_paper/figures/fig3/sla2_del_final20.pdf, id=4
-88, 1767.54347pt x 1325.23108pt>
-File: /Users/deepikaa/Desktop/scission_paper/figures/fig3/sla2_del_final20.pdf 
-Graphic file (type pdf)
-
-<use /Users/deepikaa/Desktop/scission_paper/figures/fig3/sla2_del_final20.pdf>
-Package pdftex.def Info: /Users/deepikaa/Desktop/scission_paper/figures/fig3/sl
-a2_del_final20.pdf used on input line 141.
-(pdftex.def)             Requested size: 386.25908pt x 289.59027pt.
-LaTeX Font Info:    Try loading font information for TS1+fos on input line 143.
+LaTeX Font Info:    Try loading font information for TS1+fos on input line 122.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/opensans/ts1fos.fd
@@ -2228,59 +2213,67 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
+Underfull \hbox (badness 10000) in paragraph at lines 128--129
+
+ []
+
+[4]
+</Users/deepikaa/Desktop/scission_paper/figures/fig3/sla2_del_final20.pdf, id=4
+75, 1767.54347pt x 1325.23108pt>
+File: /Users/deepikaa/Desktop/scission_paper/figures/fig3/sla2_del_final20.pdf 
+Graphic file (type pdf)
+
+<use /Users/deepikaa/Desktop/scission_paper/figures/fig3/sla2_del_final20.pdf>
+Package pdftex.def Info: /Users/deepikaa/Desktop/scission_paper/figures/fig3/sl
+a2_del_final20.pdf used on input line 142.
+(pdftex.def)             Requested size: 386.25908pt x 289.59027pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [5 </Users/deepikaa/Desktop/scission_paper/figures/fig2/inp9.pdf>]
-</Users/deepikaa/Desktop/scission_paper/figures/fig3/fig3_sh3loc.pdf, id=607, 9
-21.21864pt x 599.98256pt>
-File: /Users/deepikaa/Desktop/scission_paper/figures/fig3/fig3_sh3loc.pdf Graph
-ic file (type pdf)
+</Users/deepikaa/Desktop/scission_paper/figures/fig3/fig3_sh3loc_2.pdf, id=595,
+ 921.21864pt x 599.98256pt>
+File: /Users/deepikaa/Desktop/scission_paper/figures/fig3/fig3_sh3loc_2.pdf Gra
+phic file (type pdf)
 
-<use /Users/deepikaa/Desktop/scission_paper/figures/fig3/fig3_sh3loc.pdf>
+<use /Users/deepikaa/Desktop/scission_paper/figures/fig3/fig3_sh3loc_2.pdf>
 Package pdftex.def Info: /Users/deepikaa/Desktop/scission_paper/figures/fig3/fi
-g3_sh3loc.pdf used on input line 164.
-(pdftex.def)             Requested size: 162.63344pt x 105.92317pt.
+g3_sh3loc_2.pdf used on input line 165.
+(pdftex.def)             Requested size: 256.0748pt x 166.77635pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\color' on input line 172.
-
-
-</Users/deepikaa/Desktop/scission_paper/figures/fig4/delsh3_9.pdf, id=610, 3388
+[6 </Users/deepikaa/Desktop/scission_paper/figures/fig3/sla2_del_final20.pdf>]
+</Users/deepikaa/Desktop/scission_paper/figures/fig4/delsh3_9.pdf, id=768, 3388
 .60976pt x 2408.51822pt>
 File: /Users/deepikaa/Desktop/scission_paper/figures/fig4/delsh3_9.pdf Graphic 
 file (type pdf)
 
 <use /Users/deepikaa/Desktop/scission_paper/figures/fig4/delsh3_9.pdf>
 Package pdftex.def Info: /Users/deepikaa/Desktop/scission_paper/figures/fig4/de
-lsh3_9.pdf used on input line 180.
-(pdftex.def)             Requested size: 304.94235pt x 216.72054pt.
- [6 </Users/deepikaa/Desktop/scission_paper/figures/fig3/sla2_del_final20.pdf>]
+lsh3_9.pdf used on input line 183.
+(pdftex.def)             Requested size: 332.89716pt x 236.60281pt.
 
-Overfull \vbox (2.75012pt too high) has occurred while \output is active []
+Overfull \vbox (3.38585pt too high) has occurred while \output is active []
 
 
-[7 </Users/deepikaa/Desktop/scission_paper/figures/fig3/fig3_sh3loc.pdf> </User
-s/deepikaa/Desktop/scission_paper/figures/fig4/delsh3_9.pdf>]
-</Users/deepikaa/Desktop/scission_paper/figures/fig5/fig5_7.pdf, id=928, 5208.4
-1856pt x 2571.09558pt>
-File: /Users/deepikaa/Desktop/scission_paper/figures/fig5/fig5_7.pdf Graphic fi
+[7 </Users/deepikaa/Desktop/scission_paper/figures/fig3/fig3_sh3loc_2.pdf> </Us
+ers/deepikaa/Desktop/scission_paper/figures/fig4/delsh3_9.pdf>]
+</Users/deepikaa/Desktop/scission_paper/figures/fig5/fig5_9.pdf, id=908, 2956.8
+5684pt x 2091.49373pt>
+File: /Users/deepikaa/Desktop/scission_paper/figures/fig5/fig5_9.pdf Graphic fi
 le (type pdf)
 
-<use /Users/deepikaa/Desktop/scission_paper/figures/fig5/fig5_7.pdf>
+<use /Users/deepikaa/Desktop/scission_paper/figures/fig5/fig5_9.pdf>
 Package pdftex.def Info: /Users/deepikaa/Desktop/scission_paper/figures/fig5/fi
-g5_7.pdf used on input line 206.
-(pdftex.def)             Requested size: 406.5888pt x 200.70943pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
+g5_9.pdf used on input line 207.
+(pdftex.def)             Requested size: 398.33858pt x 281.73311pt.
+ [8 </Users/deepikaa/Desktop/scission_paper/figures/fig5/fig5_9.pdf>]
 LaTeX Font Info:    Font shape `T1/fos/bx/it' in size <10> not available
-(Font)              Font shape `T1/fos/b/it' tried instead on input line 239.
+(Font)              Font shape `T1/fos/b/it' tried instead on input line 259.
+
 
 ! Package inputenc Error: Unicode char   (U+2028)
 (inputenc)                not set up for use with LaTeX.
@@ -2289,7 +2282,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.240 ...\Delta$sh3}, (Fig.\ref{delsh3}B). Sla1 
+l.260 ...elta$sh3}, (Fig.\ref{delsh3}B,D). Sla1 
                                                   moves inwards at a slower ...
 
 Your command was ignored.
@@ -2304,22 +2297,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.240 ...therefore provided by the BAR domain.  
-                                                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-[8]
-
-! Package inputenc Error: Unicode char   (U+2028)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.243 ...tin and curvature independent manner.  
+l.260 ...therefore provided by the BAR domain.  
                                                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2333,7 +2311,21 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.246 ...sassembly indicates that upon vesicle  
+l.263 ...tin and curvature independent manner.  
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char   (U+2028)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.266 ...sassembly indicates that upon vesicle  
                                                   scission, the actin networ...
 
 Your command was ignored.
@@ -2348,7 +2340,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.246 ...sity starts to drop, and the decay of  
+l.266 ...sity starts to drop, and the decay of  
                                                   Abp1 is prolonged, taking ...
 
 Your command was ignored.
@@ -2363,7 +2355,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.246 ...t is not clear what the decoupling of  
+l.266 ...t is not clear what the decoupling of  
                                                   Abp1 and Rvs167\textit{$\D...
 
 Your command was ignored.
@@ -2378,32 +2370,113 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.246 ...gests a strong disruption of the actin 
+l.266 ...gests a strong disruption of the actin 
                                                   network dynamics.
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 282--284
 
-Overfull \vbox (3.55032pt too high) has occurred while \output is active []
+ []
 
-
-[9 </Users/deepikaa/Desktop/scission_paper/figures/fig5/fig5_7.pdf>] [10]
+[10]
 </Users/deepikaa/Desktop/scission_paper/figures/yeast_schematic_concl.pdf, id=1
-093, 702.625pt x 287.0725pt>
+049, 702.625pt x 287.0725pt>
 File: /Users/deepikaa/Desktop/scission_paper/figures/yeast_schematic_concl.pdf 
 Graphic file (type pdf)
 
 <use /Users/deepikaa/Desktop/scission_paper/figures/yeast_schematic_concl.pdf>
 Package pdftex.def Info: /Users/deepikaa/Desktop/scission_paper/figures/yeast_s
-chematic_concl.pdf used on input line 272.
+chematic_concl.pdf used on input line 295.
 (pdftex.def)             Requested size: 325.27309pt x 132.90036pt.
 
 [11 </Users/deepikaa/Desktop/scission_paper/figures/yeast_schematic_concl.pdf>]
-[12]
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 334.
+[12] (./main.bbl [13] [14])
+Underfull \hbox (badness 10000) in paragraph at lines 386--387
 
- (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/t1lmtt.fd
+ []
+
+
+</Users/deepikaa/Desktop/scission_paper/figures/fig1/growth_assay.pdf, id=1159,
+ 1587.9325pt x 676.4171pt>
+File: /Users/deepikaa/Desktop/scission_paper/figures/fig1/growth_assay.pdf Grap
+hic file (type pdf)
+
+<use /Users/deepikaa/Desktop/scission_paper/figures/fig1/growth_assay.pdf>
+Package pdftex.def Info: /Users/deepikaa/Desktop/scission_paper/figures/fig1/gr
+owth_assay.pdf used on input line 394.
+(pdftex.def)             Requested size: 325.27309pt x 138.55286pt.
+
+</Users/deepikaa/Desktop/scission_paper/figures/fig1/wt_alignment2.pdf, id=1160
+, 930.405pt x 497.92224pt>
+File: /Users/deepikaa/Desktop/scission_paper/figures/fig1/wt_alignment2.pdf Gra
+phic file (type pdf)
+
+<use /Users/deepikaa/Desktop/scission_paper/figures/fig1/wt_alignment2.pdf>
+Package pdftex.def Info: /Users/deepikaa/Desktop/scission_paper/figures/fig1/wt
+_alignment2.pdf used on input line 402.
+(pdftex.def)             Requested size: 325.27309pt x 174.07785pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+</Users/deepikaa/Desktop/scission_paper/figures/fig1/vpsdel_alignment2.pdf, id=
+1163, 930.405pt x 497.92224pt>
+File: /Users/deepikaa/Desktop/scission_paper/figures/fig1/vpsdel_alignment2.pdf
+ Graphic file (type pdf)
+
+<use /Users/deepikaa/Desktop/scission_paper/figures/fig1/vpsdel_alignment2.pdf>
+Package pdftex.def Info: /Users/deepikaa/Desktop/scission_paper/figures/fig1/vp
+sdel_alignment2.pdf used on input line 410.
+(pdftex.def)             Requested size: 325.27309pt x 174.07785pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+</Users/deepikaa/Desktop/scission_paper/figures/fig1/rvsdel_alignment.pdf, id=1
+166, 930.405pt x 497.92224pt>
+File: /Users/deepikaa/Desktop/scission_paper/figures/fig1/rvsdel_alignment.pdf 
+Graphic file (type pdf)
+
+<use /Users/deepikaa/Desktop/scission_paper/figures/fig1/rvsdel_alignment.pdf>
+Package pdftex.def Info: /Users/deepikaa/Desktop/scission_paper/figures/fig1/rv
+sdel_alignment.pdf used on input line 418.
+(pdftex.def)             Requested size: 325.27309pt x 174.07785pt.
+
+</Users/deepikaa/Desktop/scission_paper/figures/fig2/supplement.pdf, id=1169, 2
+550.7797pt x 1075.12665pt>
+File: /Users/deepikaa/Desktop/scission_paper/figures/fig2/supplement.pdf Graphi
+c file (type pdf)
+
+<use /Users/deepikaa/Desktop/scission_paper/figures/fig2/supplement.pdf>
+Package pdftex.def Info: /Users/deepikaa/Desktop/scission_paper/figures/fig2/su
+pplement.pdf used on input line 426.
+(pdftex.def)             Requested size: 386.25908pt x 162.80411pt.
+
+
+LaTeX Warning: File `/Users/deepikaa/Desktop/scission_paper/figures/fig4/cytopl
+asmic_int_3.pdf' not found on input line 434.
+
+
+! Package pdftex.def Error: File `/Users/deepikaa/Desktop/scission_paper/figure
+s/fig4/cytoplasmic_int_3.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.434 ...paper/figures/fig4/cytoplasmic_int_3.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 434.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 Package microtype Info: Loading generic settings for font family
@@ -2412,135 +2485,51 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             See the microtype manual for details.
 
 
-Package natbib Warning: Citation `Aivazian917' on page 13 undefined on input li
-ne 334.
-
-
-Package natbib Warning: Citation `Aivazian917' on page 13 undefined on input li
-ne 334.
-
-(./main.bbl [13] [14])
-Underfull \hbox (badness 10000) in paragraph at lines 363--364
-
- []
-
-
-</Users/deepikaa/Desktop/scission_paper/figures/fig1/growth_assay.pdf, id=1208,
- 1587.9325pt x 676.4171pt>
-File: /Users/deepikaa/Desktop/scission_paper/figures/fig1/growth_assay.pdf Grap
-hic file (type pdf)
-
-<use /Users/deepikaa/Desktop/scission_paper/figures/fig1/growth_assay.pdf>
-Package pdftex.def Info: /Users/deepikaa/Desktop/scission_paper/figures/fig1/gr
-owth_assay.pdf used on input line 371.
-(pdftex.def)             Requested size: 325.27309pt x 138.55286pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-</Users/deepikaa/Desktop/scission_paper/figures/fig1/wt_alignment2.pdf, id=1209
-, 930.405pt x 497.92224pt>
-File: /Users/deepikaa/Desktop/scission_paper/figures/fig1/wt_alignment2.pdf Gra
-phic file (type pdf)
-
-<use /Users/deepikaa/Desktop/scission_paper/figures/fig1/wt_alignment2.pdf>
-Package pdftex.def Info: /Users/deepikaa/Desktop/scission_paper/figures/fig1/wt
-_alignment2.pdf used on input line 379.
-(pdftex.def)             Requested size: 325.27309pt x 174.07785pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-</Users/deepikaa/Desktop/scission_paper/figures/fig1/vpsdel_alignment2.pdf, id=
-1212, 930.405pt x 497.92224pt>
-File: /Users/deepikaa/Desktop/scission_paper/figures/fig1/vpsdel_alignment2.pdf
- Graphic file (type pdf)
-
-<use /Users/deepikaa/Desktop/scission_paper/figures/fig1/vpsdel_alignment2.pdf>
-Package pdftex.def Info: /Users/deepikaa/Desktop/scission_paper/figures/fig1/vp
-sdel_alignment2.pdf used on input line 387.
-(pdftex.def)             Requested size: 325.27309pt x 174.07785pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-</Users/deepikaa/Desktop/scission_paper/figures/fig1/rvsdel_alignment.pdf, id=1
-215, 930.405pt x 497.92224pt>
-File: /Users/deepikaa/Desktop/scission_paper/figures/fig1/rvsdel_alignment.pdf 
-Graphic file (type pdf)
-
-<use /Users/deepikaa/Desktop/scission_paper/figures/fig1/rvsdel_alignment.pdf>
-Package pdftex.def Info: /Users/deepikaa/Desktop/scission_paper/figures/fig1/rv
-sdel_alignment.pdf used on input line 395.
-(pdftex.def)             Requested size: 325.27309pt x 174.07785pt.
-
-</Users/deepikaa/Desktop/scission_paper/figures/fig2/supplement.pdf, id=1218, 2
-550.7797pt x 1075.12665pt>
-File: /Users/deepikaa/Desktop/scission_paper/figures/fig2/supplement.pdf Graphi
-c file (type pdf)
-
-<use /Users/deepikaa/Desktop/scission_paper/figures/fig2/supplement.pdf>
-Package pdftex.def Info: /Users/deepikaa/Desktop/scission_paper/figures/fig2/su
-pplement.pdf used on input line 403.
-(pdftex.def)             Requested size: 386.25908pt x 162.80411pt.
-
-</Users/deepikaa/Desktop/scission_paper/figures/fig4/cytoplasmic_int_supplement
-3.pdf, id=1219, 1806.75pt x 883.36826pt>
-File: /Users/deepikaa/Desktop/scission_paper/figures/fig4/cytoplasmic_int_suppl
-ement3.pdf Graphic file (type pdf)
-
-<use /Users/deepikaa/Desktop/scission_paper/figures/fig4/cytoplasmic_int_supple
-ment3.pdf>
-Package pdftex.def Info: /Users/deepikaa/Desktop/scission_paper/figures/fig4/cy
-toplasmic_int_supplement3.pdf used on input line 411.
-(pdftex.def)             Requested size: 243.95636pt x 119.27652pt.
-
-
 Package natbib Warning: There were undefined citations.
 
 
 AED: lastpage setting LastPage
-[15] [16 </Users/deepikaa/Desktop/scission_paper/figures/fig1/growth_assay.pdf>
- </Users/deepikaa/Desktop/scission_paper/figures/fig1/wt_alignment2.pdf
-
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file /Users/deepikaa/Desktop/scis
-sion_paper/figures/fig1/wt_alignment2.pdf): PDF inclusion: multiple pdfs with p
-age group included in a single page
-> </Users/deepikaa/Desktop/scission_paper/figures/fig1/vpsdel_alignment2.pdf
+[15 </Users/deepikaa/Desktop/scission_paper/figures/fig1/growth_assay.pdf>]
+[16 </Users/deepikaa/Desktop/scission_paper/figures/fig1/wt_alignment2.pdf> </U
+sers/deepikaa/Desktop/scission_paper/figures/fig1/vpsdel_alignment2.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file /Users/deepikaa/Desktop/scis
 sion_paper/figures/fig1/vpsdel_alignment2.pdf): PDF inclusion: multiple pdfs wi
 th page group included in a single page
->] [17 </Users/deepikaa/Desktop/scission_paper/figures/fig1/rvsdel_alignment.pd
-f> </Users/deepikaa/Desktop/scission_paper/figures/fig2/supplement.pdf
+> </Users/deepikaa/Desktop/scission_paper/figures/fig1/rvsdel_alignment.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file /Users/deepikaa/Desktop/scis
-sion_paper/figures/fig2/supplement.pdf): PDF inclusion: multiple pdfs with page
- group included in a single page
-> </Users/deepikaa/Desktop/scission_paper/figures/fig4/cytoplasmic_int_suppleme
-nt3.pdf>] (./main.suppinfo)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 416.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 416.
+sion_paper/figures/fig1/rvsdel_alignment.pdf): PDF inclusion: multiple pdfs wit
+h page group included in a single page
+>] [17 </Users/deepikaa/Desktop/scission_paper/figures/fig2/supplement.pdf>]
+(./main.suppinfo)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 439.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 439.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 416.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 416.
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 9DE579F28785292E0A1447D6592D14D7;2676.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 439.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 439.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: 07C3160CCC02DC5951FC75A5F62BE6FF;2450
+(rerunfilecheck)             After:  3CA446D8EAD7C2ABA9285B366AD202D7;2457.
  ) 
 Here is how much of TeX's memory you used:
- 28130 strings out of 492995
- 515715 string characters out of 6132705
- 724686 words of memory out of 5000000
- 30371 multiletter control sequences out of 15000+600000
- 748868 words of font info for 788 fonts, out of 8000000 for 9000
+ 28085 strings out of 492995
+ 514544 string characters out of 6132705
+ 721513 words of memory out of 5000000
+ 30365 multiletter control sequences out of 15000+600000
+ 744363 words of font info for 758 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,11n,53p,10450b,1116s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/opensans/opensans-02.enc}
-{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/opensans/opensans-03.enc}{/
-usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/opensans/opensans-04.enc}{/us
-r/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texliv
+{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/
+texlive/2017/texmf-dist/fonts/enc/dvips/opensans/opensans-03.enc}{/usr/local/te
+xlive/2017/texmf-dist/fonts/enc/dvips/opensans/opensans-02.enc}{/usr/local/texl
+ive/2017/texmf-dist/fonts/enc/dvips/opensans/opensans-04.enc}{/usr/local/texliv
 e/2017/texmf-dist/fonts/enc/dvips/opensans/opensans-01.enc}</usr/local/texlive/
 2017/texmf-dist/fonts/type1/public/opensans/OpenSans-Bold.pfb></usr/local/texli
 ve/2017/texmf-dist/fonts/type1/public/opensans/OpenSans-BoldItalic.pfb></usr/lo
@@ -2550,10 +2539,10 @@ fb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmtt9.pfb></usr/lo
 cal/texlive/2017/texmf-dist/fonts/type1/public/stix/stix-mathcal.pfb></usr/loca
 l/texlive/2017/texmf-dist/fonts/type1/public/stix/stix-mathit.pfb></usr/local/t
 exlive/2017/texmf-dist/fonts/type1/public/stix/stix-mathrm.pfb>
-Output written on main.pdf (17 pages, 8403896 bytes).
+Output written on main.pdf (17 pages, 8167302 bytes).
 PDF statistics:
- 2728 PDF objects out of 2984 (max. 8388607)
- 1028 compressed objects within 11 object streams
- 108 named destinations out of 1000 (max. 500000)
- 71978 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 2652 PDF objects out of 2984 (max. 8388607)
+ 981 compressed objects within 10 object streams
+ 105 named destinations out of 1000 (max. 500000)
+ 71949 words of extra memory for PDF output out of 74296 (max. 10000000)
 
