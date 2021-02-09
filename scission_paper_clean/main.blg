@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: main.aux
+The style file: apalike.bst
+Database file #1: yeast_endocytosis-scission_paper.bib
+Warning--I didn't find a database entry for "Aivazian917"
+Warning--empty institution in Rothman1986
+You've used 48 entries,
+            1935 wiz_defined-function locations,
+            824 strings with 16360 characters,
+and the built_in function-call counts, 24462 in all, are:
+= -- 2302
+> -- 1504
+< -- 8
++ -- 544
+- -- 544
+* -- 2434
+:= -- 4307
+add.period$ -- 143
+call.type$ -- 48
+change.case$ -- 513
+chr.to.int$ -- 48
+cite$ -- 49
+duplicate$ -- 678
+empty$ -- 1419
+format.name$ -- 606
+if$ -- 4572
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 46
+newline$ -- 242
+num.names$ -- 144
+pop$ -- 415
+preamble$ -- 1
+purify$ -- 512
+quote$ -- 0
+skip$ -- 501
+stack$ -- 0
+substring$ -- 1727
+swap$ -- 59
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 288
+warning$ -- 1
+while$ -- 183
+width$ -- 0
+write$ -- 622
+(There were 2 warnings)
