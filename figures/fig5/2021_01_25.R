@@ -26,7 +26,7 @@ get(load("/Users/deepikaa/Desktop/data_desktop/Tracking/SC/Abp1-mCH/2020_02_06/1
 get(load("/Users/deepikaa/Desktop/data_desktop/Tracking/SC/Abp1-mCH/alignments/abpmch_Sla1823_mytrasf.Rdata"))->sla1823_transf
 get(load("/Users/deepikaa/Desktop/data_desktop/Tracking/SC/Abp1-mCH/alignments_haploid/rvsdup_sla1_3706_mytrasf.Rdata"))->sla13706_transf
 get(load("/Users/deepikaa/Desktop/data_desktop/Tracking/SC/Abp1-mCH/alignments_haploid/rvsdelsh3_sla1_3292_mytrasf.Rdata"))->sla13292_transf
-get(load("/Users/deepikaa/Desktop/data_desktop/Tracking/SC/Abp1-mCH/alignments_haploid/rvsdelsh3_sla1_3826_tracks2_c_mytrasf.Rdata"))->sla13826_transf
+get(load("/Users/deepikaa/Desktop/data_desktop/Tracking/SC/Abp1-mCH/alignments_haploid/rvsdelsh3_sla1_3826_tracks2_d_mytrasf.Rdata"))->sla13826_transf
 get(load("/Users/deepikaa/Desktop/data_desktop/Tracking/SC/Abp1-mCH/alignments/fimax_false_1801/abpmch_delrvs1801_mytrasf.Rdata"))->sla1801_transf
 
 #generate a template transformation matrix to fool gen.data
@@ -55,13 +55,12 @@ sla1_rvsdel<-gen.data(delrvs_sla1_new,sla1801_transf,n=NA,sn=NA,t0=t0_abpmch_rvs
 
 #abp1 mch SC tracking from sla1 co-tagged strains
 #numbers from sla1 co-tag
-abpmch_1x_sla1_no<-gen.data(abpmch_notrans_1xRvs_sla1,transformation_template,n=360.4,sn=37.7,rescale.n=1, t0=t0_abpmch_1xRvs_sla1)
-abpmch_2x_sla1_no<-gen.data(abpmch_notrans_2xRvs_sla1,transformation_template,n=329.4 ,sn=41.0,rescale.n=1, t0=t0_abpmch_2xRvs_sla1)
-abpmch_1xBAR_sla1_no<-gen.data(abpmch_notrans_1xBar_sla1,transformation_template,n=341.9,sn=37.6,rescale.n=1,t0=t0_abpmch_1xBar_sla1)
-abpmch_2xBAR_sla1_no<-gen.data(abpmch_notrans_2xBar_sla1,transformation_template,n=277.9,sn=33.8,rescale.n=1,t0=t0_abpmch_2xBar_sla1)
+abpmch_1x_sla1_no<-gen.data(abpmch_notrans_1xRvs_sla1,transformation_template,n=344.8,sn=27.8,rescale.n=1, t0=t0_abpmch_1xRvs_sla1)
+abpmch_2x_sla1_no<-gen.data(abpmch_notrans_2xRvs_sla1,transformation_template,n=318.8 ,sn=28.1,rescale.n=1, t0=t0_abpmch_2xRvs_sla1)
+abpmch_1xBAR_sla1_no<-gen.data(abpmch_notrans_1xBar_sla1,transformation_template,n=243.5,sn=24.6,rescale.n=1,t0=t0_abpmch_1xBar_sla1)
+abpmch_2xBAR_sla1_no<-gen.data(abpmch_notrans_2xBar_sla1,transformation_template,n=296.2,sn=25,rescale.n=1,t0=t0_abpmch_2xBar_sla1)
 #abpmch_rvsdel<-gen.data(abpmch_notrans_rvsdel_sla1,transformation_template,n=384.5,sn=35.9,rescale.n=1,t0=t0_abpmch_rvsdel) #mky3297
 abpmch_rvsdel<-gen.data(abpmch_notrans_rvsdel_sla1,transformation_template,n=362.64,sn=39.36,rescale.n=1,t0=t0_abpmch_rvsdel_sla1)
-
 
 
 #sla1
@@ -84,23 +83,37 @@ cols_blue<-brewer.pal(n=9, name="Blues")
 cols_rdpu<-brewer.pal(n=9, name="RdPu")
 
 ##with delsh3-duplicated
-pdf("all_haploid_2021_c.pdf")
+pdf("all_haploid_2021_g.pdf")
 mnorm<-function(x) return((x-min(x,na.rm=T))/(max(x,na.rm=T)-min(x,na.rm=T)))
 
 #b, with transformation matrix that includes all dc tracks for delsh3dup_sla1
 #a, with 04, 25, 27,28, 30 removed
 #apparently no difference??
 #c with new delsh3dup abp1mch SC tracks.Rdata after cleanup, and redoing the DC alignment with this new tracks.Rdata
+#d with abp1 nombers from 2020_01_19_haploid, set2
+#e with new tracks.data from abpmch 2xBAR after removing tracks 11,14,28,31 from the tracks folder
+#f with new 2xBAR abpmch, and also redone DC alignment
+#g with newly analysed 1xBAR abpmch
 myplot(sla823[,"t"],sla823[,"x"]-xsla823,sla823[,"t.err"],sla823[,"x.err"],line.col="#023858", xlab="Time (s)",ylab="Inward movement (nm)",line.lwd=3,deltat=0.25,xlim=c(-30,30),ylim=c(-25,200))
 myplot(rvsdup[,"t"],rvsdup[,"x"]-xrvsdup,rvsdup[,"t.err"],rvsdup[,"x.err"],line.col=cols_rdpu[4],hold_on=TRUE,line.lwd=3,deltat=0.25)
 myplot(delsh3dup[,"t"],delsh3dup[,"x"]-xdelsh3dup,delsh3dup[,"t.err"],delsh3dup[,"x.err"],line.col=cols_rdpu[8],hold_on=TRUE,line.lwd=3,deltat=0.25)
+myplot(delsh3[,"t"],delsh3[,"x"]-xdelsh3,delsh3[,"t.err"],delsh3[,"x.err"],line.col= cols_rdpu[6],hold_on=TRUE,line.lwd=3,deltat=0.25)
+#myplot(sla1_rvsdel[,"t"],sla1_rvsdel[,"x"]-xsla1_rvsdel,sla1_rvsdel[,"t.err"],sla1_rvsdel[,"x.err"],line.col=cols_rdpu[5],hold_on=TRUE,line.lwd=3,deltat=0.25)
+
 title("sla1 movement")
 
 
-myplot(abpmch_1x_sla1_no[,"t"],abpmch_1x_sla1_no[,"n"],abpmch_1x_sla1_no[,"t.err"],abpmch_1x_sla1_no[,"n.err"],line.col="#000000",line.lwd=3,deltat=0.25,xlim=c(-30,30),ylim=c(-25,600))
+myplot(abpmch_1x_sla1_no[,"t"],abpmch_1x_sla1_no[,"n"],abpmch_1x_sla1_no[,"t.err"],abpmch_1x_sla1_no[,"n.err"],line.col="#000000",line.lwd=3,deltat=0.25,xlim=c(-15,15),ylim=c(-25,650))
 myplot(abpmch_2x_sla1_no[,"t"],abpmch_2x_sla1_no[,"n"],abpmch_2x_sla1_no[,"t.err"],abpmch_2x_sla1_no[,"n.err"],line.col="#CC0066",hold_on=TRUE,line.lwd=3,deltat=0.45)
 myplot(abpmch_2xBAR_sla1_no[,"t"],abpmch_2xBAR_sla1_no[,"n"],abpmch_2xBAR_sla1_no[,"t.err"],abpmch_2xBAR_sla1_no[,"n.err"],line.col="#660099",hold_on=TRUE,line.lwd=3,deltat=0.45)
-title("abp1 fl.int")
+myplot(abpmch_1xBAR_sla1_no[,"t"],abpmch_1xBAR_sla1_no[,"n"],abpmch_1xBAR_sla1_no[,"t.err"],abpmch_1xBAR_sla1_no[,"n.err"],line.col="#66cc99",hold_on=TRUE,line.lwd=3,deltat=0.45)
+myplot(abpmch_rvsdel[,"t"],abpmch_rvsdel[,"n"],abpmch_rvsdel[,"t.err"],abpmch_rvsdel[,"n.err"],line.col="#ccddee",hold_on=TRUE,line.lwd=3,deltat=0.45)
+legend("topleft",c("abp1mch 1xRvs", "abp1mch 2xRvs","abp1mch 2xBAR", "abp1mch 1xBAR", "abp1mch rvsdel"),lty=1,col=c("#000000", "#CC0066", "#660099","#66cc99","#ccddee"),bty='n', cex=0.75)
+title(main="abp mch sla1 co-tag set2")
+
+#title("abp1 fl.int")
+#legend("topleft",c("sla1 1x","sla1 2x ","sla1 2xBAR", "rvsdel"),lty=1,col=c("#023858", "#CC0066", "#660099", cols_rdpu[5]),bty='n', cex=0.75)
+
 
 myplot(rvsdup[,"t"],mnorm(rvsdup[,"fi"]),rvsdup[,"t.err"],rvsdup[,"fi.err"],line.col="#CC0066",line.lwd=3,deltat=0.25,xlim=c(-30,30),ylim=c(-0.1,1))
 myplot(delsh3dup[,"t"],mnorm(delsh3dup[,"fi"]),delsh3dup[,"t.err"],delsh3dup[,"fi.err"],line.col="#660099",hold_on=TRUE,line.lwd=3,deltat=0.45)
@@ -117,13 +130,13 @@ legend("topleft",c("abp", "sla1"),lty=1,col=c("#000000", "#023858"),bty='n', cex
 myplot(abpmch_1x_sla1_no[,"t"],mnorm(abpmch_1x_sla1_no[,"fi"])*180,abpmch_1x_sla1_no[,"t.err"],abpmch_1x_sla1_no[,"fi.err"],line.col="#000000",line.lwd=3,deltat=0.25,xlim=c(-30,30),ylim=c(-10,200))
 #myplot(sla823[,"t"],mnorm(sla823[,"fi"]),sla823[,"t.err"],sla823[,"fi.err"],line.col="#000066",hold_on=TRUE,line.lwd=3,deltat=0.45)
 myplot(sla823[,"t"],sla823[,"x"]-xsla823,sla823[,"t.err"],sla823[,"x.err"],line.col="#023858",hold_on=TRUE,line.lwd=3,deltat=0.45)
-title("wt 823")
+title("wt 823, abp fl.int vs sla1 movment")
 legend("topleft",c("abp", "sla1"),lty=1,col=c("#000000", "#023858"),bty='n', cex=0.75)
 
 
 myplot(abpmch_2x_sla1_no[,"t"],mnorm(abpmch_2x_sla1_no[,"fi"]),abpmch_2x_sla1_no[,"t.err"],abpmch_2x_sla1_no[,"fi.err"],line.col="#CC0066",line.lwd=3,deltat=0.25,xlim=c(-30,30),ylim=c(-0.1,1))
 myplot(rvsdup[,"t"],mnorm(rvsdup[,"fi"]),rvsdup[,"t.err"],rvsdup[,"fi.err"],line.col="#220066",hold_on=TRUE,line.lwd=3,deltat=0.45)
-title("rvs dup")
+title("rvs dup fl.int")
 legend("topleft",c("abp", "sla1"),lty=1,col=c("#CC0066", "#220066"),bty='n', cex=0.75)
 
 myplot(abpmch_2x_sla1_no[,"t"],mnorm(abpmch_2x_sla1_no[,"fi"])*200,abpmch_2x_sla1_no[,"t.err"],abpmch_2x_sla1_no[,"fi.err"],line.col="#CC0066",line.lwd=3,deltat=0.25,xlim=c(-30,30),ylim=c(-0.1,200))

@@ -1,9 +1,0 @@
-\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
-\defcounter {refsection}{0}\relax 
-\select@language {english}
-\contentsline {chapter}{Abstract}{vii}{section*.1}
-\select@language {ngerman}
-\contentsline {chapter}{Zusammenfassung}{ix}{section*.2}
-\select@language {english}
-\contentsline {chapter}{Acknowledgements}{xi}{section*.3}
-\contentsline {chapter}{Contents}{xiii}{chapter*.4}

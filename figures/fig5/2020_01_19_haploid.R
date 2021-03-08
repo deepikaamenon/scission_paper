@@ -138,6 +138,7 @@ abpmch_rvsdel<-gen.data(abpmch_notrans_rvsdel_sla1,transformation_template,n=362
 #rvs delnumbers an average of 5 numbers, 2x data sets 1802, 1801, 4394, 3297
 
 #numbers from sla1 co-tag set2 2
+#numbers from yellow coloured cells, data_desktop/nuf2/excel/numbers_nuf2_2018_11_c, all on the same day except rvsdel
 abpmch_1x_sla1_no2<-gen.data(abpmch_notrans_1xRvs_sla1,transformation_template,n=344.8,sn=27.8,rescale.n=1, t0=t0_abpmch_1xRvs_sla1)
 abpmch_2x_sla1_no2<-gen.data(abpmch_notrans_2xRvs_sla1,transformation_template,n=318.8 ,sn=28.1,rescale.n=1, t0=t0_abpmch_2xRvs_sla1)
 abpmch_1xBAR_sla1_no2<-gen.data(abpmch_notrans_1xBar_sla1,transformation_template,n=243.5,sn=24.6,rescale.n=1,t0=t0_abpmch_1xBar_sla1)
