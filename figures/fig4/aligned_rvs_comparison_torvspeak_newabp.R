@@ -64,7 +64,8 @@ x1<-mean(sla1_wt[1:100,"x"])
 x_delsh3<-median(sla1_delsh3[1:110,"x"])
 
 #plot them
-pdf("aligned_newabp2018_removedboth_newdelsh4.pdf")
+#pdf("aligned_newabp2018_removedboth_newdelsh4.pdf")
+pdf("aligned_newabp2018_removedboth_newdelsh_trial.pdf")
 
 myplot(abp1[,"t"],abp1[,"x"]-x1,abp1[,"t.err"],abp1[,"x.err"],line.col="#FF3399",xlab="Time (s)",ylab="Inward movement (nm)",line.lwd=3,deltat=0.25,xlim=c(-10,10),ylim=c(-50,200))
 myplot(sla1_wt[,"t"], sla1_wt[,"x"]-x1,sla1_wt[,"t.err"],sla1_wt[,"x.err"],line.col="#083956",hold_on=TRUE, line.lwd=3,deltat=0.25)

@@ -176,7 +176,7 @@ x_rvsdelvps<-mean(rvs_delvps[1:25,"x"])
 mnorm<-function(x) return((x-min(x,na.rm=T))/(max(x,na.rm=T)-min(x,na.rm=T)))
 
 #plot them
-pdf("check_mutantDC_wt_allfalse_rvsdelvps_wtrvs5x.pdf")
+pdf("check_mutantDC_wt_allfalse_rvsdelvps_wtrvs6x.pdf")
 #5 includes a sla1 intensity plot
 #####check sla1 alignment
 ##sla1 all w/ abp intensities
@@ -268,9 +268,9 @@ myplot(rvs_delinp52[,"t"]-26,rvs_delinp52[,"x"]-x_rvsdel52,rvs_delinp52[,"t.err"
 legend("topleft",c("WT-rvs", "delinp52-rvs","delinp51-rvs"),lty=1,col=c("#000000","#FFCC00", "#FF6600"),bty='n', cex=0.75)
 
 ##############################sla1 plots
-myplot(sla1_823[,"t"]+6,mnorm(sla1_823[,"fi"]),sla1_823[,"t.err"],sla1_823[,"fi.err"],line.col="#000000",xlab="Time (s)",ylab="Fl.Intensity (a.u)",line.lwd=3,deltat=0.45,xlim=c(-15,15),ylim=c(0,1.1))
-myplot(sla1_delinp52[,"t"]+13,mnorm(sla1_delinp52[,"fi"]),sla1_delinp52[,"t.err"],sla1_delinp52[,"fi.err"],line.col="#FFCC00",hold_on=TRUE,line.lwd=3,deltat=0.25)
-myplot(sla1_delinp51[,"t"]+21,mnorm(sla1_delinp51[,"fi"]),sla1_delinp51[,"t.err"],sla1_delinp51[,"fi.err"],line.col="#FF6600",hold_on=TRUE,line.lwd=3,deltat=0.25)
+myplot(sla1_823[,"t"],mnorm(sla1_823[,"fi"]),sla1_823[,"t.err"],sla1_823[,"fi.err"],line.col="#000000",xlab="Time (s)",ylab="Fl.Intensity (a.u)",line.lwd=3,deltat=0.45,xlim=c(-15,15),ylim=c(0,1.1))
+myplot(sla1_delinp52[,"t"],mnorm(sla1_delinp52[,"fi"]),sla1_delinp52[,"t.err"],sla1_delinp52[,"fi.err"],line.col="#FFCC00",hold_on=TRUE,line.lwd=3,deltat=0.25)
+myplot(sla1_delinp51[,"t"],mnorm(sla1_delinp51[,"fi"]),sla1_delinp51[,"t.err"],sla1_delinp51[,"fi.err"],line.col="#FF6600",hold_on=TRUE,line.lwd=3,deltat=0.25)
 legend("topleft",c("WT-sla1", "delinp52-sla1","delinp51-sla1"),lty=1,col=c("#000000","#FFCC00", "#FF6600"),bty='n', cex=0.75)
 title("sla1 all intensities aligned to maximum intensity manually ")
 

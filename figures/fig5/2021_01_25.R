@@ -23,7 +23,8 @@ get(load("/Users/deepikaa/Desktop/data_desktop/Tracking/SC/Abp1-mCH/2020_07_27/2
 get(load("/Users/deepikaa/Desktop/data_desktop/Tracking/SC/Abp1-mCH/2020_02_06/1801/tracks.Rdata"))->abpmch_notrans_rvsdel_sla1
 
 #trasnformations for sla1
-get(load("/Users/deepikaa/Desktop/data_desktop/Tracking/SC/Abp1-mCH/alignments/abpmch_Sla1823_mytrasf.Rdata"))->sla1823_transf
+#get(load("/Users/deepikaa/Desktop/data_desktop/Tracking/SC/Abp1-mCH/alignments/abpmch_Sla1823_mytrasf.Rdata"))->sla1823_transf
+get(load("/Users/deepikaa/Desktop/data_desktop/Tracking/SC/Abp1-mCH/alignments/old_alignments/abpmch_Sla1823_mytrasf.Rdata"))->sla1823_transf
 get(load("/Users/deepikaa/Desktop/data_desktop/Tracking/SC/Abp1-mCH/alignments_haploid/rvsdup_sla1_3706_mytrasf.Rdata"))->sla13706_transf
 get(load("/Users/deepikaa/Desktop/data_desktop/Tracking/SC/Abp1-mCH/alignments_haploid/rvsdelsh3_sla1_3292_mytrasf.Rdata"))->sla13292_transf
 get(load("/Users/deepikaa/Desktop/data_desktop/Tracking/SC/Abp1-mCH/alignments_haploid/rvsdelsh3_sla1_3826_tracks2_d_mytrasf.Rdata"))->sla13826_transf
@@ -83,7 +84,7 @@ cols_blue<-brewer.pal(n=9, name="Blues")
 cols_rdpu<-brewer.pal(n=9, name="RdPu")
 
 ##with delsh3-duplicated
-pdf("all_haploid_2021_g.pdf")
+pdf("all_haploid_2021_redone_july2021.pdf")
 mnorm<-function(x) return((x-min(x,na.rm=T))/(max(x,na.rm=T)-min(x,na.rm=T)))
 
 #b, with transformation matrix that includes all dc tracks for delsh3dup_sla1

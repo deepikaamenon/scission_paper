@@ -65,4 +65,50 @@ there is no complete alignment otherwise\
 \
 final intensity plots from  check_mutantDC_wt_allfalse_rvsdelvps_wtrvs5x.pdf \
 with alignment to the intensity maxima of both sla1 and rvs..\
-gives a \'93fake meaning\'94 to the time axis, but its easier to see the delay in assembly/ disassembly when they are not aligned to the beginning of the tracks}
+gives a \'93fake meaning\'94 to the time axis, but its easier to see the delay in assembly/ disassembly when they are not aligned to the beginning of the tracks\
+\
+
+\f1\b 2021_05_20
+\f0\b0 \
+\
+tried to redo the DC alignments in the last couple of weeks\
+inpdel51_3132: rvs movement looks ok, or \'93as expected\'94, similar to WT, after some cleanup\
+inpdel51_823:\
+sla1 alignment isnt really working: the fl.int. has a plateau rather than a peak, which is throwing off the abp to sla1 alignment. \
+lifetimes of sla1 are between 20 and 32 seconds, while wt lifetimes are between 15 and 25. \
+when the lifetimes are split into \'93similar to WT\'94 (red) and \'93dissimlar to WT\'94 (magenta), \
+in /Users/deepikaa/Desktop/data_desktop/Tracking/SC/delinp51/823_SC/2017_03_07/tracks/\
+magenta: 9 tracks \'97> have plateaus\
+red: 11 \'97> dont have plateaus\
+so its hard to say what is \'93average\'94\
+\
+inp52del_823\
+from\
+/Users/deepikaa/Desktop/data_desktop/Tracking/SC/delinp52/2017_12_29/52del_823_8d/tracks/\
+lifetimes are even longer than inp51del_823, and even more spread.\
+alignment probably makes even less sense than the inp51\
+\
+but cleaned up the delinp52/2017_12_29/52del_823_8d/tracks.Rdata\
+to remove a wierd early peak in the sla1 tracks.Rdata thats not in most of the tracks.\
+using here track2.Rdata. \
+seems a bit \'93faster\'94 than WT in the beginning of the track, but is within the average\
+\
+2021_05_25\
+inp52del 3132\
+check  \'93inpdel_check_rvs.R\'94 \
+in "/Users/deepikaa/Desktop/data_desktop/Tracking/SC"\
+producing \'93check3132_inp52del.pdf\'94\
+\
+tracks sorted by fl.int to sort for non_average tracks,  the \'93normal \'93 ones are in tracks_stereotypic_2021\
+problem is: the abp to rvs peak is shifted, and not sure if this is \'93real\'94 or not\
+sorting the rvs by inward movment there are more tracks that are immotile, that may be retracting events (we\'92re expecting a larger than WT percentage of these)\
+removed these also from \'93tracks_stereotypic\'94\
+and redid alignment\
+\
+
+\f1\b 2021_07_04 
+\f0\b0 \
+final plot after alignments so that t0=abpmax was generated in /Desktop/data_desktop/Tracking/DC\
+by delinp_abpmch_transformed_abp0.R\
+in check_inp76.pdf\
+}
